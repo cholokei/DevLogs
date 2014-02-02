@@ -1,0 +1,91 @@
+Script started on 2014년 02월 01일 (토) 오후 07시 11분 27초
+scripts/kconfig/conf --silentoldconfig Kconfig
+drivers/i2c/chips/Kconfig:96:warning: 'INPUT_YAS529_POSITION': number is invalid
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  CC      kernel/sys.o
+  CC      drivers/i2c/chips/yda165.o
+  CC      drivers/i2c/chips/gp2ap020_proximity.o
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  CC      drivers/i2c/chips/gp2ap020_light.o
+  CC      arch/arm/mach-msm/msm_rq_stats.o
+  CC      arch/arm/mach-msm/msm_show_resume_irq.o
+  CC      arch/arm/mach-msm/restart.o
+  CC      drivers/video/msm/mdp4_hsic.o
+  CC      arch/arm/mach-msm/sec_debug.o
+  CC      drivers/video/msm/mdp4_overlay_dsi_cmd.o
+  CC      arch/arm/mach-msm/sec_getlog.o
+  CC      arch/arm/mach-msm/sec_gaf.o
+  CC      drivers/video/msm/mdp4_dtv.o
+  CC      arch/arm/mach-msm/sec_last_log.o
+arch/arm/mach-msm/board-msm8x60_dali.c:1851:2: error: unknown field 'check_microusb' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:1851:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:1851:2: warning: (near initialization for 'msm_gadget_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4055:0: warning: "MSM_ION_MM_SIZE" redefined [enabled by default]
+  CC      arch/arm/mach-msm/board-bluetooth-bcm4330.o
+arch/arm/mach-msm/board-msm8x60_dali.c:4036:0: note: this is the location of the previous definition
+arch/arm/mach-msm/board-msm8x60_dali.c: In function 'sec_jack_read_adc':
+arch/arm/mach-msm/board-msm8x60_dali.c:6399:3: warning: implicit declaration of function 'pm8058_xoadc_clear_recentQ' [-Wimplicit-function-declaration]
+  CC [M]  arch/arm/mach-msm/dal_remotetest.o
+arch/arm/mach-msm/board-msm8x60_dali.c: At top level:
+arch/arm/mach-msm/board-msm8x60_dali.c:8815:45: error: 'scale_sec_settherm' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9718:3: error: 'msm_device_tz_log' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9718:2: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:9718:2: error: (near initialization for 'surf_devices[49]')
+arch/arm/mach-msm/board-msm8x60_dali.c:9847:19: error: 'ION_ADSP_TYPE' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9847:4: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:9847:4: error: (near initialization for 'msm8x60_heaps[5].memory_type')
+arch/arm/mach-msm/board-msm8x60_dali.c:9859:4: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:9859:4: error: (near initialization for 'msm8x60_heaps[6].memory_type')
+  CC [M]  arch/arm/mach-msm/dma_test.o
+arch/arm/mach-msm/board-msm8x60_dali.c:13471:2: error: unknown field 'cfg_mpm_sdiowakeup' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:13471:24: error: 'msm_sdcc_cfg_mpm_sdiowakeup' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:13471:2: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:13471:2: error: (near initialization for 'msm8x60_sdc4_data.wpswitch_gpio')
+arch/arm/mach-msm/board-msm8x60_dali.c:766:31: warning: 'smc91x_device' defined but not used [-Wunused-variable]
+arch/arm/mach-msm/board-msm8x60_dali.c:1086:36: warning: 'msm_pm_data' defined but not used [-Wunused-variable]
+arch/arm/mach-msm/board-msm8x60_dali.c:1130:33: warning: 'msm_cstates' defined but not used [-Wunused-variable]
+  CC [M]  arch/arm/mach-msm/msm-buspm-dev.o
+make[1]: *** [arch/arm/mach-msm/board-msm8x60_dali.o] 오류 1
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      drivers/video/msm/mdp4_overlay_dtv.o
+  CC      drivers/video/msm/mdp_dma.o
+drivers/video/msm/mdp4_hsic.c: In function '_hsic_generate_csc_matrix':
+drivers/video/msm/mdp4_hsic.c:379:38: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c: In function '_hsic_update_mdp':
+drivers/video/msm/mdp4_hsic.c:457:38: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c: At top level:
+drivers/video/msm/mdp4_hsic.c:513:59: warning: 'struct dpp_ctrl' declared inside parameter list [enabled by default]
+drivers/video/msm/mdp4_hsic.c:513:59: warning: its scope is only this definition or declaration, which is probably not what you want [enabled by default]
+drivers/video/msm/mdp4_hsic.c: In function 'mdp4_hsic_get':
+drivers/video/msm/mdp4_hsic.c:517:19: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c:517:42: error: dereferencing pointer to incomplete type
+drivers/video/msm/mdp4_hsic.c: At top level:
+drivers/video/msm/mdp4_hsic.c:520:59: warning: 'struct dpp_ctrl' declared inside parameter list [enabled by default]
+drivers/video/msm/mdp4_hsic.c: In function 'mdp4_hsic_set':
+drivers/video/msm/mdp4_hsic.c:524:19: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c:524:40: error: dereferencing pointer to incomplete type
+drivers/video/msm/mdp4_hsic.c:526:10: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c: In function 'mdp4_hsic_update':
+drivers/video/msm/mdp4_hsic.c:532:10: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+make[3]: *** [drivers/video/msm/mdp4_hsic.o] 오류 1
+make[3]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  LD      drivers/i2c/chips/built-in.o
+  LD      drivers/i2c/built-in.o
+  CC      kernel/module.o
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  CC      kernel/trace/trace.o
+make: *** [arch/arm/mach-msm] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+make[2]: *** [drivers/video/msm] 오류 2
+make[1]: *** [drivers/video] 오류 2
+make: *** [drivers] 오류 2
+  LD      kernel/trace/built-in.o
+  LD      kernel/built-in.o

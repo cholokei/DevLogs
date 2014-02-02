@@ -1,0 +1,677 @@
+Script started on 2014년 01월 13일 (월) 오전 01시 04분 47초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  CC [M]  arch/arm/perfmon/per-process-perf.o
+  LD      init/built-in.o
+arch/arm/perfmon/per-process-perf.c: In function 'per_process_create_results_proc':
+arch/arm/perfmon/per-process-perf.c:438:3: error: invalid use of flexible array member
+arch/arm/perfmon/per-process-perf.c: In function 'per_process_create_l2_results_proc':
+arch/arm/perfmon/per-process-perf.c:461:3: error: invalid use of flexible array member
+  CC      kernel/sysctl_binary.o
+make[1]: *** [arch/arm/perfmon/per-process-perf.o] 오류 1
+make: *** [arch/arm/perfmon] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      drivers/gpio/gpio-sx150x.o
+  CC      drivers/char/msm_rotator.o
+  CC      drivers/base/regmap/regmap-i2c.o
+  CC      net/bluetooth/hidp/core.o
+  CC      drivers/base/genlock.o
+  CC      drivers/i2c/i2c-boardinfo.o
+  CC      sound/soc/soc-cache.o
+  CC      drivers/gpu/msm/kgsl.o
+  CC      arch/arm/mach-msm/devices-msm8x60.o
+kernel/sysctl_binary.c:527:13: error: 'NET_IPV6_ACCEPT_RA_PREFIX_ROUTE' undeclared here (not in a function)
+  LD      drivers/base/regmap/built-in.o
+make[1]: *** [kernel/sysctl_binary.o] 오류 1
+make: *** [kernel] 오류 2
+  CC      sound/soc/soc-io.o
+  CC      drivers/i2c/i2c-core.o
+  LD      drivers/gpio/built-in.o
+  CC      drivers/input/keyboard/cypress-touchkey_dali.o
+  CC      drivers/i2c/i2c-dev.o
+  CC      drivers/input/touchscreen/melfas_ts.o
+  CC      drivers/input/keyboard/issp_driver_routines.o
+  LD      sound/soc/snd-soc-core.o
+  LD      drivers/base/built-in.o
+  LD      sound/soc/built-in.o
+  LD      sound/built-in.o
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  CC      drivers/input/keyboard/issp_routines.o
+  CC      drivers/mfd/marimba-core.o
+  CC      drivers/media/common/tuners/tuner-xc2028.o
+  LD      net/bluetooth/hidp/hidp.o
+  CC [M]  drivers/misc/vibetonz/tspdrv.o
+  LD      net/bluetooth/hidp/built-in.o
+  LD      net/bluetooth/built-in.o
+  CC      drivers/media/common/tuners/tuner-simple.o
+  CC      drivers/media/common/tuners/tuner-types.o
+  CC      drivers/media/common/tuners/mt20xx.o
+  LD      net/built-in.o
+arch/arm/mach-msm/board-msm8x60_dali.c: In function 'sec_jack_read_adc':
+arch/arm/mach-msm/board-msm8x60_dali.c:6353:3: warning: implicit declaration of function 'pm8058_xoadc_clear_recentQ' [-Wimplicit-function-declaration]
+arch/arm/mach-msm/board-msm8x60_dali.c: At top level:
+arch/arm/mach-msm/board-msm8x60_dali.c:8884:45: error: 'scale_sec_settherm' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9680:3: error: 'msm_rpm_device' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9680:2: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:9680:2: error: (near initialization for 'surf_devices[41]')
+arch/arm/mach-msm/board-msm8x60_dali.c:9717:15: error: variable 'cp_mm_ion_pdata' has initializer but incomplete type
+arch/arm/mach-msm/board-msm8x60_dali.c:9718:2: error: unknown field 'permission_type' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9718:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9718:2: warning: (near initialization for 'cp_mm_ion_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9719:2: error: unknown field 'align' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9719:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9719:2: warning: (near initialization for 'cp_mm_ion_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9720:2: error: unknown field 'request_region' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9720:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9720:2: warning: (near initialization for 'cp_mm_ion_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9721:2: error: unknown field 'release_region' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9721:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9721:2: warning: (near initialization for 'cp_mm_ion_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9722:2: error: unknown field 'setup_region' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9722:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9722:2: warning: (near initialization for 'cp_mm_ion_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9723:2: error: unknown field 'iommu_map_all' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9723:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9723:2: warning: (near initialization for 'cp_mm_ion_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9724:2: error: unknown field 'iommu_2x_map_domain' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9724:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9724:2: warning: (near initialization for 'cp_mm_ion_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9727:15: error: variable 'cp_mfc_ion_pdata' has initializer but incomplete type
+arch/arm/mach-msm/board-msm8x60_dali.c:9728:2: error: unknown field 'permission_type' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9728:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9728:2: warning: (near initialization for 'cp_mfc_ion_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9729:2: error: unknown field 'align' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9729:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9729:2: warning: (near initialization for 'cp_mfc_ion_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9730:2: error: unknown field 'request_region' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9730:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9730:2: warning: (near initialization for 'cp_mfc_ion_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9731:2: error: unknown field 'release_region' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9731:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9731:2: warning: (near initialization for 'cp_mfc_ion_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9732:2: error: unknown field 'setup_region' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9732:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9732:2: warning: (near initialization for 'cp_mfc_ion_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9735:15: error: variable 'cp_wb_ion_pdata' has initializer but incomplete type
+arch/arm/mach-msm/board-msm8x60_dali.c:9736:2: error: unknown field 'permission_type' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9736:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9736:2: warning: (near initialization for 'cp_wb_ion_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9737:2: error: unknown field 'align' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9737:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9737:2: warning: (near initialization for 'cp_wb_ion_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9740:15: error: variable 'fw_co_ion_pdata' has initializer but incomplete type
+arch/arm/mach-msm/board-msm8x60_dali.c:9741:2: error: unknown field 'adjacent_mem_id' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9741:21: error: 'ION_CP_MM_HEAP_ID' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9741:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9741:2: warning: (near initialization for 'fw_co_ion_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9742:2: error: unknown field 'align' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9742:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9742:2: warning: (near initialization for 'fw_co_ion_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9745:15: error: variable 'co_ion_pdata' has initializer but incomplete type
+arch/arm/mach-msm/board-msm8x60_dali.c:9746:2: error: unknown field 'adjacent_mem_id' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9746:21: error: 'INVALID_HEAP_ID' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9746:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9746:2: warning: (near initialization for 'co_ion_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9747:2: error: unknown field 'align' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9747:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9747:2: warning: (near initialization for 'co_ion_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9764:2: warning: braces around scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9764:2: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9765:3: warning: braces around scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9765:3: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9766:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9766:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9766:10: error: 'ION_SYSTEM_HEAP_ID' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9766:4: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:9766:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9767:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9767:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9767:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9767:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9768:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9768:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9768:12: error: 'ION_VMALLOC_HEAP_NAME' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9768:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9768:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9771:3: warning: braces around scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9771:3: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9772:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9772:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9772:4: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:9772:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9773:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9773:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9773:12: error: 'ION_HEAP_TYPE_CP' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9773:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9773:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9774:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9774:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9774:12: error: 'ION_MM_HEAP_NAME' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9774:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9774:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9775:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9775:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9775:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9775:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9776:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9776:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9776:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9776:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9777:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9777:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9777:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9777:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9778:3: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9778:3: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9779:3: warning: braces around scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9779:3: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9780:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9780:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9780:10: error: 'ION_MM_FIRMWARE_HEAP_ID' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9780:4: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:9780:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9781:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9781:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9781:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9781:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9782:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9782:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9782:12: error: 'ION_MM_FIRMWARE_HEAP_NAME' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9782:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9782:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9783:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9783:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9783:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9783:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9784:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9784:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9784:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9784:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9785:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9785:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9785:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9785:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9786:3: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9786:3: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9787:3: warning: braces around scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9787:3: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9788:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9788:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9788:10: error: 'ION_CP_MFC_HEAP_ID' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9788:4: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:9788:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9789:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9789:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9789:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9789:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9790:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9790:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9790:12: error: 'ION_MFC_HEAP_NAME' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9790:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9790:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9791:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9791:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9791:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9791:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9792:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9792:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9792:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9792:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9793:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9793:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9793:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9793:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9794:3: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9794:3: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9795:3: warning: braces around scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9795:3: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9796:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9796:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9796:10: error: 'ION_SF_HEAP_ID' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9796:4: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:9796:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9797:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9797:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9797:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9797:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9798:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9798:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9798:12: error: 'ION_SF_HEAP_NAME' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9798:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9798:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9799:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9799:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9799:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9799:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9800:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9800:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9800:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9800:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9801:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9801:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9801:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9801:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9802:3: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9802:3: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9803:3: warning: braces around scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9803:3: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9804:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9804:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9804:10: error: 'ION_CP_WB_HEAP_ID' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9804:4: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:9804:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9805:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9805:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9805:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9805:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9806:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9806:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9806:12: error: 'ION_WB_HEAP_NAME' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9806:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9806:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9807:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9807:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9807:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9807:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9809:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9809:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9809:19: error: 'ION_ADSP_TYPE' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9809:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9809:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9813:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9813:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9813:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9813:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9814:3: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9814:3: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9815:3: warning: braces around scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9815:3: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9816:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9816:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9816:10: error: 'ION_CAMERA_HEAP_ID' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9816:4: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:9816:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9817:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9817:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9817:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9817:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9818:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9818:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9818:12: error: 'ION_CAMERA_HEAP_NAME' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9818:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9818:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9819:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9819:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9819:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9819:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9821:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9821:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9821:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9821:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9825:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9825:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9825:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9825:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9826:3: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9826:3: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9837:3: warning: braces around scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9837:3: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9838:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9838:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9838:10: error: 'ION_AUDIO_HEAP_ID' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9838:4: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:9838:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9839:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9839:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9839:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9839:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9840:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9840:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9840:12: error: 'ION_AUDIO_HEAP_NAME' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9840:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9840:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9841:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9841:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9841:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9841:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9842:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9842:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9842:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9842:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9843:4: error: field name not in record or union initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:9843:4: error: (near initialization for 'ion_pdata.heaps')
+arch/arm/mach-msm/board-msm8x60_dali.c:9843:4: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9843:4: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9844:3: warning: excess elements in scalar initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9844:3: warning: (near initialization for 'ion_pdata.heaps') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9877:3: error: 'MEMTYPE_PMEM_ADSP' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9877:2: error: array index in initializer not of integer type
+arch/arm/mach-msm/board-msm8x60_dali.c:9877:2: error: (near initialization for 'msm8x60_reserve_table')
+arch/arm/mach-msm/board-msm8x60_dali.c: In function 'reserve_ion_memory':
+arch/arm/mach-msm/board-msm8x60_dali.c:9899:30: warning: comparison between pointer and integer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9912:38: warning: comparison between pointer and integer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9914:22: error: dereferencing pointer to incomplete type
+arch/arm/mach-msm/board-msm8x60_dali.c:9914:22: error: request for member 'iommu_map_all' in something not a structure or union
+arch/arm/mach-msm/board-msm8x60_dali.c:9913:18: warning: initialization makes integer from pointer without a cast [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:9933:23: error: array subscript is not an integer
+arch/arm/mach-msm/board-msm8x60_dali.c:9933:42: error: request for member 'size' in something not a structure or union
+arch/arm/mach-msm/board-msm8x60_dali.c:9933:2: warning: statement with no effect [-Wunused-value]
+arch/arm/mach-msm/board-msm8x60_dali.c:9934:23: error: array subscript is not an integer
+arch/arm/mach-msm/board-msm8x60_dali.c:9934:42: error: request for member 'size' in something not a structure or union
+arch/arm/mach-msm/board-msm8x60_dali.c:9934:2: warning: statement with no effect [-Wunused-value]
+arch/arm/mach-msm/board-msm8x60_dali.c: In function 'msm_sdcc_cfg_mpm_sdiowakeup':
+arch/arm/mach-msm/board-msm8x60_dali.c:13406:19: error: storage size of 'pin' isn't known
+arch/arm/mach-msm/board-msm8x60_dali.c:13413:9: error: 'MSM_MPM_PIN_SDC4_DAT1' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:13413:9: note: each undeclared identifier is reported only once for each function it appears in
+arch/arm/mach-msm/board-msm8x60_dali.c:13413:3: warning: statement with no effect [-Wunused-value]
+arch/arm/mach-msm/board-msm8x60_dali.c:13419:3: warning: passing argument 1 of 'msm_mpm_enable_pin' makes integer from pointer without a cast [enabled by default]
+arch/arm/mach-msm/include/mach/mpm.h:54:5: note: expected 'unsigned int' but argument is of type 'struct platform_device **'
+arch/arm/mach-msm/board-msm8x60_dali.c:13422:3: warning: passing argument 1 of 'msm_mpm_set_pin_type' makes integer from pointer without a cast [enabled by default]
+arch/arm/mach-msm/include/mach/mpm.h:81:5: note: expected 'unsigned int' but argument is of type 'struct platform_device **'
+arch/arm/mach-msm/board-msm8x60_dali.c:13423:3: warning: passing argument 1 of 'msm_mpm_enable_pin' makes integer from pointer without a cast [enabled by default]
+arch/arm/mach-msm/include/mach/mpm.h:54:5: note: expected 'unsigned int' but argument is of type 'struct platform_device **'
+arch/arm/mach-msm/board-msm8x60_dali.c:13426:3: warning: passing argument 1 of 'msm_mpm_set_pin_wake' makes integer from pointer without a cast [enabled by default]
+arch/arm/mach-msm/include/mach/mpm.h:68:5: note: expected 'unsigned int' but argument is of type 'struct platform_device **'
+arch/arm/mach-msm/board-msm8x60_dali.c:13429:3: warning: passing argument 1 of 'msm_mpm_set_pin_wake' makes integer from pointer without a cast [enabled by default]
+arch/arm/mach-msm/include/mach/mpm.h:68:5: note: expected 'unsigned int' but argument is of type 'struct platform_device **'
+arch/arm/mach-msm/board-msm8x60_dali.c:13406:19: warning: unused variable 'pin' [-Wunused-variable]
+arch/arm/mach-msm/board-msm8x60_dali.c: At top level:
+arch/arm/mach-msm/board-msm8x60_dali.c:13453:2: error: unknown field 'pclk_src_dfab' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:13468:2: error: unknown field 'pclk_src_dfab' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:13493:2: error: unknown field 'pclk_src_dfab' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:13507:2: error: unknown field 'pclk_src_dfab' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:13508:2: error: unknown field 'cfg_mpm_sdiowakeup' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:13508:2: warning: initialization makes integer from pointer without a cast [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:13508:2: warning: (near initialization for 'msm8x60_sdc4_data.wpswitch_gpio') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:13523:2: error: unknown field 'pclk_src_dfab' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:16720:13: error: invalid operands to binary << (have 'long unsigned int' and 'struct platform_device **')
+arch/arm/mach-msm/board-msm8x60_dali.c:16720:2: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:16720:2: error: (near initialization for 'mdp_pdata.mem_hid')
+arch/arm/mach-msm/board-msm8x60_dali.c:17373:2: error: unknown field 'irq_vmpm' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:17374:2: error: unknown field 'msm_apps_ipc_rpm_reg' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:17375:2: error: unknown field 'msm_apps_ipc_rpm_val' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c: In function 'msm8x60_init':
+arch/arm/mach-msm/board-msm8x60_dali.c:17539:2: warning: passing argument 1 of 'msm_rpmrs_levels_init' from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/rpm_resources.h:142:5: note: expected 'struct msm_rpmrs_platform_data *' but argument is of type 'struct msm_rpmrs_level *'
+arch/arm/mach-msm/board-msm8x60_dali.c:17539:2: error: too many arguments to function 'msm_rpmrs_levels_init'
+arch/arm/mach-msm/rpm_resources.h:142:5: note: declared here
+arch/arm/mach-msm/board-msm8x60_dali.c:17605:3: warning: implicit declaration of function 'acpuclk_init' [-Wimplicit-function-declaration]
+arch/arm/mach-msm/board-msm8x60_dali.c:17605:17: error: 'acpuclk_8x60_soc_data' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:17809:2: warning: implicit declaration of function 'msm_cpuidle_set_states' [-Wimplicit-function-declaration]
+  CC      drivers/media/common/tuners/tda8290.o
+make[1]: *** [arch/arm/mach-msm/board-msm8x60_dali.o] 오류 1
+make: *** [arch/arm/mach-msm] 오류 2
+  CC      drivers/mfd/timpani-codec.o
+  CC      drivers/misc/fsa9480.o
+  LD      drivers/input/keyboard/built-in.o
+  CC      drivers/i2c/algos/i2c-algo-bit.o
+  LD      drivers/input/touchscreen/built-in.o
+  CC      drivers/misc/ak8975.o
+  LD      drivers/input/built-in.o
+  CC      drivers/media/common/tuners/tea5767.o
+  CC      drivers/media/radio/radio-tavarua.o
+  LD [M]  drivers/misc/vibetonz/vibrator.o
+  CC      drivers/misc/k3dh.o
+  CC      drivers/mfd/msm-adie-codec.o
+  LD      drivers/char/built-in.o
+  CC      drivers/misc/sec_jack.o
+  CC      drivers/misc/pmic8058-pwm.o
+  CC      drivers/media/common/tuners/tea5761.o
+  LD      drivers/i2c/algos/built-in.o
+  CC      drivers/i2c/busses/i2c-gpio.o
+  CC      drivers/i2c/busses/i2c-qup.o
+  CC      drivers/i2c/busses/i2c-ssbi.o
+  CC      drivers/misc/pm8xxx-upl.o
+  LD      drivers/mfd/built-in.o
+  CC      drivers/media/common/tuners/tda9887.o
+  CC      drivers/media/common/tuners/tda827x.o
+  CC      drivers/power/max17040_battery.o
+  CC      drivers/media/video/v4l2-device.o
+  CC      drivers/misc/pmic8058-xoadc.o
+  CC      drivers/misc/sec_misc.o
+  CC      drivers/misc/sec_level.o
+  CC      drivers/power/smb328a_charger.o
+  CC      drivers/media/common/tuners/tda18271-maps.o
+  CC      drivers/misc/sec_param.o
+  CC [M]  drivers/misc/tsif.o
+  CC      drivers/media/common/tuners/tda18271-common.o
+  LD      drivers/gpu/msm/msm_adreno.o
+  LD      drivers/gpu/msm/msm_z180.o
+  CC [M]  drivers/misc/tsif_chrdev.o
+  LD      drivers/gpu/msm/msm_kgsl_core.o
+  LD      drivers/gpu/msm/built-in.o
+  CC      drivers/media/video/v4l2-common.o
+  LD      drivers/gpu/built-in.o
+  CC      drivers/rtc/rtc-lib.o
+  CC      drivers/spi/spi.o
+  CC      drivers/staging/staging.o
+  CC      drivers/media/common/tuners/tda18271-fe.o
+  CC      drivers/media/common/tuners/xc5000.o
+  CC      drivers/scsi/scsi.o
+  CC      drivers/staging/android/binder.o
+  LD      drivers/i2c/busses/built-in.o
+  LD      drivers/i2c/built-in.o
+  CC      drivers/spi/spi_qsd.o
+  CC      drivers/staging/android/ashmem.o
+  CC      drivers/switch/switch_class.o
+  LD      drivers/misc/built-in.o
+  CC      drivers/staging/android/logger.o
+  CC      drivers/media/common/tuners/xc4000.o
+  LD      drivers/power/built-in.o
+  CC      drivers/rtc/hctosys.o
+  CC      drivers/thermal/thermal_sys.o
+  LD      drivers/media/radio/built-in.o
+  CC      drivers/thermal/msm_tsens.o
+  CC      drivers/switch/switch_gpio.o
+  CC      drivers/rtc/class.o
+  CC      drivers/media/video/ir-kbd-i2c.o
+  LD [M]  drivers/misc/msm_tsif.o
+  CC      drivers/scsi/hosts.o
+  LD      drivers/switch/built-in.o
+  CC      drivers/thermal/pm8xxx-tm.o
+  CC      drivers/staging/android/persistent_ram.o
+  CC      drivers/media/common/tuners/mc44s803.o
+  LD      drivers/media/video/videodev.o
+  CC [M]  drivers/spi/spidev.o
+  CC      drivers/staging/android/ram_console.o
+  CC      drivers/tty/tty_io.o
+  CC      drivers/rtc/interface.o
+  LD      drivers/media/video/built-in.o
+  CC      drivers/tty/n_tty.o
+  LD      drivers/media/common/tuners/tda18271.o
+  CC      drivers/rtc/rtc-dev.o
+  CC      drivers/staging/android/timed_output.o
+  CC      drivers/staging/android/timed_gpio.o
+  CC      drivers/staging/android/lowmemorykiller.o
+  LD      drivers/media/common/tuners/built-in.o
+  CC      drivers/rtc/rtc-proc.o
+  LD      drivers/media/common/built-in.o
+  LD      drivers/media/built-in.o
+  LD      drivers/thermal/built-in.o
+  CC      drivers/usb/class/cdc-acm.o
+  CC      drivers/scsi/scsi_ioctl.o
+  CC      drivers/scsi/constants.o
+  CC      drivers/usb/class/usblp.o
+  CC      drivers/video/fb_notify.o
+  CC      drivers/video/fbmem.o
+  CC      drivers/video/fbmon.o
+  CC      drivers/rtc/rtc-sysfs.o
+  CC      drivers/rtc/alarm.o
+  CC      drivers/rtc/alarm-dev.o
+  CC      drivers/rtc/rtc-pm8xxx.o
+  CC      drivers/video/fbcmap.o
+  CC      drivers/video/fbsysfs.o
+  CC      drivers/scsi/scsicam.o
+  CC      drivers/video/modedb.o
+  LD      drivers/spi/built-in.o
+  CC      drivers/video/fbcvt.o
+  CC      drivers/scsi/scsi_error.o
+  LD      drivers/rtc/rtc-core.o
+  CC      drivers/scsi/scsi_lib.o
+  CC      drivers/video/backlight/backlight.o
+  LD      drivers/rtc/built-in.o
+  CC      drivers/video/backlight/generic_bl.o
+  CC [M]  drivers/video/backlight/lcd.o
+  CC      drivers/video/console/dummycon.o
+  CC      drivers/scsi/scsi_lib_dma.o
+  CC      drivers/video/cfbfillrect.o
+  CC      drivers/video/msm/msm_fb.o
+  CC      drivers/video/cfbcopyarea.o
+  CC      drivers/tty/tty_ioctl.o
+  LD      drivers/usb/class/built-in.o
+  CC      drivers/video/cfbimgblt.o
+  CC      drivers/usb/core/usb.o
+  CC      drivers/video/console/fbcon.o
+  CC      drivers/video/output.o
+  CC      drivers/usb/core/hub.o
+  LD      drivers/video/backlight/built-in.o
+  CC      drivers/usb/core/hcd.o
+  CC      drivers/tty/tty_ldisc.o
+  CC      drivers/scsi/scsi_scan.o
+  LD      drivers/video/fb.o
+  CC      drivers/tty/tty_buffer.o
+  CC      drivers/tty/tty_port.o
+  CC      drivers/tty/tty_mutex.o
+  CC      drivers/tty/pty.o
+  CC      drivers/usb/core/urb.o
+  CC      drivers/tty/sysrq.o
+  CC      drivers/tty/serial/serial_core.o
+  CC      drivers/scsi/scsi_sysfs.o
+  CC      drivers/tty/serial/msm_serial_hs.o
+  CC      drivers/tty/serial/msm_serial_hs_lite.o
+  CC      drivers/tty/vt/vt_ioctl.o
+  CC      drivers/tty/vt/vc_screen.o
+  CC      drivers/scsi/scsi_devinfo.o
+  LD      drivers/staging/android/built-in.o
+  LD      drivers/staging/built-in.o
+  CC      drivers/scsi/scsi_sysctl.o
+  CC      drivers/scsi/scsi_proc.o
+  CC      drivers/scsi/scsi_trace.o
+  CC      drivers/scsi/scsi_pm.o
+  CC      drivers/usb/core/message.o
+  CC      drivers/usb/core/driver.o
+  CC      drivers/tty/vt/selection.o
+  CC      drivers/tty/vt/keyboard.o
+  CC      drivers/scsi/scsi_tgt_lib.o
+  CC      drivers/scsi/scsi_tgt_if.o
+  CC      drivers/tty/vt/consolemap.o
+  CC      drivers/scsi/sd.o
+  CC      drivers/video/msm/logo.o
+  CC      drivers/scsi/sg.o
+  CC      drivers/scsi/ch.o
+  CC      drivers/video/console/bitblit.o
+  CC      drivers/tty/vt/consolemap_deftbl.o
+  CC      drivers/video/console/fonts.o
+  CC      drivers/tty/vt/vt.o
+  CC      drivers/video/console/font_8x8.o
+  CC      drivers/video/msm/mdp.o
+  CC      drivers/usb/core/config.o
+  CC      drivers/video/console/font_8x16.o
+  CC [M]  drivers/scsi/scsi_wait_scan.o
+  CC      drivers/video/console/softcursor.o
+  CC      drivers/usb/core/file.o
+  CC      drivers/tty/vt/defkeymap.o
+  LD      drivers/video/console/font.o
+  LD      drivers/tty/serial/built-in.o
+  CC      drivers/video/msm/mdp_debugfs.o
+  CC      drivers/usb/host/ehci-hcd.o
+  CC      drivers/usb/gadget/udc-core.o
+  CC      drivers/usb/core/buffer.o
+  CC      drivers/usb/gadget/msm72k_udc.o
+  CC      drivers/usb/core/sysfs.o
+  CC      drivers/usb/core/endpoint.o
+  CC      drivers/usb/core/devio.o
+  LD      drivers/video/console/built-in.o
+  CC      drivers/usb/gadget/android.o
+  CC      drivers/usb/core/notify.o
+  CC      drivers/usb/core/generic.o
+  CC      drivers/usb/core/quirks.o
+  CC      drivers/usb/core/devices.o
+  CC      drivers/video/msm/mdp4_util.o
+  CC      drivers/usb/misc/ehset.o
+  CC      drivers/video/msm/mdp4_video_enhance.o
+  CC      drivers/video/msm/mdp4_hsic.o
+  CC      drivers/video/msm/mdp4_overlay.o
+  CC      drivers/video/msm/mdp4_overlay_lcdc.o
+  CC      drivers/video/msm/mdp4_overlay_dsi_video.o
+  LD      drivers/usb/misc/built-in.o
+  CC      drivers/usb/otg/otg.o
+drivers/video/msm/mdp4_video_tuning_HD720.h:297:21: warning: 'DMB_LUT_TUNE' defined but not used [-Wunused-variable]
+drivers/video/msm/mdp4_hsic.c: In function '_hsic_generate_csc_matrix':
+drivers/video/msm/mdp4_hsic.c:379:38: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c: In function '_hsic_update_mdp':
+drivers/video/msm/mdp4_hsic.c:457:38: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c: At top level:
+drivers/video/msm/mdp4_hsic.c:513:59: warning: 'struct dpp_ctrl' declared inside parameter list [enabled by default]
+drivers/video/msm/mdp4_hsic.c:513:59: warning: its scope is only this definition or declaration, which is probably not what you want [enabled by default]
+drivers/video/msm/mdp4_hsic.c: In function 'mdp4_hsic_get':
+drivers/video/msm/mdp4_hsic.c:517:19: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c:517:42: error: dereferencing pointer to incomplete type
+drivers/video/msm/mdp4_hsic.c: At top level:
+drivers/video/msm/mdp4_hsic.c:520:59: warning: 'struct dpp_ctrl' declared inside parameter list [enabled by default]
+drivers/video/msm/mdp4_hsic.c: In function 'mdp4_hsic_set':
+drivers/video/msm/mdp4_hsic.c:524:19: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c:524:40: error: dereferencing pointer to incomplete type
+drivers/video/msm/mdp4_hsic.c:526:10: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c: In function 'mdp4_hsic_update':
+drivers/video/msm/mdp4_hsic.c:532:10: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+make[3]: *** [drivers/video/msm/mdp4_hsic.o] 오류 1
+make[3]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      drivers/usb/otg/msm72k_otg.o
+  CC      drivers/usb/usb-common.o
+  CC      drivers/usb/storage/alauda.o
+  LD      drivers/scsi/scsi_mod.o
+  LD      drivers/scsi/scsi_tgt.o
+  LD      drivers/scsi/sd_mod.o
+  LD      drivers/scsi/built-in.o
+  CC      drivers/usb/storage/cypress_atacb.o
+  CC      drivers/usb/storage/datafab.o
+  CC      drivers/usb/storage/freecom.o
+  CC      drivers/usb/storage/isd200.o
+  CC      drivers/usb/storage/jumpshot.o
+  CC      drivers/usb/storage/karma.o
+  CC      drivers/usb/storage/onetouch.o
+  LD      drivers/usb/core/usbcore.o
+  CC      drivers/usb/storage/sddr09.o
+  CC      drivers/usb/storage/sddr55.o
+  LD      drivers/tty/vt/built-in.o
+  LD      drivers/usb/core/built-in.o
+  LD      drivers/tty/built-in.o
+  CC      drivers/usb/storage/shuttle_usbat.o
+  CC      drivers/usb/storage/scsiglue.o
+  CC      drivers/usb/storage/protocol.o
+  CC      drivers/usb/storage/transport.o
+  CC      drivers/usb/storage/usb.o
+  CC      drivers/usb/storage/initializers.o
+  CC      drivers/usb/storage/sierra_ms.o
+  CC      drivers/usb/storage/option_ms.o
+  CC      drivers/usb/storage/usual-tables.o
+make[2]: *** [drivers/video/msm] 오류 2
+make[1]: *** [drivers/video] 오류 2
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  LD      drivers/usb/storage/usb-storage.o
+  LD      drivers/usb/storage/ums-alauda.o
+  LD      drivers/usb/storage/ums-cypress.o
+  LD      drivers/usb/storage/ums-datafab.o
+  LD      drivers/usb/storage/ums-freecom.o
+  LD      drivers/usb/storage/ums-isd200.o
+  LD      drivers/usb/storage/ums-jumpshot.o
+  LD      drivers/usb/storage/ums-karma.o
+  LD      drivers/usb/storage/ums-onetouch.o
+  LD      drivers/usb/storage/ums-sddr09.o
+  LD      drivers/usb/storage/ums-sddr55.o
+  LD      drivers/usb/storage/ums-usbat.o
+  LD      drivers/usb/storage/built-in.o
+  LD      drivers/usb/otg/built-in.o
+  LD      drivers/usb/host/built-in.o
+  LD      drivers/usb/gadget/g_android.o
+  LD      drivers/usb/gadget/built-in.o
+  LD      drivers/usb/built-in.o
+make: *** [drivers] 오류 2
+make: *** wait: 하위 프로세스가 없음.  멈춤.

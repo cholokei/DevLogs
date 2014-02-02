@@ -1,0 +1,181 @@
+Script started on 2014년 01월 30일 (목) 오후 02시 46분 49초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CC [M]  arch/arm/perfmon/per-process-perf.o
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  CC      kernel/sys.o
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  CC      arch/arm/mach-msm/restart.o
+  CC      arch/arm/mach-msm/sec_debug.o
+  CC      arch/arm/mach-msm/sec_gaf.o
+  CC      arch/arm/mach-msm/sec_last_log.o
+  LD      init/built-in.o
+  CC      arch/arm/mach-msm/board-bluetooth-bcm4330.o
+arch/arm/mach-msm/sec_gaf.c:118:36: error: 'struct vfsmount' has no member named 'mnt_mountpoint'
+arch/arm/mach-msm/sec_gaf.c:120:32: error: 'struct vfsmount' has no member named 'mnt_parent'
+arch/arm/mach-msm/sec_gaf.c: In function 'dump_cpu_stat':
+arch/arm/mach-msm/sec_gaf.c:300:26: error: 'cputime64_zero' undeclared (first use in this function)
+arch/arm/mach-msm/sec_gaf.c:300:26: note: each undeclared identifier is reported only once for each function it appears in
+arch/arm/mach-msm/sec_gaf.c:306:3: warning: implicit declaration of function 'cputime64_add' [-Wimplicit-function-declaration]
+arch/arm/mach-msm/sec_gaf.c:306:42: error: 'struct kernel_stat' has no member named 'cpustat'
+arch/arm/mach-msm/sec_gaf.c:307:42: error: 'struct kernel_stat' has no member named 'cpustat'
+arch/arm/mach-msm/sec_gaf.c:308:46: error: 'struct kernel_stat' has no member named 'cpustat'
+arch/arm/mach-msm/sec_gaf.c:309:42: error: 'struct kernel_stat' has no member named 'cpustat'
+arch/arm/mach-msm/sec_gaf.c:311:46: error: 'struct kernel_stat' has no member named 'cpustat'
+arch/arm/mach-msm/sec_gaf.c:312:40: error: 'struct kernel_stat' has no member named 'cpustat'
+arch/arm/mach-msm/sec_gaf.c:313:48: error: 'struct kernel_stat' has no member named 'cpustat'
+arch/arm/mach-msm/sec_gaf.c:350:22: error: 'struct kernel_stat' has no member named 'cpustat'
+arch/arm/mach-msm/sec_gaf.c:351:22: error: 'struct kernel_stat' has no member named 'cpustat'
+arch/arm/mach-msm/sec_gaf.c:352:24: error: 'struct kernel_stat' has no member named 'cpustat'
+arch/arm/mach-msm/sec_gaf.c:353:22: error: 'struct kernel_stat' has no member named 'cpustat'
+arch/arm/mach-msm/sec_gaf.c:355:24: error: 'struct kernel_stat' has no member named 'cpustat'
+arch/arm/mach-msm/sec_gaf.c:356:21: error: 'struct kernel_stat' has no member named 'cpustat'
+arch/arm/mach-msm/sec_gaf.c:357:25: error: 'struct kernel_stat' has no member named 'cpustat'
+make[1]: *** [arch/arm/mach-msm/sec_gaf.o] 오류 1
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+arch/arm/perfmon/per-process-perf.c: In function 'per_process_create_results_proc':
+arch/arm/perfmon/per-process-perf.c:438:3: error: invalid use of flexible array member
+arch/arm/perfmon/per-process-perf.c: In function 'per_process_create_l2_results_proc':
+arch/arm/perfmon/per-process-perf.c:461:3: error: invalid use of flexible array member
+make[1]: *** [arch/arm/perfmon/per-process-perf.o] 오류 1
+make: *** [arch/arm/perfmon] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+arch/arm/mach-msm/sec_debug.c:148:36: error: expected ')' before 'uint'
+arch/arm/mach-msm/sec_debug.c:149:46: error: expected ')' before 'uint'
+arch/arm/mach-msm/sec_debug.c:150:48: error: expected ')' before 'uint'
+arch/arm/mach-msm/sec_debug.c:343:1: warning: data definition has no type or storage class [enabled by default]
+arch/arm/mach-msm/sec_debug.c:343:1: warning: type defaults to 'int' in declaration of 'EXPORT_SYMBOL' [-Wimplicit-int]
+arch/arm/mach-msm/sec_debug.c:343:1: warning: parameter names (without types) in function declaration [enabled by default]
+arch/arm/mach-msm/sec_debug.c:361:1: warning: data definition has no type or storage class [enabled by default]
+arch/arm/mach-msm/sec_debug.c:361:1: warning: type defaults to 'int' in declaration of 'EXPORT_SYMBOL' [-Wimplicit-int]
+arch/arm/mach-msm/sec_debug.c:361:1: warning: parameter names (without types) in function declaration [enabled by default]
+arch/arm/mach-msm/sec_debug.c: In function 'sec_debug_hw_reset':
+arch/arm/mach-msm/sec_debug.c:575:2: warning: implicit declaration of function 'arch_reset' [-Wimplicit-function-declaration]
+make[1]: *** [arch/arm/mach-msm/sec_debug.o] 오류 1
+  CC      kernel/module.o
+  GZIP    kernel/config_data.gz
+  CC      drivers/video/msm/mdp4_hsic.o
+  CC      drivers/video/msm/msm_dss_io_8x60.o
+  CC      drivers/video/msm/mipi_dsi.o
+  CHK     kernel/config_data.h
+arch/arm/mach-msm/restart.c: In function 'msm_restart':
+arch/arm/mach-msm/restart.c:335:4: error: 'error' undeclared (first use in this function)
+arch/arm/mach-msm/restart.c:335:4: note: each undeclared identifier is reported only once for each function it appears in
+arch/arm/mach-msm/restart.c: At top level:
+arch/arm/mach-msm/restart.c:279:0: error: unterminated #ifdef
+  CC      drivers/video/msm/mipi_dsi_host.o
+make[1]: *** [arch/arm/mach-msm/restart.o] 오류 1
+  CC      drivers/video/msm/mipi_s6e8aa0_hd720.o
+  CC      drivers/video/msm/smart_dimming.o
+  CC      kernel/trace/trace.o
+  CC      drivers/video/msm/sec_mipi_lcd_esd_refresh.o
+  CC      drivers/video/msm/msm_fb_panel.o
+  CC      drivers/video/msm/mipi_s6e8aa0_hd720_pt.o
+  CC      drivers/video/msm/hdmi_msm.o
+  CC      drivers/video/msm/external_common.o
+drivers/video/msm/mdp4_hsic.c: In function '_hsic_generate_csc_matrix':drivers/video/msm/msm_dss_io_8x60.c:650:39: warning: 'struct hdmi_disp_mode_timing_type' declared inside parameter list [enabled by default]
+drivers/video/msm/msm_dss_io_8x60.c:650:39: warning: its scope is only this definition or declaration, which is probably not what you want [enabled by default]
+drivers/video/msm/msm_dss_io_8x60.c:650:6: error: conflicting types for 'hdmi_frame_ctrl_cfg'
+drivers/video/msm/hdmi_msm.h:124:6: note: previous declaration of 'hdmi_frame_ctrl_cfg' was here
+drivers/video/msm/msm_dss_io_8x60.c: In function 'hdmi_frame_ctrl_cfg':
+drivers/video/msm/msm_dss_io_8x60.c:668:1: error: dereferencing pointer to incomplete type
+drivers/video/msm/msm_dss_io_8x60.c:668:1: error: dereferencing pointer to incomplete type
+drivers/video/msm/msm_dss_io_8x60.c:668:1: error: dereferencing pointer to incomplete type
+
+drivers/video/msm/mdp4_hsic.c:379:38: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c: In function '_hsic_update_mdp':
+drivers/video/msm/mdp4_hsic.c:457:38: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c: At top level:
+drivers/video/msm/mdp4_hsic.c:513:59: warning: 'struct dpp_ctrl' declared inside parameter list [enabled by default]
+drivers/video/msm/mdp4_hsic.c:513:59: warning: its scope is only this definition or declaration, which is probably not what you want [enabled by default]
+drivers/video/msm/mdp4_hsic.c: In function 'mdp4_hsic_get':
+drivers/video/msm/mdp4_hsic.c:517:19: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c:517:42: error: dereferencing pointer to incomplete type
+drivers/video/msm/mdp4_hsic.c: At top level:
+drivers/video/msm/mdp4_hsic.c:520:59: warning: 'struct dpp_ctrl' declared inside parameter list [enabled by default]
+drivers/video/msm/mdp4_hsic.c: In function 'mdp4_hsic_set':
+drivers/video/msm/mdp4_hsic.c:524:19: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c:524:40: error: dereferencing pointer to incomplete type
+drivers/video/msm/mdp4_hsic.c:526:10: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c: In function 'mdp4_hsic_update':
+drivers/video/msm/mdp4_hsic.c:532:10: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mipi_s6e8aa0_hd720_pt.c: In function 'mipi_video_s6e8aa0_hd720_pt_init':
+drivers/video/msm/mipi_s6e8aa0_hd720_pt.c:147:23: error: 'BLT_SWITCH_TG_OFF' undeclared (first use in this function)
+drivers/video/msm/mipi_s6e8aa0_hd720_pt.c:147:23: note: each undeclared identifier is reported only once for each function it appears in
+make[3]: *** [drivers/video/msm/mipi_s6e8aa0_hd720_pt.o] 오류 1
+make[3]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      drivers/video/msm/vidc/common/init/vidc_init.o
+make[3]: *** [drivers/video/msm/msm_dss_io_8x60.o] 오류 1
+  CC      drivers/video/msm/vidc/common/vcd/vcd_api.o
+  CC      drivers/video/msm/vidc/common/vcd/vcd_power_sm.o
+make[3]: *** [drivers/video/msm/mdp4_hsic.o] 오류 1
+  CC      drivers/video/msm/vidc/common/vcd/vcd_client_sm.o
+arch/arm/mach-msm/board-msm8x60_dali.c:1851:2: error: unknown field 'check_microusb' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:1851:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:1851:2: warning: (near initialization for 'msm_gadget_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4055:0: warning: "MSM_ION_MM_SIZE" redefined [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4036:0: note: this is the location of the previous definition
+  CC      drivers/video/msm/vidc/common/vcd/vcd_device_sm.o
+arch/arm/mach-msm/board-msm8x60_dali.c: In function 'sec_jack_read_adc':
+arch/arm/mach-msm/board-msm8x60_dali.c:6399:3: warning: implicit declaration of function 'pm8058_xoadc_clear_recentQ' [-Wimplicit-function-declaration]
+  CC      drivers/video/msm/vidc/common/vcd/vcd_scheduler.o
+arch/arm/mach-msm/board-msm8x60_dali.c: At top level:
+arch/arm/mach-msm/board-msm8x60_dali.c:8815:45: error: 'scale_sec_settherm' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9718:3: error: 'msm_device_tz_log' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9718:2: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:9718:2: error: (near initialization for 'surf_devices[49]')
+arch/arm/mach-msm/board-msm8x60_dali.c:9847:19: error: 'ION_ADSP_TYPE' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9847:4: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:9847:4: error: (near initialization for 'msm8x60_heaps[5].memory_type')
+arch/arm/mach-msm/board-msm8x60_dali.c:9859:4: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:9859:4: error: (near initialization for 'msm8x60_heaps[6].memory_type')
+arch/arm/mach-msm/board-msm8x60_dali.c:9912:3: error: 'MEMTYPE_PMEM_ADSP' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9912:2: error: array index in initializer not of integer type
+arch/arm/mach-msm/board-msm8x60_dali.c:9912:2: error: (near initialization for 'msm8x60_reserve_table')
+arch/arm/mach-msm/board-msm8x60_dali.c: In function 'reserve_ion_memory':
+arch/arm/mach-msm/board-msm8x60_dali.c:9966:23: error: array subscript is not an integer
+arch/arm/mach-msm/board-msm8x60_dali.c:9966:42: error: request for member 'size' in something not a structure or union
+arch/arm/mach-msm/board-msm8x60_dali.c:9966:2: warning: statement with no effect [-Wunused-value]
+arch/arm/mach-msm/board-msm8x60_dali.c:9967:23: error: array subscript is not an integer
+arch/arm/mach-msm/board-msm8x60_dali.c:9967:42: error: request for member 'size' in something not a structure or union
+arch/arm/mach-msm/board-msm8x60_dali.c:9967:2: warning: statement with no effect [-Wunused-value]
+arch/arm/mach-msm/board-msm8x60_dali.c: At top level:
+arch/arm/mach-msm/board-msm8x60_dali.c:13471:2: error: unknown field 'cfg_mpm_sdiowakeup' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:13471:24: error: 'msm_sdcc_cfg_mpm_sdiowakeup' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:13471:2: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:13471:2: error: (near initialization for 'msm8x60_sdc4_data.wpswitch_gpio')
+arch/arm/mach-msm/board-msm8x60_dali.c:766:31: warning: 'smc91x_device' defined but not used [-Wunused-variable]
+arch/arm/mach-msm/board-msm8x60_dali.c:1086:36: warning: 'msm_pm_data' defined but not used [-Wunused-variable]
+arch/arm/mach-msm/board-msm8x60_dali.c:1130:33: warning: 'msm_cstates' defined but not used [-Wunused-variable]
+  CC      drivers/video/msm/vidc/common/vcd/vcd_sub.o
+make[1]: *** [arch/arm/mach-msm/board-msm8x60_dali.o] 오류 1
+make: *** [arch/arm/mach-msm] 오류 2
+  CC      drivers/video/msm/vidc/1080p/ddl/vcd_ddl_helper.o
+  CC      drivers/video/msm/vidc/1080p/ddl/vcd_ddl_utils.o
+  CC      drivers/video/msm/vidc/1080p/ddl/vcd_ddl_interrupt_handler.o
+  CC      drivers/video/msm/vidc/1080p/ddl/vcd_ddl_properties.o
+  CC      drivers/video/msm/vidc/1080p/ddl/vcd_ddl_errors.o
+  CC      drivers/video/msm/vidc/1080p/ddl/vcd_ddl_shared_mem.o
+  CC      drivers/video/msm/vidc/1080p/ddl/vidc.o
+  CC      drivers/video/msm/vidc/1080p/ddl/vidc_pix_cache.o
+  CC      drivers/video/msm/vidc/1080p/ddl/vcd_ddl_vidc.o
+  CC      drivers/video/msm/vidc/1080p/ddl/vcd_ddl.o
+  CC      drivers/video/msm/vidc/1080p/ddl/vcd_ddl_metadata.o
+  CC      drivers/video/msm/vidc/1080p/resource_tracker/vcd_res_tracker.o
+  CC      drivers/video/msm/vidc/common/dec/vdec.o
+  CC      drivers/video/msm/vidc/common/enc/venc.o
+  CC      drivers/video/msm/vidc/common/enc/venc_internal.o
+  LD      kernel/trace/built-in.o
+  LD      kernel/built-in.o
+  LD      drivers/video/msm/vidc/vidc.o
+  LD      drivers/video/msm/vidc/vidc_vdec.o
+  LD      drivers/video/msm/vidc/vidc_venc.o
+  LD      drivers/video/msm/vidc/built-in.o
+make[2]: *** [drivers/video/msm] 오류 2
+make[1]: *** [drivers/video] 오류 2
+make: *** [drivers] 오류 2

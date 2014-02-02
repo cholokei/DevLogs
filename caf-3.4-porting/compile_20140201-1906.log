@@ -1,0 +1,63 @@
+Script started on 2014년 02월 01일 (토) 오후 07시 06분 36초
+scripts/kconfig/conf --silentoldconfig Kconfig
+drivers/i2c/chips/Kconfig:96:warning: 'INPUT_YAS529_POSITION': number is invalid
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  CC      drivers/i2c/chips/yda165.o
+  CC      drivers/i2c/chips/gp2ap020_proximity.o
+  CC      drivers/i2c/chips/gp2ap020_light.o
+  CC      kernel/sys.o
+  LD      arch/arm/mach-msm/msm-etm.o
+  CC      drivers/i2c/chips/fsa9480.o
+  CC      drivers/i2c/chips/k3g.o
+  CC      drivers/i2c/chips/orientation.o
+drivers/i2c/chips/gp2ap020_light.c:30:32: fatal error: linux/i2c/gp2ap020.h: No such file or directory
+compilation terminated.
+make[3]: *** [drivers/i2c/chips/gp2ap020_light.o] 오류 1
+make[3]: *** 끝나지 않은 작업을 기다리고 있습니다....
+drivers/i2c/chips/yda165.c:10:30: fatal error: linux/i2c/yda165.h: No such file or directory
+compilation terminated.
+make[3]: *** [drivers/i2c/chips/yda165.o] 오류 1
+  LD      init/built-in.o
+drivers/i2c/chips/gp2ap020_proximity.c:37:32: fatal error: linux/i2c/gp2ap020.h: No such file or directory
+compilation terminated.
+make[3]: *** [drivers/i2c/chips/gp2ap020_proximity.o] 오류 1
+make[2]: *** [drivers/i2c/chips] 오류 2
+make[1]: *** [drivers/i2c] 오류 2
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  CC      arch/arm/mach-msm/mdm.o
+  CC      drivers/misc/sec_jack.o
+  CC      arch/arm/mach-msm/rmt_storage_client.o
+  CC      arch/arm/mach-msm/sdio_smem.o
+  CC      arch/arm/mach-msm/rpm.o
+  CC      arch/arm/mach-msm/rpm_resources.o
+  CC      arch/arm/mach-msm/mpm.o
+  CC      arch/arm/mach-msm/rpm_stats.o
+  CC      arch/arm/mach-msm/rpm_master_stat.o
+  CC      arch/arm/mach-msm/rpm_log.o
+  CC      arch/arm/mach-msm/msm_xo.o
+  CC      arch/arm/mach-msm/gpiomux-8x60_dali.o
+  LD      drivers/misc/built-in.o
+  CC      arch/arm/mach-msm/gpiomux-v2.o
+  CC      arch/arm/mach-msm/gpiomux.o
+arch/arm/mach-msm/board-msm8x60_dali.c:61:30: fatal error: linux/i2c/yda165.h: No such file or directory
+compilation terminated.
+make[1]: *** [arch/arm/mach-msm/board-msm8x60_dali.o] 오류 1
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      kernel/module.o
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  UPD     kernel/config_data.h
+  CC      kernel/configs.o
+  CC      kernel/trace/trace.o
+make: *** [drivers] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+make: *** [arch/arm/mach-msm] 오류 2
+  LD      kernel/trace/built-in.o
+  LD      kernel/built-in.o

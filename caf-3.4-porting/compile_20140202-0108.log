@@ -1,0 +1,107 @@
+Script started on 2014년 02월 02일 (일) 오전 01시 08분 44초
+scripts/kconfig/conf --silentoldconfig Kconfig
+drivers/i2c/chips/Kconfig:96:warning: 'INPUT_YAS529_POSITION': number is invalid
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  CC      drivers/hwmon/msm_adc.o
+  CC      kernel/sys.o
+  CC      drivers/i2c/chips/gp2ap020_proximity.o
+  CC      drivers/i2c/chips/fsa9480.o
+  CC      drivers/input/keyboard/cypress-touchkey_dali.o
+  CC      drivers/input/keyboard/issp_driver_routines.o
+  CC      drivers/input/keyboard/issp_main.o
+  CC      drivers/input/touchscreen/melfas_ts.o
+  LD      init/built-in.o
+  CC      drivers/mfd/pmic8058.o
+  LD      drivers/hwmon/built-in.o
+  LD      drivers/i2c/chips/built-in.o
+  LD      drivers/input/keyboard/built-in.o
+  CC      drivers/misc/ak8975.o
+  CC [M]  drivers/misc/vibetonz/tspdrv.o
+  LD      drivers/i2c/built-in.o
+  LD      drivers/input/touchscreen/built-in.o
+  LD      drivers/input/built-in.o
+  LD      drivers/mfd/built-in.o
+  LD [M]  drivers/misc/vibetonz/vibrator.o
+  CC      drivers/misc/pmic8058-xoadc.o
+  CC      arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.o
+  CC      drivers/power/sec_battery.o
+  LD      drivers/misc/built-in.o
+  CC      drivers/regulator/pmic8058-regulator.o
+  LD      drivers/power/built-in.o
+  LD      drivers/regulator/built-in.o
+  LD      arch/arm/mach-msm/qdsp6v2/built-in.o
+  CC      arch/arm/mach-msm/msm_watchdog.o
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  CC      kernel/module.o
+  GZIP    kernel/config_data.gz
+  CC      arch/arm/mach-msm/restart.o
+  CHK     kernel/config_data.h
+  CC      kernel/trace/trace.o
+  CC      drivers/video/msm/mdp4_hsic.o
+  CC      drivers/video/msm/msm_dss_io_8x60.o
+  LD      drivers/video/msm/msm_mipi.o
+  CC      drivers/video/msm/mipi_s6e8aa0_hd720_pt.o
+drivers/video/msm/mipi_s6e8aa0_hd720_pt.c: In function 'mipi_video_s6e8aa0_hd720_pt_init':
+drivers/video/msm/mipi_s6e8aa0_hd720_pt.c:147:23: error: 'BLT_SWITCH_TG_OFF' undeclared (first use in this function)
+drivers/video/msm/mipi_s6e8aa0_hd720_pt.c:147:23: note: each undeclared identifier is reported only once for each function it appears in
+drivers/video/msm/mdp4_hsic.c: In function '_hsic_generate_csc_matrix':
+drivers/video/msm/mdp4_hsic.c:379:38: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c: In function '_hsic_update_mdp':
+drivers/video/msm/mdp4_hsic.c:457:38: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c: At top level:
+drivers/video/msm/mdp4_hsic.c:513:59: warning: 'struct dpp_ctrl' declared inside parameter list [enabled by default]
+drivers/video/msm/mdp4_hsic.c:513:59: warning: its scope is only this definition or declaration, which is probably not what you want [enabled by default]
+drivers/video/msm/mdp4_hsic.c: In function 'mdp4_hsic_get':
+drivers/video/msm/mdp4_hsic.c:517:19: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c:517:42: error: dereferencing pointer to incomplete type
+drivers/video/msm/mdp4_hsic.c: At top level:
+drivers/video/msm/mdp4_hsic.c:520:59: warning: 'struct dpp_ctrl' declared inside parameter list [enabled by default]
+drivers/video/msm/mdp4_hsic.c: In function 'mdp4_hsic_set':
+drivers/video/msm/mdp4_hsic.c:524:19: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c:524:40: error: dereferencing pointer to incomplete type
+drivers/video/msm/mdp4_hsic.c:526:10: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c: In function 'mdp4_hsic_update':
+drivers/video/msm/mdp4_hsic.c:532:10: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+make[3]: *** [drivers/video/msm/mipi_s6e8aa0_hd720_pt.o] 오류 1
+make[3]: *** 끝나지 않은 작업을 기다리고 있습니다....
+make[3]: *** [drivers/video/msm/mdp4_hsic.o] 오류 1
+drivers/video/msm/msm_dss_io_8x60.c:650:39: warning: 'struct hdmi_disp_mode_timing_type' declared inside parameter list [enabled by default]
+drivers/video/msm/msm_dss_io_8x60.c:650:39: warning: its scope is only this definition or declaration, which is probably not what you want [enabled by default]
+drivers/video/msm/msm_dss_io_8x60.c:650:6: error: conflicting types for 'hdmi_frame_ctrl_cfg'
+drivers/video/msm/hdmi_msm.h:124:6: note: previous declaration of 'hdmi_frame_ctrl_cfg' was here
+drivers/video/msm/msm_dss_io_8x60.c: In function 'hdmi_frame_ctrl_cfg':
+drivers/video/msm/msm_dss_io_8x60.c:668:1: error: dereferencing pointer to incomplete type
+drivers/video/msm/msm_dss_io_8x60.c:668:1: error: dereferencing pointer to incomplete type
+drivers/video/msm/msm_dss_io_8x60.c:668:1: error: dereferencing pointer to incomplete type
+make[3]: *** [drivers/video/msm/msm_dss_io_8x60.o] 오류 1
+make[2]: *** [drivers/video/msm] 오류 2
+make[1]: *** [drivers/video] 오류 2
+make: *** [drivers] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+arch/arm/mach-msm/board-msm8x60_dali.c:1770:2: error: unknown field 'check_microusb' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:1770:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:1770:2: warning: (near initialization for 'msm_gadget_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:8732:45: error: 'scale_sec_settherm' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9635:3: error: 'msm_device_tz_log' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9635:2: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:9635:2: error: (near initialization for 'surf_devices[49]')
+arch/arm/mach-msm/board-msm8x60_dali.c:9764:19: error: 'ION_ADSP_TYPE' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9764:4: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:9764:4: error: (near initialization for 'msm8x60_heaps[5].memory_type')
+arch/arm/mach-msm/board-msm8x60_dali.c:9776:4: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:9776:4: error: (near initialization for 'msm8x60_heaps[6].memory_type')
+arch/arm/mach-msm/board-msm8x60_dali.c:13388:2: error: unknown field 'cfg_mpm_sdiowakeup' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:13388:24: error: 'msm_sdcc_cfg_mpm_sdiowakeup' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:13388:2: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:13388:2: error: (near initialization for 'msm8x60_sdc4_data.wpswitch_gpio')
+make[1]: *** [arch/arm/mach-msm/board-msm8x60_dali.o] 오류 1
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+make: *** [arch/arm/mach-msm] 오류 2
+  LD      kernel/trace/built-in.o
+  LD      kernel/built-in.o
