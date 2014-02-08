@@ -1,0 +1,111 @@
+Script started on 2014년 02월 08일 (토) 오후 11시 33분 41초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  CC      drivers/power/max17040_battery.o
+drivers/power/max17040_battery.c: In function 'max17040_get_property':
+drivers/power/max17040_battery.c:188:3: warning: implicit declaration of function 'max17040_get_vcell' [-Wimplicit-function-declaration]
+drivers/power/max17040_battery.c: In function 'max17040_reset':
+drivers/power/max17040_battery.c:279:2: warning: implicit declaration of function 'max17040_set_rcomp' [-Wimplicit-function-declaration]
+drivers/power/max17040_battery.c:280:2: warning: implicit declaration of function 'max17040_get_rcomp' [-Wimplicit-function-declaration]
+drivers/power/max17040_battery.c: At top level:
+drivers/power/max17040_battery.c:441:12: error: conflicting types for 'max17040_get_rcomp'
+drivers/power/max17040_battery.c:280:16: note: previous implicit declaration of 'max17040_get_rcomp' was here
+drivers/power/max17040_battery.c:464:13: warning: conflicting types for 'max17040_set_rcomp' [enabled by default]
+drivers/power/max17040_battery.c:464:13: error: static declaration of 'max17040_set_rcomp' follows non-static declaration
+drivers/power/max17040_battery.c:279:2: note: previous implicit declaration of 'max17040_set_rcomp' was here
+make[2]: *** [drivers/power/max17040_battery.o] 오류 1
+make[1]: *** [drivers/power] 오류 2
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      drivers/video/msm/mdp4_hsic.o
+  CC      drivers/video/msm/msm_dss_io_8x60.o
+  LD      drivers/video/msm/msm_mipi.o
+  CC      drivers/video/msm/mipi_s6e8aa0_hd720.o
+  CC      drivers/video/msm/smart_dimming.o
+  CC      drivers/video/msm/sec_mipi_lcd_esd_refresh.o
+  CC      drivers/video/msm/msm_fb_panel.o
+  CC      drivers/video/msm/mipi_s6e8aa0_hd720_pt.o
+  CC      drivers/video/msm/hdmi_msm.o
+  CC      drivers/video/msm/external_common.o
+arch/arm/mach-msm/board-msm8x60_dali.c:1770:2: error: unknown field 'check_microusb' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:1770:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:1770:2: warning: (near initialization for 'msm_gadget_pdata') [enabled by default]
+  CC      drivers/video/msm/vidc/common/init/vidc_init.o
+  CC      drivers/video/msm/vidc/common/vcd/vcd_api.o
+  CC      drivers/video/msm/vidc/common/vcd/vcd_power_sm.o
+  CC      drivers/video/msm/vidc/common/vcd/vcd_client_sm.o
+  CC      drivers/video/msm/vidc/common/vcd/vcd_device_sm.o
+  CC      drivers/video/msm/vidc/common/vcd/vcd_scheduler.o
+arch/arm/mach-msm/board-msm8x60_dali.c:8732:45: error: 'scale_sec_settherm' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9635:3: error: 'msm_device_tz_log' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9635:2: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:9635:2: error: (near initialization for 'surf_devices[49]')
+arch/arm/mach-msm/board-msm8x60_dali.c:13388:2: error: unknown field 'cfg_mpm_sdiowakeup' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:13388:24: error: 'msm_sdcc_cfg_mpm_sdiowakeup' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:13388:2: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:13388:2: error: (near initialization for 'msm8x60_sdc4_data.wpswitch_gpio')
+make[1]: *** [arch/arm/mach-msm/board-msm8x60_dali.o] 오류 1
+make: *** [arch/arm/mach-msm] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      drivers/video/msm/vidc/common/vcd/vcd_sub.o
+drivers/video/msm/mdp4_hsic.c: In function '_hsic_generate_csc_matrix':
+drivers/video/msm/mdp4_hsic.c:379:38: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c: In function '_hsic_update_mdp':
+drivers/video/msm/mdp4_hsic.c:457:38: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c: At top level:
+drivers/video/msm/mdp4_hsic.c:513:59: warning: 'struct dpp_ctrl' declared inside parameter list [enabled by default]
+drivers/video/msm/mdp4_hsic.c:513:59: warning: its scope is only this definition or declaration, which is probably not what you want [enabled by default]
+drivers/video/msm/mdp4_hsic.c: In function 'mdp4_hsic_get':
+drivers/video/msm/mdp4_hsic.c:517:19: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c:517:42: error: dereferencing pointer to incomplete type
+drivers/video/msm/mdp4_hsic.c: At top level:
+drivers/video/msm/mdp4_hsic.c:520:59: warning: 'struct dpp_ctrl' declared inside parameter list [enabled by default]
+drivers/video/msm/mdp4_hsic.c: In function 'mdp4_hsic_set':
+drivers/video/msm/mdp4_hsic.c:524:19: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c:524:40: error: dereferencing pointer to incomplete type
+drivers/video/msm/mdp4_hsic.c:526:10: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c: In function 'mdp4_hsic_update':
+drivers/video/msm/mdp4_hsic.c:532:10: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+make[3]: *** [drivers/video/msm/mdp4_hsic.o] 오류 1
+make[3]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      drivers/video/msm/vidc/1080p/ddl/vcd_ddl_helper.o
+drivers/video/msm/msm_dss_io_8x60.c:650:39: warning: 'struct hdmi_disp_mode_timing_type' declared inside parameter list [enabled by default]
+drivers/video/msm/msm_dss_io_8x60.c:650:39: warning: its scope is only this definition or declaration, which is probably not what you want [enabled by default]
+drivers/video/msm/msm_dss_io_8x60.c:650:6: error: conflicting types for 'hdmi_frame_ctrl_cfg'
+drivers/video/msm/hdmi_msm.h:124:6: note: previous declaration of 'hdmi_frame_ctrl_cfg' was here
+drivers/video/msm/msm_dss_io_8x60.c: In function 'hdmi_frame_ctrl_cfg':
+drivers/video/msm/msm_dss_io_8x60.c:668:1: error: dereferencing pointer to incomplete type
+drivers/video/msm/msm_dss_io_8x60.c:668:1: error: dereferencing pointer to incomplete type
+drivers/video/msm/msm_dss_io_8x60.c:668:1: error: dereferencing pointer to incomplete type
+make[3]: *** [drivers/video/msm/msm_dss_io_8x60.o] 오류 1
+drivers/video/msm/mipi_s6e8aa0_hd720_pt.c: In function 'mipi_video_s6e8aa0_hd720_pt_init':
+drivers/video/msm/mipi_s6e8aa0_hd720_pt.c:147:23: error: 'BLT_SWITCH_TG_OFF' undeclared (first use in this function)
+drivers/video/msm/mipi_s6e8aa0_hd720_pt.c:147:23: note: each undeclared identifier is reported only once for each function it appears in
+  CC      drivers/video/msm/vidc/1080p/ddl/vcd_ddl_utils.o
+make[3]: *** [drivers/video/msm/mipi_s6e8aa0_hd720_pt.o] 오류 1
+  CC      drivers/video/msm/vidc/1080p/ddl/vcd_ddl_interrupt_handler.o
+  CC      drivers/video/msm/vidc/1080p/ddl/vcd_ddl_properties.o
+  CC      drivers/video/msm/vidc/1080p/ddl/vcd_ddl_errors.o
+  CC      drivers/video/msm/vidc/1080p/ddl/vcd_ddl_shared_mem.o
+  CC      drivers/video/msm/vidc/1080p/ddl/vidc.o
+  CC      drivers/video/msm/vidc/1080p/ddl/vidc_pix_cache.o
+  CC      drivers/video/msm/vidc/1080p/ddl/vcd_ddl_vidc.o
+  CC      drivers/video/msm/vidc/1080p/ddl/vcd_ddl.o
+  CC      drivers/video/msm/vidc/1080p/ddl/vcd_ddl_metadata.o
+  CC      drivers/video/msm/vidc/1080p/resource_tracker/vcd_res_tracker.o
+  CC      drivers/video/msm/vidc/common/dec/vdec.o
+  CC      drivers/video/msm/vidc/common/enc/venc.o
+  CC      drivers/video/msm/vidc/common/enc/venc_internal.o
+  LD      drivers/video/msm/vidc/vidc.o
+  LD      drivers/video/msm/vidc/vidc_vdec.o
+  LD      drivers/video/msm/vidc/vidc_venc.o
+  LD      drivers/video/msm/vidc/built-in.o
+make[2]: *** [drivers/video/msm] 오류 2
+make[1]: *** [drivers/video] 오류 2
+make: *** [drivers] 오류 2

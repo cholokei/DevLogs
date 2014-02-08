@@ -1,0 +1,190 @@
+Script started on 2014년 02월 08일 (토) 오후 11시 17분 06초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  LD      arch/arm/mach-msm/msm-etm.o
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  LD      drivers/power/power_supply.o
+  CC      drivers/power/max17040_battery.o
+  CC      drivers/usb/class/cdc-acm.o
+  CC      drivers/tty/tty_io.o
+  CC      drivers/usb/class/usblp.o
+  CC      drivers/video/fb_notify.o
+drivers/power/max17040_battery.c: In function 'max17040_get_property':
+drivers/power/max17040_battery.c:188:3: warning: implicit declaration of function 'max17040_get_vcell' [-Wimplicit-function-declaration]
+drivers/power/max17040_battery.c: In function 'max17040_reset':
+drivers/power/max17040_battery.c:279:2: warning: implicit declaration of function 'max17040_set_rcomp' [-Wimplicit-function-declaration]
+drivers/power/max17040_battery.c:280:2: warning: implicit declaration of function 'max17040_get_rcomp' [-Wimplicit-function-declaration]
+drivers/power/max17040_battery.c: At top level:
+drivers/power/max17040_battery.c:289:13: warning: conflicting types for 'max17040_get_vcell' [enabled by default]
+drivers/power/max17040_battery.c:289:13: error: static declaration of 'max17040_get_vcell' follows non-static declaration
+drivers/power/max17040_battery.c:188:3: note: previous implicit declaration of 'max17040_get_vcell' was here
+drivers/power/max17040_battery.c:441:12: error: conflicting types for 'max17040_get_rcomp'
+drivers/power/max17040_battery.c:280:16: note: previous implicit declaration of 'max17040_get_rcomp' was here
+drivers/power/max17040_battery.c:464:13: warning: conflicting types for 'max17040_set_rcomp' [enabled by default]
+drivers/power/max17040_battery.c:464:13: error: static declaration of 'max17040_set_rcomp' follows non-static declaration
+drivers/power/max17040_battery.c:279:2: note: previous implicit declaration of 'max17040_set_rcomp' was here
+make[2]: *** [drivers/power/max17040_battery.o] 오류 1
+make[1]: *** [drivers/power] 오류 2
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      drivers/usb/host/ehci-hcd.o
+  CC      drivers/usb/gadget/udc-core.o
+  CC      drivers/usb/core/usb.o
+  CC      drivers/usb/gadget/msm72k_udc.o
+  CC      drivers/usb/gadget/android.o
+  CC      drivers/usb/misc/ehset.o
+  CC      drivers/tty/n_tty.o
+arch/arm/mach-msm/board-msm8x60_dali.c:1770:2: error: unknown field 'check_microusb' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:1770:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:1770:2: warning: (near initialization for 'msm_gadget_pdata') [enabled by default]
+  CC      drivers/usb/otg/otg.o
+arch/arm/mach-msm/board-msm8x60_dali.c:8732:45: error: 'scale_sec_settherm' undeclared here (not in a function)
+  CC      drivers/usb/otg/msm72k_otg.o
+arch/arm/mach-msm/board-msm8x60_dali.c:9635:3: error: 'msm_device_tz_log' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9635:2: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:9635:2: error: (near initialization for 'surf_devices[49]')
+arch/arm/mach-msm/board-msm8x60_dali.c:13388:2: error: unknown field 'cfg_mpm_sdiowakeup' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:13388:24: error: 'msm_sdcc_cfg_mpm_sdiowakeup' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:13388:2: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:13388:2: error: (near initialization for 'msm8x60_sdc4_data.wpswitch_gpio')
+  CC      drivers/video/fbmem.o
+make[1]: *** [arch/arm/mach-msm/board-msm8x60_dali.o] 오류 1
+make: *** [arch/arm/mach-msm] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      drivers/usb/usb-common.o
+  CC      drivers/video/fbmon.o
+  CC      drivers/usb/storage/alauda.o
+  CC      drivers/video/fbcmap.o
+  LD      drivers/usb/misc/built-in.o
+  CC      drivers/video/fbsysfs.o
+  CC      drivers/video/modedb.o
+  CC      drivers/video/fbcvt.o
+  CC      drivers/video/backlight/backlight.o
+  CC      drivers/usb/core/hub.o
+  CC      drivers/video/console/dummycon.o
+  CC      drivers/video/cfbfillrect.o
+  CC      drivers/video/cfbcopyarea.o
+  CC      drivers/video/msm/msm_fb.o
+  CC      drivers/video/msm/logo.o
+  CC      drivers/video/console/fbcon.o
+  LD      drivers/usb/class/built-in.o
+  CC      drivers/video/cfbimgblt.o
+  CC      drivers/usb/storage/cypress_atacb.o
+  CC      drivers/video/backlight/generic_bl.o
+  CC      drivers/video/output.o
+  LD      drivers/video/fb.o
+  CC [M]  drivers/video/backlight/lcd.o
+  CC      drivers/tty/tty_ioctl.o
+  CC      drivers/tty/tty_ldisc.o
+  CC      drivers/usb/core/hcd.o
+  CC      drivers/video/msm/mdp.o
+  LD      drivers/video/backlight/built-in.o
+  CC      drivers/usb/core/urb.o
+  CC      drivers/usb/core/message.o
+  CC      drivers/usb/storage/datafab.o
+  CC      drivers/tty/tty_buffer.o
+  CC      drivers/usb/storage/freecom.o
+  CC      drivers/tty/tty_port.o
+  LD      drivers/usb/otg/built-in.o
+  CC      drivers/usb/storage/isd200.o
+  CC      drivers/tty/tty_mutex.o
+  CC      drivers/usb/storage/jumpshot.o
+  CC      drivers/tty/pty.o
+  CC      drivers/usb/core/driver.o
+  CC      drivers/usb/storage/karma.o
+  CC      drivers/tty/sysrq.o
+  CC      drivers/tty/serial/serial_core.o
+  CC      drivers/tty/vt/vt_ioctl.o
+  CC      drivers/usb/storage/onetouch.o
+  CC      drivers/video/msm/mdp_debugfs.o
+  CC      drivers/usb/storage/sddr09.o
+  CC      drivers/usb/core/config.o
+  CC      drivers/usb/core/file.o
+  CC      drivers/usb/core/buffer.o
+  CC      drivers/video/console/bitblit.o
+  CC      drivers/video/msm/mdp4_util.o
+  CC      drivers/usb/core/sysfs.o
+  CC      drivers/usb/core/endpoint.o
+  CC      drivers/usb/core/devio.o
+  CC      drivers/video/msm/mdp4_video_enhance.o
+  CC      drivers/video/msm/mdp4_hsic.o
+  LD      drivers/usb/host/built-in.o
+  CC      drivers/usb/storage/sddr55.o
+  CC      drivers/usb/storage/shuttle_usbat.o
+  CC      drivers/usb/core/notify.o
+  CC      drivers/usb/core/generic.o
+  CC      drivers/usb/core/quirks.o
+  CC      drivers/video/console/fonts.o
+  CC      drivers/tty/vt/vc_screen.o
+drivers/video/msm/mdp4_hsic.c: In function '_hsic_generate_csc_matrix':
+drivers/video/msm/mdp4_hsic.c:379:38: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c: In function '_hsic_update_mdp':
+drivers/video/msm/mdp4_hsic.c:457:38: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c: At top level:
+drivers/video/msm/mdp4_hsic.c:513:59: warning: 'struct dpp_ctrl' declared inside parameter list [enabled by default]
+drivers/video/msm/mdp4_hsic.c:513:59: warning: its scope is only this definition or declaration, which is probably not what you want [enabled by default]
+drivers/video/msm/mdp4_hsic.c: In function 'mdp4_hsic_get':
+drivers/video/msm/mdp4_hsic.c:517:19: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c:517:42: error: dereferencing pointer to incomplete type
+drivers/video/msm/mdp4_hsic.c: At top level:
+drivers/video/msm/mdp4_hsic.c:520:59: warning: 'struct dpp_ctrl' declared inside parameter list [enabled by default]
+drivers/video/msm/mdp4_hsic.c: In function 'mdp4_hsic_set':
+drivers/video/msm/mdp4_hsic.c:524:19: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c:524:40: error: dereferencing pointer to incomplete type
+drivers/video/msm/mdp4_hsic.c:526:10: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+drivers/video/msm/mdp4_hsic.c: In function 'mdp4_hsic_update':
+drivers/video/msm/mdp4_hsic.c:532:10: error: 'struct mdp4_overlay_pipe' has no member named 'hsic_regs'
+make[3]: *** [drivers/video/msm/mdp4_hsic.o] 오류 1
+make[3]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      drivers/tty/vt/selection.o
+  CC      drivers/usb/core/devices.o
+  CC      drivers/tty/vt/keyboard.o
+  CC      drivers/video/console/font_8x8.o
+  CC      drivers/video/console/font_8x16.o
+  CC      drivers/video/console/softcursor.o
+  CC      drivers/usb/storage/scsiglue.o
+  CC      drivers/usb/storage/protocol.o
+  CC      drivers/usb/storage/transport.o
+  LD      drivers/video/console/font.o
+  CC      drivers/tty/serial/msm_serial_hs.o
+  CC      drivers/tty/serial/msm_serial_hs_lite.o
+  CC      drivers/usb/storage/usb.o
+  CC      drivers/tty/vt/consolemap.o
+make[2]: *** [drivers/video/msm] 오류 2
+make[2]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      drivers/tty/vt/consolemap_deftbl.o
+  CC      drivers/usb/storage/initializers.o
+  CC      drivers/usb/storage/sierra_ms.o
+  CC      drivers/tty/vt/vt.o
+  CC      drivers/tty/vt/defkeymap.o
+  CC      drivers/usb/storage/option_ms.o
+  LD      drivers/video/console/built-in.o
+make[1]: *** [drivers/video] 오류 2
+  CC      drivers/usb/storage/usual-tables.o
+  LD      drivers/usb/core/usbcore.o
+  LD      drivers/usb/storage/usb-storage.o
+  LD      drivers/usb/storage/ums-alauda.o
+  LD      drivers/usb/storage/ums-cypress.o
+  LD      drivers/usb/storage/ums-datafab.o
+  LD      drivers/usb/storage/ums-freecom.o
+  LD      drivers/usb/storage/ums-isd200.o
+  LD      drivers/usb/storage/ums-jumpshot.o
+  LD      drivers/usb/storage/ums-karma.o
+  LD      drivers/usb/storage/ums-onetouch.o
+  LD      drivers/usb/storage/ums-sddr09.o
+  LD      drivers/usb/storage/ums-sddr55.o
+  LD      drivers/usb/storage/ums-usbat.o
+  LD      drivers/usb/storage/built-in.o
+  LD      drivers/usb/core/built-in.o
+  LD      drivers/tty/serial/built-in.o
+  LD      drivers/tty/vt/built-in.o
+  LD      drivers/tty/built-in.o
+  LD      drivers/usb/gadget/g_android.o
+  LD      drivers/usb/gadget/built-in.o
+  LD      drivers/usb/built-in.o
+make: *** [drivers] 오류 2

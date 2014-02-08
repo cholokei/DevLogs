@@ -1,0 +1,65 @@
+Script started on 2014년 02월 08일 (토) 오후 11시 30분 10초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  CC      drivers/power/max17040_battery.o
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  CC      arch/arm/mach-msm/rpm.o
+drivers/power/max17040_battery.c: In function 'max17040_get_property':
+drivers/power/max17040_battery.c:188:3: warning: implicit declaration of function 'max17040_get_vcell' [-Wimplicit-function-declaration]
+drivers/power/max17040_battery.c: In function 'max17040_reset':
+drivers/power/max17040_battery.c:279:2: warning: implicit declaration of function 'max17040_set_rcomp' [-Wimplicit-function-declaration]
+drivers/power/max17040_battery.c:280:2: warning: implicit declaration of function 'max17040_get_rcomp' [-Wimplicit-function-declaration]
+drivers/power/max17040_battery.c: At top level:
+drivers/power/max17040_battery.c:289:12: error: static declaration of 'max17040_get_vcell' follows non-static declaration
+drivers/power/max17040_battery.c:188:3: note: previous implicit declaration of 'max17040_get_vcell' was here
+drivers/power/max17040_battery.c: In function 'max17040_get_vcell':
+drivers/power/max17040_battery.c:309:1: warning: no return statement in function returning non-void [-Wreturn-type]
+drivers/power/max17040_battery.c: At top level:
+drivers/power/max17040_battery.c:441:12: error: conflicting types for 'max17040_get_rcomp'
+drivers/power/max17040_battery.c:280:16: note: previous implicit declaration of 'max17040_get_rcomp' was here
+drivers/power/max17040_battery.c:464:13: warning: conflicting types for 'max17040_set_rcomp' [enabled by default]
+drivers/power/max17040_battery.c:464:13: error: static declaration of 'max17040_set_rcomp' follows non-static declaration
+drivers/power/max17040_battery.c:279:2: note: previous implicit declaration of 'max17040_set_rcomp' was here
+make[2]: *** [drivers/power/max17040_battery.o] 오류 1
+make[1]: *** [drivers/power] 오류 2
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      arch/arm/mach-msm/rpm_resources.o
+  CC      arch/arm/mach-msm/mpm.o
+  CC      arch/arm/mach-msm/rpm_stats.o
+  CC      arch/arm/mach-msm/rpm_master_stat.o
+  CC      arch/arm/mach-msm/rpm_log.o
+  CC      arch/arm/mach-msm/msm_xo.o
+  CC      arch/arm/mach-msm/gpiomux-8x60_dali.o
+  CC      arch/arm/mach-msm/gpiomux-v2.o
+  CC      arch/arm/mach-msm/gpiomux.o
+  CC      arch/arm/mach-msm/msm_rq_stats.o
+  CC      arch/arm/mach-msm/msm_show_resume_irq.o
+  CC      arch/arm/mach-msm/restart.o
+  CC      arch/arm/mach-msm/sec_debug.o
+arch/arm/mach-msm/board-msm8x60_dali.c:1770:2: error: unknown field 'check_microusb' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:1770:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:1770:2: warning: (near initialization for 'msm_gadget_pdata') [enabled by default]
+  CC      arch/arm/mach-msm/sec_getlog.o
+arch/arm/mach-msm/board-msm8x60_dali.c:8732:45: error: 'scale_sec_settherm' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9635:3: error: 'msm_device_tz_log' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9635:2: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:9635:2: error: (near initialization for 'surf_devices[49]')
+  CC      arch/arm/mach-msm/sec_gaf.o
+make: *** [drivers] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      arch/arm/mach-msm/sec_last_log.o
+arch/arm/mach-msm/board-msm8x60_dali.c:13388:2: error: unknown field 'cfg_mpm_sdiowakeup' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:13388:24: error: 'msm_sdcc_cfg_mpm_sdiowakeup' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:13388:2: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:13388:2: error: (near initialization for 'msm8x60_sdc4_data.wpswitch_gpio')
+  CC      arch/arm/mach-msm/board-bluetooth-bcm4330.o
+  CC [M]  arch/arm/mach-msm/dal_remotetest.o
+make[1]: *** [arch/arm/mach-msm/board-msm8x60_dali.o] 오류 1
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+make: *** [arch/arm/mach-msm] 오류 2
