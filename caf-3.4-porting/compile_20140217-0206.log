@@ -1,0 +1,106 @@
+Script started on 2014년 02월 17일 (월) 오전 02시 07분 00초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  CC      kernel/sys.o
+  LD      arch/arm/mach-msm/msm-etm.o
+  LD      init/built-in.o
+  CC      arch/arm/mach-msm/msm_bus/msm_bus_board_8660.o
+  CC      drivers/usb/host/ehci-hcd.o
+  CC      drivers/usb/gadget/msm72k_udc.o
+  CC      drivers/usb/misc/ehset.o
+  CC      drivers/usb/otg/otg.o
+  CC      drivers/usb/storage/alauda.o
+  CC      arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.o
+  LD      arch/arm/mach-msm/msm_bus/built-in.o
+  CC      drivers/video/msm/mdp4_dtv.o
+  CC      drivers/video/msm/mdp4_overlay_dtv.o
+  CC      drivers/usb/otg/msm72k_otg.o
+  CC      drivers/video/msm/mdp_dma.o
+arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.c: In function 'msm_snddev_poweramp_on':
+arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.c:516:2: warning: implicit declaration of function 'config_class_d0_gpio' [-Wimplicit-function-declaration]
+arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.c:521:2: warning: implicit declaration of function 'config_class_d1_gpio' [-Wimplicit-function-declaration]
+arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.c: In function 'msm_snddev_init':  LD      drivers/usb/misc/built-in.o
+
+arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.c:2883:19: error: 'snd_devices_celox' undeclared (first use in this function)
+arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.c:2883:19: note: each undeclared identifier is reported only once for each function it appears in
+arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.c:2883:19: error: negative width in bit-field '<anonymous>'
+arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.c:2887:5: error: negative width in bit-field '<anonymous>'
+arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.c: At top level:  CC      drivers/usb/usb-common.o
+
+arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.c:788:12: warning: 'msm_snddev_enable_dmic_sec_power' defined but not used [-Wunused-function]
+arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.c:808:13: warning: 'msm_snddev_disable_dmic_sec_power' defined but not used [-Wunused-function]
+make[2]: *** [arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.o] 오류 1
+make[1]: *** [arch/arm/mach-msm/qdsp6v2] 오류 2
+make: *** [arch/arm/mach-msm] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      drivers/usb/gadget/android.o
+  CC      drivers/usb/storage/cypress_atacb.o
+  CC      drivers/usb/storage/datafab.o
+  CC      drivers/usb/storage/freecom.o
+  CC      drivers/usb/storage/isd200.o
+  CC      drivers/usb/storage/jumpshot.o
+  CC      drivers/video/msm/mdp_dma_s.o
+  CC      drivers/usb/storage/karma.o
+  CC      drivers/usb/storage/onetouch.o
+  CC      drivers/video/msm/mdp_vsync.o
+  CC      drivers/video/msm/mdp_cursor.o
+  CC      drivers/usb/storage/sddr09.o
+  CC      drivers/video/msm/mdp_dma_tv.o
+  CC      kernel/trace/trace.o
+  CC      drivers/usb/storage/sddr55.o
+  CC      drivers/usb/storage/shuttle_usbat.o
+  CC      drivers/video/msm/msm_dss_io_8x60.o
+  CC      drivers/video/msm/mipi_dsi.o
+  CC      drivers/usb/storage/scsiglue.o
+  CC      drivers/usb/storage/protocol.o
+  CC      drivers/usb/storage/transport.o
+drivers/video/msm/msm_dss_io_8x60.c:650:39: warning: 'struct hdmi_disp_mode_timing_type' declared inside parameter list [enabled by default]
+drivers/video/msm/msm_dss_io_8x60.c:650:39: warning: its scope is only this definition or declaration, which is probably not what you want [enabled by default]
+drivers/video/msm/msm_dss_io_8x60.c:650:6: error: conflicting types for 'hdmi_frame_ctrl_cfg'
+drivers/video/msm/hdmi_msm.h:124:6: note: previous declaration of 'hdmi_frame_ctrl_cfg' was here
+drivers/video/msm/msm_dss_io_8x60.c: In function 'hdmi_frame_ctrl_cfg':
+drivers/video/msm/msm_dss_io_8x60.c:668:1: error: dereferencing pointer to incomplete type
+drivers/video/msm/msm_dss_io_8x60.c:668:1: error: dereferencing pointer to incomplete type
+drivers/video/msm/msm_dss_io_8x60.c:668:1: error: dereferencing pointer to incomplete type
+make[3]: *** [drivers/video/msm/msm_dss_io_8x60.o] 오류 1
+make[3]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      drivers/usb/storage/usb.o
+  CC      drivers/usb/storage/initializers.o
+  CC      drivers/usb/storage/sierra_ms.o
+  CC      drivers/usb/storage/option_ms.o
+  CC      drivers/usb/storage/usual-tables.o
+make[2]: *** [drivers/video/msm] 오류 2
+make[1]: *** [drivers/video] 오류 2
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      kernel/module.o
+  GZIP    kernel/config_data.gz
+  LD      drivers/usb/storage/usb-storage.o
+  LD      drivers/usb/storage/ums-alauda.o
+  LD      drivers/usb/storage/ums-cypress.o
+  LD      drivers/usb/storage/ums-datafab.o
+  LD      drivers/usb/storage/ums-freecom.o
+  LD      drivers/usb/storage/ums-isd200.o
+  LD      drivers/usb/storage/ums-jumpshot.o
+  LD      drivers/usb/storage/ums-karma.o
+  LD      drivers/usb/storage/ums-onetouch.o
+  LD      drivers/usb/storage/ums-sddr09.o
+  LD      drivers/usb/storage/ums-sddr55.o
+  LD      drivers/usb/storage/ums-usbat.o
+  LD      drivers/usb/storage/built-in.o
+  LD      drivers/usb/otg/built-in.o
+  LD      kernel/trace/built-in.o
+  CHK     kernel/config_data.h
+  UPD     kernel/config_data.h
+  CC      kernel/configs.o
+  LD      drivers/usb/host/built-in.o
+  LD      kernel/built-in.o
+  LD      drivers/usb/gadget/g_android.o
+  LD      drivers/usb/gadget/built-in.o
+  LD      drivers/usb/built-in.o
+make: *** [drivers] 오류 2
