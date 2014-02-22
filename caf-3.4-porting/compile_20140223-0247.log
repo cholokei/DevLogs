@@ -1,0 +1,225 @@
+Script started on 2014년 02월 23일 (일) 오전 02시 47분 09초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  CC      lib/bcd.o
+  CC      lib/div64.o
+  CC      lib/sort.o
+  LD      init/built-in.o
+  CC      lib/parser.o
+  LD      arch/arm/mach-msm/msm-etm.o
+  CC      lib/halfmd4.o
+  CC      kernel/sys.o
+  CC      lib/debug_locks.o
+  CC      lib/random32.o
+  CC      lib/bust_spinlocks.o
+  CC      lib/hexdump.o
+  CC      lib/kasprintf.o
+  CC      lib/bitmap.o
+  CC      lib/scatterlist.o
+  CC      lib/string_helpers.o
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  CC      lib/gcd.o
+  CC      lib/lcm.o
+  CC      lib/list_sort.o
+  CC      lib/uuid.o
+  CC      lib/flex_array.o
+  CC      lib/bsearch.o
+  CC      lib/find_last_bit.o
+  CC      lib/find_next_bit.o
+  CC      lib/llist.o
+  CC      lib/kstrtox.o
+  CC      lib/pci_iomap.o
+  CC      lib/iomap_copy.o
+  CC      lib/devres.o
+  CC      lib/hweight.o
+  CC      lib/bitrev.o
+  CC      lib/crc-ccitt.o
+  CC      lib/crc16.o
+  HOSTCC  lib/gen_crc32table
+  CC      lib/libcrc32c.o
+  CC      lib/genalloc.o
+  CC      lib/lzo/lzo1x_compress.o
+  CC      lib/lzo/lzo1x_decompress.o
+  CC      lib/reed_solomon/reed_solomon.o
+  CC      lib/zlib_deflate/deflate.o
+  CC      lib/textsearch.o
+  CC      lib/zlib_inflate/inffast.o
+  CC      lib/ts_kmp.o
+  CC      lib/ts_bm.o
+  CC      lib/ts_fsm.o
+  CC      lib/percpu_counter.o
+  CC      lib/zlib_inflate/inflate.o
+  CC      lib/zlib_inflate/infutil.o
+  CC      lib/dynamic_debug.o
+  LD      lib/lzo/lzo_compress.o
+  LD      lib/lzo/lzo_decompress.o
+  CC      lib/cpu_rmap.o
+  CC      lib/nlattr.o
+  LD      lib/lzo/built-in.o
+  CC      lib/dynamic_queue_limits.o
+  CC      lib/argv_split.o
+  CC      lib/zlib_inflate/inftrees.o
+  CC      lib/bug.o
+  CC      lib/zlib_inflate/inflate_syms.o
+  CC      lib/cmdline.o
+  CC      lib/zlib_deflate/deftree.o
+  CC      arch/arm/mach-msm/rpm.o
+  CC      lib/cpumask.o
+  CC      lib/zlib_deflate/deflate_syms.o
+  CC      arch/arm/mach-msm/rpm_resources.o
+  CC      arch/arm/mach-msm/mpm.o
+  CC      lib/ctype.o
+  CC      lib/dec_and_lock.o
+  CC      lib/decompress.o
+  LD      lib/reed_solomon/built-in.o
+  CC      lib/decompress_bunzip2.o
+  CC      kernel/trace/trace.o
+  CC      arch/arm/mach-msm/rpm_stats.o
+  CC      arch/arm/mach-msm/rpm_master_stat.o
+  CC      arch/arm/mach-msm/rpm_log.o
+  CC      lib/decompress_inflate.o
+  CC      lib/decompress_unlzma.o
+  LD      lib/zlib_inflate/zlib_inflate.o
+  LD      lib/zlib_inflate/built-in.o
+  CC      lib/dump_stack.o
+  CC      lib/extable.o
+  CC      arch/arm/mach-msm/msm_xo.o
+  CC      lib/idr.o
+  CC      kernel/module.o
+  CC      lib/int_sqrt.o
+  CC      lib/ioremap.o
+  CC      arch/arm/mach-msm/gpiomux-8x60_dali.o
+  CC      arch/arm/mach-msm/gpiomux-v2.o
+  CC      arch/arm/mach-msm/gpiomux.o
+  CC      lib/irq_regs.o
+  LD      lib/zlib_deflate/zlib_deflate.o
+  GZIP    kernel/config_data.gz
+  LD      lib/zlib_deflate/built-in.o
+  CC      lib/is_single_threaded.o
+  CC      lib/klist.o
+  CC      lib/kobject.o
+  CC      lib/kobject_uevent.o
+  CC      arch/arm/mach-msm/msm_rq_stats.o
+  CC      lib/md5.o
+  CC      lib/memory_alloc.o
+  CC      lib/plist.o
+  CC      arch/arm/mach-msm/msm_show_resume_irq.o
+  CC      lib/prio_heap.o
+  CC      arch/arm/mach-msm/restart.o
+  CC      arch/arm/mach-msm/sec_debug.o
+  CC      lib/prio_tree.o
+  CC      arch/arm/mach-msm/sec_getlog.o
+  CC      lib/proportions.o
+  CC      lib/radix-tree.o
+  CC      lib/ratelimit.o
+  CC      lib/rbtree.o
+  CC      lib/reciprocal_div.o
+  CC      arch/arm/mach-msm/sec_gaf.o
+  CC      arch/arm/mach-msm/sec_last_log.o
+  CC      lib/rwsem-spinlock.o
+  CC      arch/arm/mach-msm/board-bluetooth-bcm4330.o
+  CC      lib/sha1.o
+  CC      lib/show_mem.o
+  CC      lib/string.o
+  CC      lib/timerqueue.o
+  CC      lib/vsprintf.o
+  CC [M]  arch/arm/mach-msm/dal_remotetest.o
+  CC [M]  arch/arm/mach-msm/dma_test.o
+  CC [M]  arch/arm/mach-msm/msm-buspm-dev.o
+  GEN     lib/crc32table.h
+  CC      lib/crc32.o
+  LD      arch/arm/mach-msm/built-in.o
+  LD      lib/built-in.o
+  LD      kernel/trace/built-in.o
+  CHK     kernel/config_data.h
+  AR      lib/lib.a
+  LD      kernel/built-in.o
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  LD      .tmp_vmlinux1
+arch/arm/mach-msm/built-in.o: In function `msm_pm_power_collapse_standalone':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/pm-8x60.c:599: undefined reference to `avs_set_avscsr'
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/pm-8x60.c:603: undefined reference to `avs_set_avsdscr'
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/pm-8x60.c:604: undefined reference to `avs_set_avscsr'
+arch/arm/mach-msm/built-in.o: In function `msm_pm_power_collapse':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/pm-8x60.c:626: undefined reference to `avs_set_avscsr'
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/pm-8x60.c:668: undefined reference to `avs_set_avsdscr'
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/pm-8x60.c:669: undefined reference to `avs_set_avscsr'
+arch/arm/mach-msm/built-in.o: In function `sec_debug_panic_handler':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/sec_debug.c:629: undefined reference to `charm_assert_panic'
+arch/arm/mach-msm/built-in.o: In function `l2x0_saved_ctrl_reg_val':
+board-bluetooth-bcm4330.c:(.data+0x311a8): undefined reference to `scale_sec_settherm'
+board-bluetooth-bcm4330.c:(.data+0x311e8): undefined reference to `scale_sec_settherm'
+board-bluetooth-bcm4330.c:(.data+0x31208): undefined reference to `scale_sec_settherm'
+drivers/built-in.o: In function `msm_fb_probe':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/msm_fb.c:481: undefined reference to `sw_sync_timeline_create'
+drivers/built-in.o: In function `msm_fb_wait_for_fence':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/msm_fb.c:1872: undefined reference to `sync_fence_wait'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/msm_fb.c:1878: undefined reference to `sync_fence_wait'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/msm_fb.c:1886: undefined reference to `sync_fence_put'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/msm_fb.c:1890: undefined reference to `sync_fence_put'
+drivers/built-in.o: In function `msm_fb_signal_timeline':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/msm_fb.c:1901: undefined reference to `sw_sync_timeline_inc'
+drivers/built-in.o: In function `msm_fb_release_timeline':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/msm_fb.c:1914: undefined reference to `sw_sync_timeline_inc'
+drivers/built-in.o: In function `msmfb_handle_buf_sync_ioctl':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/msm_fb.c:3749: undefined reference to `sync_fence_fdget'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/msm_fb.c:3768: undefined reference to `sw_sync_pt_create'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/msm_fb.c:3776: undefined reference to `sync_fence_create'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/msm_fb.c:3779: undefined reference to `sync_pt_free'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/msm_fb.c:3792: undefined reference to `sync_fence_install'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/msm_fb.c:3804: undefined reference to `sync_fence_put'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/msm_fb.c:3809: undefined reference to `sync_fence_put'
+drivers/built-in.o: In function `mdp_off':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mdp.c:2390: undefined reference to `mdp4_overlay_writeback_off'
+drivers/built-in.o: In function `mdp_footswitch_ctrl':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mdp.c:3342: undefined reference to `mipi_dsi_prepare_ahb_clocks'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mdp.c:3361: undefined reference to `mipi_dsi_unprepare_ahb_clocks'
+drivers/built-in.o: In function `mipi_dsi_probe':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi.c:441: undefined reference to `mipi_dsi_prepare_ahb_clocks'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi.c:447: undefined reference to `mipi_dsi_unprepare_ahb_clocks'
+drivers/built-in.o: In function `mipi_dsi_fps_level_change':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi.c:72: undefined reference to `mipi_dsi_configure_fb_divider'
+drivers/built-in.o: In function `mipi_dsi_off':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi.c:93: undefined reference to `mipi_dsi_prepare_ahb_clocks'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi.c:132: undefined reference to `mipi_dsi_unprepare_ahb_clocks'
+drivers/built-in.o: In function `mipi_dsi_on':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi.c:171: undefined reference to `mipi_dsi_prepare_ahb_clocks'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi.c:323: undefined reference to `mipi_dsi_unprepare_ahb_clocks'
+drivers/built-in.o: In function `mipi_dsi_clk_cfg':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi_host.c:185: undefined reference to `mipi_dsi_prepare_ahb_clocks'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi_host.c:197: undefined reference to `mipi_dsi_unprepare_ahb_clocks'
+drivers/built-in.o: In function `mipi_dsi_turn_on_clks':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi_host.c:208: undefined reference to `mipi_dsi_prepare_ahb_clocks'
+drivers/built-in.o: In function `mipi_dsi_turn_off_clks':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi_host.c:218: undefined reference to `mipi_dsi_unprepare_ahb_clocks'
+drivers/built-in.o: In function `msm_rotator_signal_timeline':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/char/msm_rotator.c:547: undefined reference to `sw_sync_timeline_inc'
+drivers/built-in.o: In function `msm_rotator_wait_for_fence':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/char/msm_rotator.c:600: undefined reference to `sync_fence_wait'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/char/msm_rotator.c:605: undefined reference to `sync_fence_wait'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/char/msm_rotator.c:612: undefined reference to `sync_fence_put'
+drivers/built-in.o: In function `msm_rotator_signal_timeline_done':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/char/msm_rotator.c:561: undefined reference to `sw_sync_timeline_inc'
+drivers/built-in.o: In function `msm_rotator_start':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/char/msm_rotator.c:2623: undefined reference to `sw_sync_timeline_create'
+drivers/built-in.o: In function `msm_rotator_buf_sync':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/char/msm_rotator.c:655: undefined reference to `sync_fence_fdget'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/char/msm_rotator.c:665: undefined reference to `sw_sync_pt_create'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/char/msm_rotator.c:674: undefined reference to `sync_fence_create'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/char/msm_rotator.c:677: undefined reference to `sync_pt_free'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/char/msm_rotator.c:698: undefined reference to `sync_fence_put'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/char/msm_rotator.c:689: undefined reference to `sync_fence_install'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/char/msm_rotator.c:701: undefined reference to `sync_fence_put'
+make: *** [.tmp_vmlinux1] 오류 1
