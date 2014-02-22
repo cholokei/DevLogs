@@ -1,0 +1,42 @@
+Script started on 2014년 02월 23일 (일) 오전 01시 30분 23초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  CC      kernel/sys.o
+  CC      arch/arm/mach-msm/msm_bus/msm_bus_board_8660.o
+  CC      arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.o
+  LD      arch/arm/mach-msm/msm_bus/built-in.o
+  CC      kernel/module.o
+  CC      kernel/trace/trace.o
+  CC      arch/arm/mach-msm/qdsp6v2/q6voice.o
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  CC      drivers/video/msm/msm_dss_io_8x60.o
+drivers/video/msm/msm_dss_io_8x60.c:650:39: warning: 'struct hdmi_disp_mode_timing_type' declared inside parameter list [enabled by default]
+drivers/video/msm/msm_dss_io_8x60.c:650:39: warning: its scope is only this definition or declaration, which is probably not what you want [enabled by default]
+drivers/video/msm/msm_dss_io_8x60.c:650:6: error: conflicting types for 'hdmi_frame_ctrl_cfg'
+drivers/video/msm/hdmi_msm.h:124:6: note: previous declaration of 'hdmi_frame_ctrl_cfg' was here
+drivers/video/msm/msm_dss_io_8x60.c: In function 'hdmi_frame_ctrl_cfg':
+drivers/video/msm/msm_dss_io_8x60.c:668:1: error: dereferencing pointer to incomplete type
+drivers/video/msm/msm_dss_io_8x60.c:668:1: error: dereferencing pointer to incomplete type
+drivers/video/msm/msm_dss_io_8x60.c:668:1: error: dereferencing pointer to incomplete type
+make[3]: *** [drivers/video/msm/msm_dss_io_8x60.o] 오류 1
+make[2]: *** [drivers/video/msm] 오류 2
+make[1]: *** [drivers/video] 오류 2
+make: *** [drivers] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+  LD      arch/arm/mach-msm/qdsp6v2/built-in.o
+  LD      arch/arm/mach-msm/built-in.o
+  LD      kernel/trace/built-in.o
+  LD      kernel/built-in.o
+arch/arm/mach-msm/board-msm8x60_dali.o: In function `sensor_power_off_vdd':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/board-msm8x60_dali.c:15168: multiple definition of `msm_device_tz_log'
+arch/arm/mach-msm/devices-msm8x60.o:(.data+0x19a0): first defined here
+make[1]: *** [arch/arm/mach-msm/built-in.o] 오류 1
+make: *** [arch/arm/mach-msm] 오류 2
