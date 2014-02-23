@@ -2,18 +2,25 @@ Cholokei's Development Diary
 
 Project: Forward-porting Samsung Dalikt Kernel from Linux 3.0 to Linux 3.4 (based on CAF jb_2.6)
 repo: android_kernel_samsung_dalikt
-2013-11-05 ~
- * Unported drivers - 2014-02-23
+
+Initial Port with fixing compilation errors : 2013-11-05 ~ 2014-02-24
+ * Unported drivers - 2014-02-24
   - Camera
   - BCMDHD (Wi-Fi)
   - Bluetooth
+  - Audio
   - etc
+
 
 Project: Forward-porting and stabilize msm video drivers
 repo: android_kernel_samsung_dalikt
 
+Merge and fix compilation errors : 2013-11-05 ~ 2014-02-24
+
+
 Project: Optimizing RAM memory for Dalikt by disabling unused drivers
 repo: android_kernel_samsung_dalikt
+
 
 Project: Enable Kexec functionality for Dalikt to test newer kernel with multi booting function
 repo: android_kernel_samsung_dalikt / android_kernel_samsung_msm8660-common
