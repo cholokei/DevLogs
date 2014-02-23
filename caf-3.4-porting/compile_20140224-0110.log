@@ -1,0 +1,32 @@
+Script started on 2014년 02월 24일 (월) 오전 01시 10분 02초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  CC      kernel/sys.o
+  LD      init/built-in.o
+  CC      kernel/module.o
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  CC      kernel/trace/trace.o
+  CC      drivers/video/msm/msm_dss_io_8x60.o
+  LD      drivers/video/msm/built-in.o
+  LD      drivers/video/built-in.o
+  LD      drivers/built-in.o
+  LD      kernel/trace/built-in.o
+  LD      kernel/built-in.o
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  LD      .tmp_vmlinux1
+drivers/built-in.o: In function `mdp_off':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mdp.c:2390: undefined reference to `mdp4_overlay_writeback_off'
+make: *** [.tmp_vmlinux1] 오류 1

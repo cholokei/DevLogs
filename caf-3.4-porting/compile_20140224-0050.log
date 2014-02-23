@@ -1,0 +1,46 @@
+Script started on 2014년 02월 24일 (월) 오전 12시 50분 11초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      drivers/hwmon/m_adcproc.o
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  LD      drivers/hwmon/built-in.o
+  CC      arch/arm/mach-msm/mdm.o
+  LD      arch/arm/mach-msm/built-in.o
+  LD      drivers/built-in.o
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  LD      .tmp_vmlinux1
+drivers/built-in.o: In function `mdp_off':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mdp.c:2390: undefined reference to `mdp4_overlay_writeback_off'
+drivers/built-in.o: In function `mdp_footswitch_ctrl':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mdp.c:3342: undefined reference to `mipi_dsi_prepare_ahb_clocks'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mdp.c:3361: undefined reference to `mipi_dsi_unprepare_ahb_clocks'
+drivers/built-in.o: In function `mipi_dsi_probe':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi.c:441: undefined reference to `mipi_dsi_prepare_ahb_clocks'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi.c:447: undefined reference to `mipi_dsi_unprepare_ahb_clocks'
+drivers/built-in.o: In function `mipi_dsi_fps_level_change':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi.c:72: undefined reference to `mipi_dsi_configure_fb_divider'
+drivers/built-in.o: In function `mipi_dsi_off':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi.c:93: undefined reference to `mipi_dsi_prepare_ahb_clocks'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi.c:132: undefined reference to `mipi_dsi_unprepare_ahb_clocks'
+drivers/built-in.o: In function `mipi_dsi_on':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi.c:171: undefined reference to `mipi_dsi_prepare_ahb_clocks'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi.c:323: undefined reference to `mipi_dsi_unprepare_ahb_clocks'
+drivers/built-in.o: In function `mipi_dsi_clk_cfg':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi_host.c:185: undefined reference to `mipi_dsi_prepare_ahb_clocks'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi_host.c:197: undefined reference to `mipi_dsi_unprepare_ahb_clocks'
+drivers/built-in.o: In function `mipi_dsi_turn_on_clks':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi_host.c:208: undefined reference to `mipi_dsi_prepare_ahb_clocks'
+drivers/built-in.o: In function `mipi_dsi_turn_off_clks':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi_host.c:218: undefined reference to `mipi_dsi_unprepare_ahb_clocks'
+make: *** [.tmp_vmlinux1] 오류 1

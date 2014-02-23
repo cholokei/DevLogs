@@ -1,0 +1,58 @@
+Script started on 2014년 02월 24일 (월) 오전 12시 36분 50초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  CC      arch/arm/mach-msm/pm-8x60.o
+  CC      kernel/sys.o
+  CC      arch/arm/mach-msm/acpuclock-8x60.o
+  LD      arch/arm/mach-msm/built-in.o
+  CC      kernel/module.o
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  CC      kernel/trace/trace.o
+  LD      kernel/trace/built-in.o
+  LD      kernel/built-in.o
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  LD      .tmp_vmlinux1
+arch/arm/mach-msm/built-in.o: In function `sec_debug_panic_handler':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/sec_debug.c:629: undefined reference to `charm_assert_panic'
+arch/arm/mach-msm/built-in.o: In function `l2x0_saved_ctrl_reg_val':
+board-bluetooth-bcm4330.c:(.data+0x311a8): undefined reference to `scale_sec_settherm'
+board-bluetooth-bcm4330.c:(.data+0x311e8): undefined reference to `scale_sec_settherm'
+board-bluetooth-bcm4330.c:(.data+0x31208): undefined reference to `scale_sec_settherm'
+drivers/built-in.o: In function `mdp_off':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mdp.c:2390: undefined reference to `mdp4_overlay_writeback_off'
+drivers/built-in.o: In function `mdp_footswitch_ctrl':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mdp.c:3342: undefined reference to `mipi_dsi_prepare_ahb_clocks'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mdp.c:3361: undefined reference to `mipi_dsi_unprepare_ahb_clocks'
+drivers/built-in.o: In function `mipi_dsi_probe':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi.c:441: undefined reference to `mipi_dsi_prepare_ahb_clocks'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi.c:447: undefined reference to `mipi_dsi_unprepare_ahb_clocks'
+drivers/built-in.o: In function `mipi_dsi_fps_level_change':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi.c:72: undefined reference to `mipi_dsi_configure_fb_divider'
+drivers/built-in.o: In function `mipi_dsi_off':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi.c:93: undefined reference to `mipi_dsi_prepare_ahb_clocks'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi.c:132: undefined reference to `mipi_dsi_unprepare_ahb_clocks'
+drivers/built-in.o: In function `mipi_dsi_on':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi.c:171: undefined reference to `mipi_dsi_prepare_ahb_clocks'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi.c:323: undefined reference to `mipi_dsi_unprepare_ahb_clocks'
+drivers/built-in.o: In function `mipi_dsi_clk_cfg':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi_host.c:185: undefined reference to `mipi_dsi_prepare_ahb_clocks'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi_host.c:197: undefined reference to `mipi_dsi_unprepare_ahb_clocks'
+drivers/built-in.o: In function `mipi_dsi_turn_on_clks':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi_host.c:208: undefined reference to `mipi_dsi_prepare_ahb_clocks'
+drivers/built-in.o: In function `mipi_dsi_turn_off_clks':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mipi_dsi_host.c:218: undefined reference to `mipi_dsi_unprepare_ahb_clocks'
+make: *** [.tmp_vmlinux1] 오류 1
