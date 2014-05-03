@@ -1,0 +1,240 @@
+Script started on 2014년 05월 03일 (토) 오후 09시 39분 49초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CC      arch/arm/mach-msm/io.o
+  CC      arch/arm/mach-msm/dma.o
+  CC      arch/arm/mach-msm/timer.o
+  CC      arch/arm/mach-msm/memory.o
+  CC      arch/arm/mach-msm/clock.o
+  CC      arch/arm/mach-msm/clock-voter.o
+  CC      arch/arm/mach-msm/clock-dummy.o
+  CC      arch/arm/mach-msm/modem_notifier.o
+  CHK     include/generated/compile.h
+  CC      arch/arm/mach-msm/subsystem_map.o
+  CC      init/version.o
+  CC      arch/arm/mach-msm/cpufreq.o
+  CC      arch/arm/mach-msm/nohlt.o
+  CC      arch/arm/mach-msm/clock-debug.o
+  LD      init/built-in.o
+  CC      arch/arm/mach-msm/acpuclock.o
+  CC      arch/arm/mach-msm/pmu.o
+  CC      arch/arm/mach-msm/perf_event_msm_l2.o
+  CC      arch/arm/mach-msm/perf_debug.o
+  CC      kernel/sys.o
+  AS      arch/arm/mach-msm/headsmp.o
+  CC      arch/arm/mach-msm/platsmp.o
+  CC      arch/arm/mach-msm/hotplug.o
+  AS      arch/arm/mach-msm/idle-v7.o
+  CC      arch/arm/mach-msm/jtag.o
+  CC      arch/arm/mach-msm/etm.o
+  CC      arch/arm/mach-msm/scm.o
+  CC      arch/arm/mach-msm/scm-boot.o
+  CC      arch/arm/mach-msm/scm-io.o
+  CC      arch/arm/mach-msm/peripheral-loader.o
+  CC      arch/arm/mach-msm/scm-pas.o
+  CC      arch/arm/mach-msm/pil-q6v3.o
+  CC      arch/arm/mach-msm/pil-tzapps.o
+  CC      arch/arm/mach-msm/pil-modem.o
+  CC      arch/arm/mach-msm/smem_log.o
+  CC      arch/arm/mach-msm/smd.o
+  CC      arch/arm/mach-msm/smd_debug.o
+  CC      arch/arm/mach-msm/remote_spinlock.o
+  CC      arch/arm/mach-msm/smd_private.o
+  CC      arch/arm/mach-msm/socinfo.o
+  CC      arch/arm/mach-msm/smd_tty.o
+  CC      arch/arm/mach-msm/smd_pkt.o
+  CC      arch/arm/mach-msm/msm_dsps.o
+  CC      arch/arm/mach-msm/smd_rpcrouter.o
+  CC      arch/arm/mach-msm/smd_rpcrouter_device.o
+  CC      arch/arm/mach-msm/smd_rpc_sym.o
+  CC      arch/arm/mach-msm/smd_rpcrouter_servers.o
+  CC      arch/arm/mach-msm/smd_rpcrouter_clients.o
+  CC      arch/arm/mach-msm/smd_rpcrouter_xdr.o
+  CC      arch/arm/mach-msm/rpcrouter_smd_xprt.o
+  CC      arch/arm/mach-msm/ping_mdm_rpc_client.o
+  CC      arch/arm/mach-msm/ping_apps_server.o
+  CC      arch/arm/mach-msm/oem_rapi_client.o
+  CC      kernel/module.o
+  CC      kernel/trace/trace.o
+  CC      arch/arm/mach-msm/dal.o
+  CC      arch/arm/mach-msm/msm_bus/msm_bus_core.o
+  CC      arch/arm/mach-msm/pm-boot.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_dev_ctl.o
+  CC      arch/arm/mach-msm/pm-8x60.o
+  CC      arch/arm/mach-msm/pm-data.o
+  CC      arch/arm/mach-msm/pm-stats.o
+  CC      arch/arm/mach-msm/spm.o
+  CC      arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.o
+  CC      arch/arm/mach-msm/msm_bus/msm_bus_fabric.o
+  CC      arch/arm/mach-msm/devices-msm8x60.o
+  CC      arch/arm/mach-msm/clock-local.o
+  CC      arch/arm/mach-msm/clock-8x60.o
+  CC      arch/arm/mach-msm/qdsp6v2/snddev_icodec.o
+  CC      arch/arm/mach-msm/qdsp6v2/snddev_ecodec.o
+  CC      arch/arm/mach-msm/qdsp6v2/snddev_mi2s.o
+  CC      arch/arm/mach-msm/qdsp6v2/snddev_virtual.o
+  CC      arch/arm/mach-msm/qdsp6v2/pcm_out.o
+  CC      arch/arm/mach-msm/qdsp6v2/pcm_in.o
+  CC      arch/arm/mach-msm/acpuclock-8x60.o
+  CC      arch/arm/mach-msm/msm_bus/msm_bus_config.o
+  CC      arch/arm/mach-msm/qdsp6v2/fm.o
+  CC      arch/arm/mach-msm/clock-pll.o
+  CC      arch/arm/mach-msm/clock-rpm.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_lpa.o
+  CC      arch/arm/mach-msm/qdsp6v2/q6voice.o
+  CC      arch/arm/mach-msm/saw-regulator.o
+  CC      arch/arm/mach-msm/msm_bus/msm_bus_arb.o
+  CC      arch/arm/mach-msm/qdsp6v2/snddev_hdmi.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_mvs.o
+  CC      arch/arm/mach-msm/qdsp6v2/lpa_if_hdmi.o
+  CC      arch/arm/mach-msm/qdsp6v2/apr.o
+  CC      arch/arm/mach-msm/qdsp6v2/apr_v1.o
+  CC      arch/arm/mach-msm/qdsp6v2/apr_tal.o
+  CC      arch/arm/mach-msm/footswitch-8x60.o
+  CC      arch/arm/mach-msm/qdsp6v2/q6core.o
+  CC      arch/arm/mach-msm/qdsp6v2/dsp_debug.o
+  CC      arch/arm/mach-msm/rpm-regulator.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_acdb.o
+  CC      arch/arm/mach-msm/qdsp6v2/aac_in.o
+  CC      arch/arm/mach-msm/qdsp6v2/qcelp_in.o
+  CC      arch/arm/mach-msm/qdsp6v2/evrc_in.o
+  CC      arch/arm/mach-msm/qdsp6v2/amrnb_in.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_utils.o
+  CC      arch/arm/mach-msm/rpm-regulator-8660.o
+  CC      arch/arm/mach-msm/msm_bus/msm_bus_bimc.o
+  CC      arch/arm/mach-msm/msm_bus/msm_bus_noc.o
+  CC      arch/arm/mach-msm/msm_bus/msm_bus_of.o
+  CC      arch/arm/mach-msm/msm_bus/msm_bus_rpm.o
+  CC      arch/arm/mach-msm/msm_bus/msm_bus_board_8660.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_wma.o
+  CC      arch/arm/mach-msm/subsystem_notif.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_wmapro.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_aac.o
+  CC      arch/arm/mach-msm/msm_bus/msm_bus_dbg.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_multi_aac.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_utils_aio.o
+  CC      arch/arm/mach-msm/subsystem_restart.o
+  CC      arch/arm/mach-msm/ramdump.o
+  CC      arch/arm/mach-msm/qdsp6v2/rtac.o
+  CC      arch/arm/mach-msm/qdsp6v2/q6audio_v1.o
+  CC      arch/arm/mach-msm/qdsp6v2/q6audio_v1_aio.o
+  GZIP    kernel/config_data.gz
+  CC      arch/arm/mach-msm/modem-8660.o
+  CC      arch/arm/mach-msm/lpass-8660.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_mp3.o
+  LD      kernel/trace/built-in.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_amrnb.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_amrwb.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_amrwbplus.o
+  CC      arch/arm/mach-msm/sec_switch.o
+  CC      arch/arm/mach-msm/sysmon.o
+  CHK     kernel/config_data.h
+  CC      arch/arm/mach-msm/qdsp6v2/audio_evrc.o
+  LD      kernel/built-in.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_qcelp.o
+  CC      arch/arm/mach-msm/cpuidle.o
+  CC      arch/arm/mach-msm/msm_watchdog.o
+  CC      arch/arm/mach-msm/qdsp6v2/amrwb_in.o
+  AS      arch/arm/mach-msm/msm_watchdog_asm.o
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  LD      arch/arm/mach-msm/msm_bus/built-in.o
+  CC      arch/arm/mach-msm/mdm.o
+  CC      arch/arm/mach-msm/rmt_storage_client.o
+  CC      arch/arm/mach-msm/rpm.o
+  CC      arch/arm/mach-msm/rpm_resources.o
+  CC      arch/arm/mach-msm/mpm.o
+  CC      arch/arm/mach-msm/rpm_stats.o
+  CC      arch/arm/mach-msm/rpm_master_stat.o
+  CC      arch/arm/mach-msm/rpm_log.o
+  CC      arch/arm/mach-msm/tz_log.o
+  CC      arch/arm/mach-msm/msm_xo.o
+  CC      arch/arm/mach-msm/gpiomux-8x60_dali.o
+  CC      arch/arm/mach-msm/gpiomux-v2.o
+  CC      arch/arm/mach-msm/gpiomux.o
+arch/arm/mach-msm/board-msm8x60_dali.c:4886:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4886:2: warning: (near initialization for 'fsa9480_pdata.otg_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4887:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4887:2: warning: (near initialization for 'fsa9480_pdata.usb_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4888:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4888:2: warning: (near initialization for 'fsa9480_pdata.charger_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4889:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4889:2: warning: (near initialization for 'fsa9480_pdata.jig_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4890:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4890:2: warning: (near initialization for 'fsa9480_pdata.deskdock_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4891:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4891:2: warning: (near initialization for 'fsa9480_pdata.cardock_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4894:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4894:2: warning: (near initialization for 'fsa9480_pdata.mhl_cb') [enabled by default]
+  CC      arch/arm/mach-msm/msm_rq_stats.o
+  CC      arch/arm/mach-msm/msm_show_resume_irq.o
+  CC      arch/arm/mach-msm/restart.o
+  CC      arch/arm/mach-msm/sec_debug.o
+  CC      arch/arm/mach-msm/sec_getlog.o
+  LD      arch/arm/mach-msm/qdsp6v2/built-in.o
+  CC      arch/arm/mach-msm/sec_gaf.o
+  CC      arch/arm/mach-msm/sec_last_log.o
+  CC      arch/arm/mach-msm/board-bluetooth-bcm4330.o
+  CC [M]  arch/arm/mach-msm/dal_remotetest.o
+  CC [M]  arch/arm/mach-msm/dma_test.o
+  CC [M]  arch/arm/mach-msm/msm-buspm-dev.o
+  LD      arch/arm/mach-msm/msm-etm.o
+  LD      arch/arm/mach-msm/built-in.o
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  LD      .tmp_vmlinux1
+  KSYM    .tmp_kallsyms1.S
+  AS      .tmp_kallsyms1.o
+  LD      .tmp_vmlinux2
+  KSYM    .tmp_kallsyms2.S
+  AS      .tmp_kallsyms2.o
+  LD      vmlinux
+  SYSMAP  System.map
+  SYSMAP  .tmp_System.map
+  OBJCOPY arch/arm/boot/Image
+  Building modules, stage 2.
+  MODPOST 15 modules
+  Kernel: arch/arm/boot/Image is ready
+  GZIP    arch/arm/boot/compressed/piggy.gzip
+  CC      arch/arm/mach-msm/dal_remotetest.mod.o
+  CC      arch/arm/mach-msm/dma_test.mod.o
+  CC      arch/arm/mach-msm/msm-buspm-dev.mod.o
+  CC      block/test-iosched.mod.o
+  CC      crypto/ansi_cprng.mod.o
+  CC      drivers/crypto/msm/qce.mod.o
+  CC      drivers/crypto/msm/qcedev.mod.o
+  CC      drivers/crypto/msm/qcrypto.mod.o
+  CC      drivers/hid/hid-logitech-dj.mod.o
+  CC      drivers/input/evbug.mod.o
+  CC      drivers/media/video/gspca/gspca_main.mod.o
+  CC      drivers/misc/msm_tsif.mod.o
+  CC      drivers/misc/tsif_chrdev.mod.o
+  CC      drivers/scsi/scsi_wait_scan.mod.o
+  CC      drivers/spi/spidev.mod.o
+  LD [M]  arch/arm/mach-msm/dal_remotetest.ko
+  LD [M]  arch/arm/mach-msm/dma_test.ko
+  LD [M]  block/test-iosched.ko
+  LD [M]  arch/arm/mach-msm/msm-buspm-dev.ko
+  LD [M]  crypto/ansi_cprng.ko
+  LD [M]  drivers/hid/hid-logitech-dj.ko
+  LD [M]  drivers/crypto/msm/qcrypto.ko
+  LD [M]  drivers/input/evbug.ko
+  LD [M]  drivers/crypto/msm/qce.ko
+  LD [M]  drivers/crypto/msm/qcedev.ko
+  LD [M]  drivers/media/video/gspca/gspca_main.ko
+  LD [M]  drivers/misc/msm_tsif.ko
+  LD [M]  drivers/misc/tsif_chrdev.ko
+  LD [M]  drivers/scsi/scsi_wait_scan.ko
+  LD [M]  drivers/spi/spidev.ko
+  AS      arch/arm/boot/compressed/piggy.gzip.o
+  LD      arch/arm/boot/compressed/vmlinux
+  OBJCOPY arch/arm/boot/zImage
+  Kernel: arch/arm/boot/zImage is ready

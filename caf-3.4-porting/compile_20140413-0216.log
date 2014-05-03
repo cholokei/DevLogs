@@ -1,0 +1,247 @@
+Script started on 2014년 04월 13일 (일) 오전 02시 16분 50초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      arch/arm/mach-msm/spm.o
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  UPD     kernel/config_data.h
+  CC      kernel/configs.o
+  CC      drivers/misc/pm8xxx-upl.o
+  CC      drivers/staging/staging.o
+  CC      drivers/spi/spi.o
+  CC      drivers/switch/switch_class.o
+  CC      arch/arm/mach-msm/devices-msm8x60.o
+  CC      drivers/thermal/thermal_sys.o
+  CC      drivers/tty/tty_io.o
+  CC      drivers/scsi/scsi.o
+  LD      kernel/built-in.o
+  CC      drivers/staging/android/binder.o
+  LD      sound/soc/msm/built-in.o
+  CC      drivers/scsi/hosts.o
+  LD      sound/soc/built-in.o
+  CC      arch/arm/mach-msm/clock-local.o
+  CC      drivers/switch/switch_gpio.o
+  CC      drivers/net/wireless/bcmdhd/wl_cfg80211.o
+  CC      drivers/misc/android_vibrator.o
+  CC      drivers/misc/pmic8058-xoadc.o
+  LD      sound/built-in.o
+  CC      arch/arm/mach-msm/clock-8x60.o
+  CC      arch/arm/mach-msm/acpuclock-8x60.o
+  LD      drivers/switch/built-in.o
+  CC      drivers/usb/class/cdc-acm.o
+  CC      drivers/usb/class/usblp.o
+  CC      drivers/spi/spi_qsd.o
+  CC [M]  drivers/misc/tsif.o
+  CC [M]  drivers/misc/tsif_chrdev.o
+  CC [M]  drivers/spi/spidev.o
+  CC      drivers/thermal/msm_tsens.o
+  CC      drivers/staging/android/ashmem.o
+  CC      drivers/staging/android/logger.o
+  LD      drivers/misc/built-in.o
+  CC      drivers/thermal/pm8xxx-tm.o
+  CC      arch/arm/mach-msm/clock-pll.o
+  CC      drivers/staging/android/persistent_ram.o
+  CC      drivers/staging/android/ram_console.o
+  CC      drivers/scsi/scsi_ioctl.o
+  CC      drivers/scsi/constants.o
+  CC      drivers/scsi/scsicam.o
+  CC      arch/arm/mach-msm/clock-rpm.o
+  CC      drivers/staging/android/timed_output.o
+  CC      drivers/staging/android/timed_gpio.o
+  CC      drivers/staging/android/lowmemorykiller.o
+  CC      drivers/video/fb_notify.o
+  LD      drivers/thermal/built-in.o
+  CC      drivers/video/fbmem.o
+  LD      drivers/usb/class/built-in.o
+  CC      drivers/usb/core/usb.o
+  CC      drivers/tty/n_tty.o
+  CC      arch/arm/mach-msm/saw-regulator.o
+  LD [M]  drivers/misc/msm_tsif.o
+  CC      arch/arm/mach-msm/footswitch-8x60.o
+  CC      drivers/tty/tty_ioctl.o
+  CC      arch/arm/mach-msm/rpm-regulator.o
+  CC      drivers/scsi/scsi_error.o
+  CC      drivers/scsi/scsi_lib.o
+  CC      drivers/scsi/scsi_lib_dma.o
+  CC      drivers/scsi/scsi_scan.o
+  CC      drivers/scsi/scsi_sysfs.o
+  CC      drivers/video/fbmon.o
+  CC      arch/arm/mach-msm/rpm-regulator-8660.o
+  CC      arch/arm/mach-msm/subsystem_notif.o
+  CC      drivers/usb/core/hub.o
+  CC      arch/arm/mach-msm/subsystem_restart.o
+  CC      drivers/scsi/scsi_devinfo.o
+  CC      drivers/video/fbcmap.o
+  CC      drivers/tty/tty_ldisc.o
+  LD      drivers/spi/built-in.o
+  CC      drivers/tty/tty_buffer.o
+  CC      arch/arm/mach-msm/ramdump.o
+  CC      drivers/video/fbsysfs.o
+  CC      drivers/scsi/scsi_sysctl.o
+  CC      arch/arm/mach-msm/modem-8660.o
+  CC      arch/arm/mach-msm/lpass-8660.o
+  CC      drivers/scsi/scsi_proc.o
+  CC      drivers/tty/tty_port.o
+  CC      arch/arm/mach-msm/sysmon.o
+  CC      arch/arm/mach-msm/cpuidle.o
+  CC      drivers/usb/core/hcd.o
+  CC      drivers/tty/tty_mutex.o
+  CC      arch/arm/mach-msm/msm_watchdog.o
+  CC      drivers/scsi/scsi_trace.o
+  CC      drivers/scsi/scsi_pm.o
+  CC      drivers/tty/pty.o
+  AS      arch/arm/mach-msm/msm_watchdog_asm.o
+  CC      drivers/video/modedb.o
+  CC      drivers/scsi/scsi_tgt_lib.o
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  CC      drivers/usb/core/urb.o
+  CC      drivers/usb/core/message.o
+  CC      drivers/tty/tty_audit.o
+  CC      drivers/video/fbcvt.o
+  CC      drivers/scsi/scsi_tgt_if.o
+  LD      drivers/staging/android/built-in.o
+  LD      drivers/staging/built-in.o
+  CC      drivers/tty/sysrq.o
+  CC      arch/arm/mach-msm/mdm.o
+  CC      arch/arm/mach-msm/rmt_storage_client.o
+  CC      drivers/scsi/sd.o
+arch/arm/mach-msm/board-msm8x60_dali.c:136:30: fatal error: mach/devices-lte.h: No such file or directory
+compilation terminated.
+make[1]: *** [arch/arm/mach-msm/board-msm8x60_dali.o] 오류 1
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      drivers/usb/core/driver.o
+  CC      drivers/tty/serial/serial_core.o
+  CC      drivers/video/backlight/backlight.o
+  CC      drivers/tty/serial/msm_serial_hs.o
+  CC      drivers/usb/core/config.o
+  CC      drivers/tty/vt/vt_ioctl.o
+  CC      drivers/tty/vt/vc_screen.o
+  CC      drivers/scsi/sg.o
+  CC      drivers/usb/core/file.o
+  CC      drivers/scsi/ch.o
+  CC      drivers/usb/core/buffer.o
+drivers/net/wireless/bcmdhd/wl_cfg80211.c:6727:12: warning: 'wl_add_remove_eventmsg' defined but not used [-Wunused-function]
+error, forbidden warning: wl_cfg80211.c:6727
+make[4]: *** [drivers/net/wireless/bcmdhd/wl_cfg80211.o] 오류 1
+make[3]: *** [drivers/net/wireless/bcmdhd] 오류 2
+make[2]: *** [drivers/net/wireless] 오류 2
+make[1]: *** [drivers/net] 오류 2
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      drivers/usb/core/sysfs.o
+  CC      drivers/video/backlight/generic_bl.o
+  CC      drivers/usb/core/endpoint.o
+  CC      drivers/usb/core/devio.o
+  CC      drivers/tty/vt/selection.o
+make: *** [arch/arm/mach-msm] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      drivers/tty/vt/keyboard.o
+  CC      drivers/usb/core/notify.o
+  CC      drivers/usb/core/generic.o
+  CC      drivers/usb/core/quirks.o
+  CC      drivers/usb/core/devices.o
+  CC [M]  drivers/video/backlight/lcd.o
+  LD      drivers/video/backlight/built-in.o
+  CC      drivers/video/console/dummycon.o
+  CC      drivers/tty/vt/consolemap.o
+  CC      drivers/tty/vt/consolemap_deftbl.o
+  CC      drivers/tty/vt/vt.o
+  CC      drivers/tty/vt/defkeymap.o
+  CC      drivers/usb/host/ehci-hcd.o
+  CC      drivers/usb/gadget/udc-core.o
+  CC      drivers/video/console/fbcon.o
+  CC      drivers/video/console/bitblit.o
+  CC      drivers/video/console/fonts.o
+  CC      drivers/video/console/font_8x8.o
+  CC [M]  drivers/scsi/scsi_wait_scan.o
+  CC      drivers/video/console/font_8x16.o
+  CC      drivers/tty/serial/msm_serial_hs_lite.o
+  LD      drivers/scsi/scsi_mod.o
+  LD      drivers/scsi/scsi_tgt.o
+  LD      drivers/scsi/sd_mod.o
+  CC      drivers/video/console/softcursor.o
+  CC      drivers/video/cfbfillrect.o
+  CC      drivers/usb/misc/ehset.o
+  CC      drivers/video/msm/msm_fb.o
+  CC      drivers/usb/gadget/msm72k_udc.o
+  LD      drivers/video/console/font.o
+  CC      drivers/usb/gadget/android.o
+  CC      drivers/video/msm/logo.o
+  CC      drivers/video/cfbcopyarea.o
+  LD      drivers/scsi/built-in.o
+  CC      drivers/video/cfbimgblt.o
+  LD      drivers/usb/misc/built-in.o
+  CC      drivers/usb/otg/otg.o
+  CC      drivers/usb/otg/msm72k_otg.o
+  LD      drivers/usb/core/usbcore.o
+  CC      drivers/video/output.o
+  LD      drivers/usb/core/built-in.o
+  CC      drivers/usb/storage/alauda.o
+  CC      drivers/usb/usb-common.o
+  CC      drivers/usb/storage/cypress_atacb.o
+  CC      drivers/usb/storage/datafab.o
+  CC      drivers/video/msm/mdp.o
+  LD      drivers/video/fb.o
+  CC      drivers/usb/storage/freecom.o
+  CC      drivers/usb/storage/isd200.o
+  CC      drivers/usb/storage/jumpshot.o
+  CC      drivers/usb/storage/karma.o
+  LD      drivers/tty/serial/built-in.o
+  CC      drivers/usb/storage/onetouch.o
+  CC      drivers/usb/storage/sddr09.o
+  CC      drivers/usb/storage/sddr55.o
+  CC      drivers/usb/storage/shuttle_usbat.o
+  CC      drivers/usb/storage/scsiglue.o
+  CC      drivers/usb/storage/protocol.o
+  CC      drivers/video/msm/mdp_debugfs.o
+  CC      drivers/usb/storage/transport.o
+  CC      drivers/usb/storage/usb.o
+  LD      drivers/video/console/built-in.o
+  CC      drivers/usb/storage/initializers.o
+  CC      drivers/video/msm/mdp4_util.o
+  LD      drivers/tty/vt/built-in.o
+  LD      drivers/tty/built-in.o
+  CC      drivers/usb/storage/sierra_ms.o
+  CC      drivers/video/msm/mdp4_video_enhance.o
+  CC      drivers/usb/storage/option_ms.o
+  CC      drivers/usb/storage/usual-tables.o
+  CC      drivers/video/msm/mdp4_overlay.o
+  CC      drivers/video/msm/mdp4_overlay_lcdc.o
+  CC      drivers/video/msm/mdp4_overlay_dsi_video.o
+  CC      drivers/video/msm/mdp4_overlay_dsi_cmd.o
+  CC      drivers/video/msm/mdp4_dtv.o
+  CC      drivers/video/msm/mdp4_overlay_dtv.o
+  CC      drivers/video/msm/mdp_dma.o
+  CC      drivers/video/msm/mdp_dma_s.o
+  CC      drivers/video/msm/mdp_vsync.o
+  CC      drivers/video/msm/mdp_cursor.o
+  LD      drivers/usb/storage/usb-storage.o
+  LD      drivers/usb/storage/ums-alauda.o
+  LD      drivers/usb/storage/ums-cypress.o
+  LD      drivers/usb/storage/ums-datafab.o
+  LD      drivers/usb/otg/built-in.o
+  LD      drivers/usb/storage/ums-freecom.o
+  LD      drivers/usb/storage/ums-isd200.o
+  LD      drivers/usb/storage/ums-jumpshot.o
+  LD      drivers/usb/storage/ums-karma.o
+  LD      drivers/usb/storage/ums-onetouch.o
+  LD      drivers/usb/storage/ums-sddr09.o
+  LD      drivers/usb/storage/ums-sddr55.o
+  LD      drivers/usb/storage/ums-usbat.o
+  CC      drivers/video/msm/mdp_dma_tv.o
+  LD      drivers/usb/storage/built-in.o
+  CC      drivers/video/msm/msm_dss_io_8x60.o
+drivers/video/msm/mdp4_video_tuning_HD720.h:297:21: warning: 'DMB_LUT_TUNE' defined but not used [-Wunused-variable]
+error, forbidden warning: mdp4_video_tuning_HD720.h:297
+make[3]: *** [drivers/video/msm/mdp4_video_enhance.o] 오류 1
+make[3]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  LD      drivers/usb/host/built-in.o
+make[2]: *** [drivers/video/msm] 오류 2
+make[1]: *** [drivers/video] 오류 2
+  LD      drivers/usb/gadget/g_android.o
+  LD      drivers/usb/gadget/built-in.o
+  LD      drivers/usb/built-in.o
+make: *** [drivers] 오류 2

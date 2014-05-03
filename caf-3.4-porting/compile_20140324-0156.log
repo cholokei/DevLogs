@@ -1,0 +1,54 @@
+Script started on 2014년 03월 24일 (월) 오전 01시 56분 31초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  LD      arch/arm/mach-msm/msm-etm.o
+  CC      kernel/sys.o
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  CC      arch/arm/mach-msm/mdm.o
+  CC      arch/arm/mach-msm/rmt_storage_client.o
+  CC      arch/arm/mach-msm/rpm.o
+  CC      arch/arm/mach-msm/rpm_resources.o
+  CC      arch/arm/mach-msm/mpm.o
+  CC      kernel/module.o
+  CC      kernel/trace/trace.o
+  CC      arch/arm/mach-msm/rpm_stats.o
+  GZIP    kernel/config_data.gz
+  CC      arch/arm/mach-msm/rpm_master_stat.o
+  CC      arch/arm/mach-msm/rpm_log.o
+  CC      arch/arm/mach-msm/tz_log.o
+  CC      arch/arm/mach-msm/msm_xo.o
+  CC      arch/arm/mach-msm/devices-iommu.o
+  CC      arch/arm/mach-msm/iommu_domains.o
+  CC      arch/arm/mach-msm/gpiomux-8x60_dali.o
+  CC      arch/arm/mach-msm/gpiomux-v2.o
+  CC      arch/arm/mach-msm/gpiomux.o
+  CC      arch/arm/mach-msm/msm_rq_stats.o
+  CC      arch/arm/mach-msm/msm_show_resume_irq.o
+  CC      arch/arm/mach-msm/restart.o
+  CC      arch/arm/mach-msm/timer_page.o
+  CC      arch/arm/mach-msm/sec_debug.o
+  CC      arch/arm/mach-msm/sec_getlog.o
+  CC      arch/arm/mach-msm/sec_gaf.o
+  CC      arch/arm/mach-msm/sec_last_log.o
+  CC      arch/arm/mach-msm/board-bluetooth-bcm4330.o
+  CC [M]  arch/arm/mach-msm/dal_remotetest.o
+  CC [M]  arch/arm/mach-msm/dma_test.o
+arch/arm/mach-msm/timer_page.c: In function 'get_timer_page_address':
+arch/arm/mach-msm/timer_page.c:27:10: error: 'MSM8960_TMR0_PHYS' undeclared (first use in this function)
+arch/arm/mach-msm/timer_page.c:27:10: note: each undeclared identifier is reported only once for each function it appears in
+arch/arm/mach-msm/timer_page.c:29:10: error: 'MSM8930_TMR0_PHYS' undeclared (first use in this function)
+arch/arm/mach-msm/timer_page.c:31:10: error: 'APQ8064_TMR0_PHYS' undeclared (first use in this function)
+make[1]: *** [arch/arm/mach-msm/timer_page.o] 오류 1
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+make: *** [arch/arm/mach-msm] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+  LD      kernel/trace/built-in.o
+  CHK     kernel/config_data.h
+  LD      kernel/built-in.o

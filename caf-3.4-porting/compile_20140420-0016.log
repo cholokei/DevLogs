@@ -1,0 +1,80 @@
+Script started on 2014년 04월 20일 (일) 오전 12시 16분 53초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  CC      kernel/sys.o
+  LD      init/built-in.o
+  CC      arch/arm/mach-msm/sec_switch.o
+  CC      drivers/misc/fsa9480.o
+  CC      drivers/misc/k3dh.o
+  CC      drivers/misc/sec_jack.o
+  CC      drivers/power/power_supply_core.o
+  CC      drivers/regulator/pmic8058-regulator.o
+  CC      drivers/power/power_supply_sysfs.o
+  CC      drivers/power/power_supply_leds.o
+  CC      drivers/power/max17040_battery.o
+  CC      drivers/power/smb328a_charger.o
+  CC      drivers/power/sec_battery.o
+  CC      drivers/misc/pmic8058-xoadc.o
+  CC      drivers/misc/sec_misc.o
+drivers/misc/fsa9480.c: In function 'fsa9480_detect_dev':
+drivers/misc/fsa9480.c:944:5: error: 'ret' undeclared (first use in this function)
+drivers/misc/fsa9480.c:944:5: note: each undeclared identifier is reported only once for each function it appears in
+drivers/misc/fsa9480.c: In function 'fsa9480_irq_handler':
+drivers/misc/fsa9480.c:1443:3: error: 'device_type' undeclared (first use in this function)
+drivers/misc/fsa9480.c:1435:6: warning: unused variable 'device' [-Wunused-variable]
+drivers/misc/fsa9480.c: In function 'fsa9480_init_detect':
+drivers/misc/fsa9480.c:1535:2: error: too few arguments to function 'fsa9480_detect_dev'
+drivers/misc/fsa9480.c:834:13: note: declared here
+make[2]: *** [drivers/misc/fsa9480.o] 오류 1
+make[2]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      drivers/regulator/pmic8901-regulator.o
+  CC      arch/arm/mach-msm/msm_watchdog.o
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  CC      drivers/thermal/pm8xxx-tm.o
+  LD      drivers/power/power_supply.o
+  CC      arch/arm/mach-msm/mdm.o
+  CC      drivers/usb/host/ehci-hcd.o
+  CC      drivers/usb/gadget/msm72k_udc.o
+  CC      drivers/usb/gadget/android.o
+  CC      drivers/usb/otg/msm72k_otg.o
+arch/arm/mach-msm/board-msm8x60_dali.c:162:31: fatal error: linux/i2c/fsa9480.h: No such file or directory
+compilation terminated.
+make[1]: *** [arch/arm/mach-msm/board-msm8x60_dali.o] 오류 1
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      kernel/module.o
+  GZIP    kernel/config_data.gz
+make[1]: *** [drivers/misc] 오류 2
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CHK     kernel/config_data.h
+  LD      drivers/regulator/built-in.o
+  CC      kernel/trace/trace.o
+  CC      drivers/video/msm/mdp4_video_enhance.o
+  LD      drivers/thermal/built-in.o
+  CC      drivers/video/msm/mipi_s6e8aa0_hd720.o
+  CC      drivers/video/msm/sec_mipi_lcd_esd_refresh.o
+make: *** [arch/arm/mach-msm] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      drivers/video/msm/vidc/1080p/ddl/vcd_ddl_helper.o
+  LD      drivers/power/built-in.o
+  CC      drivers/video/msm/vidc/1080p/ddl/vcd_ddl.o
+  CC      drivers/video/msm/vidc/1080p/resource_tracker/vcd_res_tracker.o
+  LD      drivers/video/msm/vidc/vidc.o
+  LD      drivers/video/msm/vidc/vidc_vdec.o
+  LD      drivers/video/msm/vidc/vidc_venc.o
+  LD      drivers/video/msm/vidc/built-in.o
+  LD      drivers/video/msm/built-in.o
+  LD      drivers/usb/otg/built-in.o
+  LD      drivers/video/built-in.o
+  LD      kernel/trace/built-in.o
+  LD      kernel/built-in.o
+  LD      drivers/usb/host/built-in.o
+  LD      drivers/usb/gadget/g_android.o
+  LD      drivers/usb/gadget/built-in.o
+  LD      drivers/usb/built-in.o
+make: *** [drivers] 오류 2

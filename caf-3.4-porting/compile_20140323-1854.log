@@ -1,0 +1,22 @@
+Script started on 2014년 03월 23일 (일) 오후 06시 54분 57초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  CC      kernel/sys.o
+  CC      kernel/trace/trace.o
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  CC      kernel/module.o
+  LD      kernel/trace/built-in.o
+  GZIP    kernel/config_data.gz
+arch/arm/mach-msm/board-msm8x60_dali.c:9635:3: error: 'msm_device_tz_log' undeclared here (not in a function)
+  CHK     kernel/config_data.h
+make[1]: *** [arch/arm/mach-msm/board-msm8x60_dali.o] 오류 1
+make: *** [arch/arm/mach-msm] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+  LD      kernel/built-in.o

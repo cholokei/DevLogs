@@ -1,0 +1,30 @@
+Script started on 2014년 04월 26일 (토) 오후 07시 27분 52초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  CC      kernel/sys.o
+  CC      kernel/module.o
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  CC      kernel/time/alarmtimer.o
+  CC      kernel/trace/trace.o
+  LD      kernel/time/built-in.o
+  LD      kernel/trace/built-in.o
+  LD      kernel/built-in.o
+  LD      vmlinux.o
+drivers/built-in.o: In function `rb_set_parent':
+/home/cholokei/git/android_kernel_samsung_dalikt/include/linux/rbtree.h:125: multiple definition of `alarm_init'
+kernel/built-in.o:/home/cholokei/git/android_kernel_samsung_dalikt/kernel/time/alarmtimer.c:303: first defined here
+drivers/built-in.o: In function `alarm_cancel':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/rtc/alarm.c:233: multiple definition of `alarm_cancel'
+kernel/built-in.o:/home/cholokei/git/android_kernel_samsung_dalikt/kernel/time/alarmtimer.c:387: first defined here
+drivers/built-in.o: In function `alarm_try_to_cancel':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/rtc/alarm.c:195: multiple definition of `alarm_try_to_cancel'
+kernel/built-in.o:/home/cholokei/git/android_kernel_samsung_dalikt/kernel/time/alarmtimer.c:366: first defined here
+make: *** [vmlinux.o] 오류 1

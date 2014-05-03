@@ -1,0 +1,51 @@
+Script started on 2014년 04월 28일 (월) 오전 12시 36분 08초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  CC      kernel/sys.o
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  CC      kernel/module.o
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  CC      kernel/trace/trace.o
+arch/arm/mach-msm/board-msm8x60_dali.c: In function 'fsa9480_otg_cb':
+arch/arm/mach-msm/board-msm8x60_dali.c:4485:50: error: 'attached' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4485:50: note: each undeclared identifier is reported only once for each function it appears in
+arch/arm/mach-msm/board-msm8x60_dali.c: In function 'fsa9480_usb_cb':
+arch/arm/mach-msm/board-msm8x60_dali.c:4521:50: error: 'attached' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c: In function 'fsa9480_charger_cb':
+arch/arm/mach-msm/board-msm8x60_dali.c:4589:54: error: 'attached' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c: In function 'fsa9480_jig_cb':
+arch/arm/mach-msm/board-msm8x60_dali.c:4653:50: error: 'attached' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c: In function 'fsa9480_mhl_cb':
+arch/arm/mach-msm/board-msm8x60_dali.c:4705:50: error: 'attached' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c: In function 'fsa9480_deskdock_cb':
+arch/arm/mach-msm/board-msm8x60_dali.c:4760:55: error: 'attached' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c: In function 'fsa9480_cardock_cb':
+arch/arm/mach-msm/board-msm8x60_dali.c:4823:55: error: 'attached' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c: At top level:
+arch/arm/mach-msm/board-msm8x60_dali.c:4881:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4881:2: warning: (near initialization for 'fsa9480_pdata.otg_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4882:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4882:2: warning: (near initialization for 'fsa9480_pdata.usb_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4883:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4883:2: warning: (near initialization for 'fsa9480_pdata.charger_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4884:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4884:2: warning: (near initialization for 'fsa9480_pdata.jig_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4885:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4885:2: warning: (near initialization for 'fsa9480_pdata.deskdock_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4886:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4886:2: warning: (near initialization for 'fsa9480_pdata.cardock_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4889:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4889:2: warning: (near initialization for 'fsa9480_pdata.mhl_cb') [enabled by default]
+make[1]: *** [arch/arm/mach-msm/board-msm8x60_dali.o] 오류 1
+make: *** [arch/arm/mach-msm] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+  LD      kernel/trace/built-in.o
+  LD      kernel/built-in.o

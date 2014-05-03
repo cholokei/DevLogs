@@ -1,0 +1,34 @@
+Script started on 2014년 04월 26일 (토) 오후 07시 50분 07초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  CC      kernel/sys.o
+  CC      drivers/power/sec_battery.o
+  LD      drivers/rtc/built-in.o
+  CC      kernel/module.o
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  CC      kernel/trace/trace.o
+  UPD     kernel/config_data.h
+  CC      kernel/configs.o
+  LD      drivers/power/built-in.o
+  LD      drivers/built-in.o
+  LD      kernel/trace/built-in.o
+  LD      kernel/built-in.o
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  LD      .tmp_vmlinux1
+drivers/built-in.o: In function `sec_bat_read_proc':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/power/sec_battery.c:3937: undefined reference to `alarm_get_elapsed_realtime'
+make: *** [.tmp_vmlinux1] 오류 1

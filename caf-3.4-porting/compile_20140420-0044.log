@@ -1,0 +1,43 @@
+Script started on 2014년 04월 20일 (일) 오전 12시 44분 43초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      drivers/misc/fsa9480.o
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+drivers/misc/fsa9480.c: In function 'fsa9480_init_detect':
+drivers/misc/fsa9480.c:1536:19: error: 'client' undeclared (first use in this function)
+drivers/misc/fsa9480.c:1536:19: note: each undeclared identifier is reported only once for each function it appears in
+drivers/misc/fsa9480.c:1536:28: error: 'intr' undeclared (first use in this function)
+make[2]: *** [drivers/misc/fsa9480.o] 오류 1
+make[1]: *** [drivers/misc] 오류 2
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      arch/arm/mach-msm/sec_debug.o
+  CC      arch/arm/mach-msm/sec_getlog.o
+  CC      arch/arm/mach-msm/sec_gaf.o
+  CC      arch/arm/mach-msm/sec_last_log.o
+  CC      arch/arm/mach-msm/board-bluetooth-bcm4330.o
+  CC [M]  arch/arm/mach-msm/dal_remotetest.o
+arch/arm/mach-msm/board-msm8x60_dali.c:4881:2: warning: initialization from incompatible pointer type [enabled by default]  CC [M]  arch/arm/mach-msm/dma_test.o
+  CC [M]  arch/arm/mach-msm/msm-buspm-dev.o
+
+arch/arm/mach-msm/board-msm8x60_dali.c:4881:2: warning: (near initialization for 'fsa9480_pdata.otg_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4882:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4882:2: warning: (near initialization for 'fsa9480_pdata.usb_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4883:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4883:2: warning: (near initialization for 'fsa9480_pdata.charger_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4884:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4884:2: warning: (near initialization for 'fsa9480_pdata.jig_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4885:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4885:2: warning: (near initialization for 'fsa9480_pdata.deskdock_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4886:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4886:2: warning: (near initialization for 'fsa9480_pdata.cardock_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4889:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4889:2: warning: (near initialization for 'fsa9480_pdata.mhl_cb') [enabled by default]
+make: *** [drivers] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+  LD      arch/arm/mach-msm/built-in.o

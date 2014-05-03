@@ -1,0 +1,323 @@
+Script started on 2014년 04월 21일 (월) 오전 01시 50분 23초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  CC      drivers/bluetooth/bluesleep_bcm.o
+drivers/bluetooth/bluesleep_bcm.c: In function 'bluesleep_sleep_wakeup_wq':
+drivers/bluetooth/bluesleep_bcm.c:223:8: warning: unused variable 'ret' [-Wunused-variable]
+drivers/bluetooth/bluesleep_bcm.c: In function 'bluesleep_start_wq':
+drivers/bluetooth/bluesleep_bcm.c:483:6: warning: unused variable 'ret' [-Wunused-variable]
+  CC      sound/soc/soc-jack.o
+  CC      arch/arm/mach-msm/msm_dsps.o
+  LD      drivers/bluetooth/built-in.o
+  CC      drivers/gpio/gpiolib.o
+  CC      drivers/gpio/devres.o
+  CC      arch/arm/mach-msm/devices-msm8x60.o
+  CC      drivers/gpio/gpio-msm-common.o
+  CC      kernel/sys.o
+  CC      drivers/gpio/gpio-msm-v2.o
+  LD      sound/soc/snd-soc-core.o
+  CC      drivers/i2c/busses/i2c-gpio.o
+  CC      drivers/gpio/pm8xxx-gpio.o
+  CC      drivers/gpio/pm8xxx-mpp.o
+  CC      drivers/gpio/gpio-sx150x.o
+  CC      drivers/i2c/busses/i2c-qup.o
+  LD      sound/soc/built-in.o
+  CC      arch/arm/mach-msm/sec_switch.o
+  LD      drivers/gpio/built-in.o
+  CC      drivers/i2c/chips/yda165.o
+  CC      drivers/i2c/chips/gp2ap020_proximity.o
+  LD      drivers/i2c/busses/built-in.o
+  CC      drivers/i2c/chips/k3g.o
+  LD      sound/built-in.o
+  CC      arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.o
+  CC      drivers/leds/leds-gpio.o
+  CC      drivers/input/misc/pmic8058-othc.o
+  CC      drivers/input/touchscreen/melfas_ts.o
+  CC      drivers/input/keyboard/gpio_keys.o
+  CC      drivers/input/keyboard/matrix_keypad.o
+  CC      drivers/input/keyboard/cypress-touchkey_dali.o
+  LD      drivers/leds/built-in.o
+  CC      drivers/media/tdmb/tdmb.o
+Using built-in specs.
+COLLECT_GCC=arm-eabi-gcc
+COLLECT_LTO_WRAPPER=/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../libexec/gcc/arm-eabi/4.6.x-google/lto-wrapper
+Target: arm-eabi
+Configured with: /tmp/android-15472/src/build/../gcc/gcc-4.6/configure --prefix=/usr/local --target=arm-eabi --host=x86_64-linux-gnu --build=x86_64-linux-gnu --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --with-gmp=/tmp/android-15472/obj/temp-install --with-mpfr=/tmp/android-15472/obj/temp-install --with-mpc=/tmp/android-15472/obj/temp-install --without-ppl --without-cloog --disable-libssp --enable-threads --disable-nls --disable-libmudflap --disable-libgomp --disable-libstdc__-v3 --disable-sjlj-exceptions --disable-shared --disable-tls --disable-libitm --with-float=soft --with-fpu=vfp --with-arch=armv5te --enable-target-optspace --with-abi=aapcs --with-gcc-version=4.6 --with-binutils-version=2.21 --with-gmp-version=4.2.4 --with-mpfr-version=2.4.1 --with-gdb-version=7.3.x --with-arch=armv5te --with-sysroot=/tmp/android-15472/install/sysroot --with-prefix=/tmp/android-15472/install --with-gold-version=2.21 --enable-gold --disable-gold --disable-multilib --program-transform-name='s&^&arm-eabi-&'
+Thread model: single
+gcc version 4.6.x-google 20120106 (prerelease) (GCC) 
+COLLECT_GCC_OPTIONS='-nostdinc' '-isystem' '/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include' '-I' '/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include' '-I' 'arch/arm/include/generated' '-I' 'include' '-include' '/home/cholokei/git/android_kernel_samsung_dalikt/include/linux/kconfig.h' '-D' '__KERNEL__' '-mlittle-endian' '-I' 'arch/arm/mach-msm/include' '-Wall' '-Wundef' '-Wstrict-prototypes' '-Wno-trigraphs' '-fno-strict-aliasing' '-fno-common' '-Wno-format-security' '-fno-delete-null-pointer-checks' '-Os' '-marm' '-fno-dwarf2-cfi-asm' '-mabi=aapcs-linux' '-mno-thumb-interwork' '-funwind-tables' '-D' '__LINUX_ARM_ARCH__=7' '-march=armv7-a' '-msoft-float' '-U' 'arm' '-Wframe-larger-than=1024' '-fno-stack-protector' '-Wno-unused-but-set-variable' '-fomit-frame-pointer' '-g' '-Wdeclaration-after-statement' '-Wno-pointer-sign' '-fno-strict-overflow' '-fconserve-stack' '-I' 'drivers/media/tdmb' '-v' '-I' 'drivers/media/tdmb/t3900' '-I' 'drivers/media/tdmb/fc8050' '-D' 'KBUILD_STR(s)=#s' '-D' 'KBUILD_BASENAME=KBUILD_STR(tdmb)' '-D' 'KBUILD_MODNAME=KBUILD_STR(tdmb)' '-c' '-o' 'drivers/media/tdmb/.tmp_tdmb.o' '-mfpu=vfp'
+ /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../libexec/gcc/arm-eabi/4.6.x-google/cc1 -quiet -nostdinc -v -I /home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include -I arch/arm/include/generated -I include -I arch/arm/mach-msm/include -I drivers/media/tdmb -I drivers/media/tdmb/t3900 -I drivers/media/tdmb/fc8050 -iprefix /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/ -D__USES_INITFINI__ -D __KERNEL__ -D __LINUX_ARM_ARCH__=7 -U arm -D KBUILD_STR(s)=#s -D KBUILD_BASENAME=KBUILD_STR(tdmb) -D KBUILD_MODNAME=KBUILD_STR(tdmb) -isystem /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include -include /home/cholokei/git/android_kernel_samsung_dalikt/include/linux/kconfig.h -MD drivers/media/tdmb/.tdmb.o.d drivers/media/tdmb/tdmb.c -quiet -dumpbase tdmb.c -mlittle-endian -marm -mabi=aapcs-linux -mno-thumb-interwork -march=armv7-a -msoft-float -mfpu=vfp -auxbase-strip drivers/media/tdmb/.tmp_tdmb.o -g -Os -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -Wno-format-security -Wframe-larger-than=1024 -Wno-unused-but-set-variable -Wdeclaration-after-statement -Wno-pointer-sign -version -fno-strict-aliasing -fno-common -fno-delete-null-pointer-checks -fno-dwarf2-cfi-asm -funwind-tables -fno-stack-protector -fomit-frame-pointer -fno-strict-overflow -fconserve-stack -o /tmp/ccfiXCRv.s
+GNU C (GCC) version 4.6.x-google 20120106 (prerelease) (arm-eabi)
+	compiled by GNU C version 4.4.3, GMP version 4.2.4, MPFR version 2.4.1, MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include
+ arch/arm/include/generated
+ include
+ arch/arm/mach-msm/include
+ drivers/media/tdmb
+ drivers/media/tdmb/t3900
+ drivers/media/tdmb/fc8050
+ /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include
+End of search list.
+GNU C (GCC) version 4.6.x-google 20120106 (prerelease) (arm-eabi)
+	compiled by GNU C version 4.4.3, GMP version 4.2.4, MPFR version 2.4.1, MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 7e0a3541f55243241c747ff83ef85799
+  CC      drivers/mmc/core/cd-gpio.o
+  CC      kernel/trace/trace.o
+  CC      kernel/module.o
+  GZIP    kernel/config_data.gz
+  CC      arch/arm/mach-msm/qdsp6v2/snddev_icodec.o
+  CC      drivers/misc/tspdrv/tspdrv.o
+  CC      arch/arm/mach-msm/qdsp6v2/snddev_ecodec.o
+  LD      drivers/i2c/chips/built-in.o
+  LD      drivers/i2c/built-in.o
+  CC      drivers/media/video/vcap_v4l2.o
+drivers/media/tdmb/tdmb.c: In function 'tdmb_mmap':  CC      drivers/input/touchscreen/mcs8000_download.o
+
+drivers/media/tdmb/tdmb.c:208:2: warning: format '%lx' expects argument of type 'long unsigned int', but argument 5 has type 'pgprot_t' [-Wformat]
+  CC      drivers/net/ethernet/smsc/smsc911x.o
+  LD      drivers/mmc/core/mmc_core.o
+COLLECT_GCC_OPTIONS='-nostdinc' '-isystem' '/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include' '-I' '/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include' '-I' 'arch/arm/include/generated' '-I' 'include' '-include' '/home/cholokei/git/android_kernel_samsung_dalikt/include/linux/kconfig.h' '-D' '__KERNEL__' '-mlittle-endian' '-I' 'arch/arm/mach-msm/include' '-Wall' '-Wundef' '-Wstrict-prototypes' '-Wno-trigraphs' '-fno-strict-aliasing' '-fno-common' '-Wno-format-security' '-fno-delete-null-pointer-checks' '-Os' '-marm' '-fno-dwarf2-cfi-asm' '-mabi=aapcs-linux' '-mno-thumb-interwork' '-funwind-tables' '-D' '__LINUX_ARM_ARCH__=7' '-march=armv7-a' '-msoft-float' '-U' 'arm' '-Wframe-larger-than=1024' '-fno-stack-protector' '-Wno-unused-but-set-variable' '-fomit-frame-pointer' '-g' '-Wdeclaration-after-statement' '-Wno-pointer-sign' '-fno-strict-overflow' '-fconserve-stack' '-I' 'drivers/media/tdmb' '-v' '-I' 'drivers/media/tdmb/t3900' '-I' 'drivers/media/tdmb/fc8050' '-D' 'KBUILD_STR(s)=#s' '-D' 'KBUILD_BASENAME=KBUILD_STR(tdmb)' '-D' 'KBUILD_MODNAME=KBUILD_STR(tdmb)' '-c' '-o' 'drivers/media/tdmb/.tmp_tdmb.o' '-mfpu=vfp'
+ /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/../../../../arm-eabi/bin/as -v -I /home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include -I arch/arm/include/generated -I include -I arch/arm/mach-msm/include -I drivers/media/tdmb -I drivers/media/tdmb/t3900 -I drivers/media/tdmb/fc8050 -EL -march=armv7-a -mfloat-abi=soft -mfpu=vfp -meabi=5 -o drivers/media/tdmb/.tmp_tdmb.o /tmp/ccfiXCRv.s
+GNU assembler version 2.21 (arm-eabi) using BFD version (GNU Binutils) 2.21
+  LD      drivers/mmc/core/built-in.o
+  CC      drivers/mmc/host/msm_sdcc.o
+  CC      drivers/misc/fsa9480.o
+  CC      arch/arm/mach-msm/qdsp6v2/snddev_mi2s.o
+COMPILER_PATH=/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../libexec/gcc/arm-eabi/4.6.x-google/:/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../libexec/gcc/:/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/../../../../arm-eabi/bin/
+LIBRARY_PATH=/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/:/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/:/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/../../../../arm-eabi/lib/
+COLLECT_GCC_OPTIONS='-nostdinc' '-isystem' '/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include' '-I' '/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include' '-I' 'arch/arm/include/generated' '-I' 'include' '-include' '/home/cholokei/git/android_kernel_samsung_dalikt/include/linux/kconfig.h' '-D' '__KERNEL__' '-mlittle-endian' '-I' 'arch/arm/mach-msm/include' '-Wall' '-Wundef' '-Wstrict-prototypes' '-Wno-trigraphs' '-fno-strict-aliasing' '-fno-common' '-Wno-format-security' '-fno-delete-null-pointer-checks' '-Os' '-marm' '-fno-dwarf2-cfi-asm' '-mabi=aapcs-linux' '-mno-thumb-interwork' '-funwind-tables' '-D' '__LINUX_ARM_ARCH__=7' '-march=armv7-a' '-msoft-float' '-U' 'arm' '-Wframe-larger-than=1024' '-fno-stack-protector' '-Wno-unused-but-set-variable' '-fomit-frame-pointer' '-g' '-Wdeclaration-after-statement' '-Wno-pointer-sign' '-fno-strict-overflow' '-fconserve-stack' '-I' 'drivers/media/tdmb' '-v' '-I' 'drivers/media/tdmb/t3900' '-I' 'drivers/media/tdmb/fc8050' '-D' 'KBUILD_STR(s)=#s' '-D' 'KBUILD_BASENAME=KBUILD_STR(tdmb)' '-D' 'KBUILD_MODNAME=KBUILD_STR(tdmb)' '-c' '-o' 'drivers/media/tdmb/.tmp_tdmb.o' '-mfpu=vfp'
+  CC      drivers/media/tdmb/tdmb_data.o
+Using built-in specs.
+COLLECT_GCC=arm-eabi-gcc
+COLLECT_LTO_WRAPPER=/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../libexec/gcc/arm-eabi/4.6.x-google/lto-wrapper
+Target: arm-eabi
+Configured with: /tmp/android-15472/src/build/../gcc/gcc-4.6/configure --prefix=/usr/local --target=arm-eabi --host=x86_64-linux-gnu --build=x86_64-linux-gnu --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --with-gmp=/tmp/android-15472/obj/temp-install --with-mpfr=/tmp/android-15472/obj/temp-install --with-mpc=/tmp/android-15472/obj/temp-install --without-ppl --without-cloog --disable-libssp --enable-threads --disable-nls --disable-libmudflap --disable-libgomp --disable-libstdc__-v3 --disable-sjlj-exceptions --disable-shared --disable-tls --disable-libitm --with-float=soft --with-fpu=vfp --with-arch=armv5te --enable-target-optspace --with-abi=aapcs --with-gcc-version=4.6 --with-binutils-version=2.21 --with-gmp-version=4.2.4 --with-mpfr-version=2.4.1 --with-gdb-version=7.3.x --with-arch=armv5te --with-sysroot=/tmp/android-15472/install/sysroot --with-prefix=/tmp/android-15472/install --with-gold-version=2.21 --enable-gold --disable-gold --disable-multilib --program-transform-name='s&^&arm-eabi-&'
+Thread model: single
+gcc version 4.6.x-google 20120106 (prerelease) (GCC) 
+COLLECT_GCC_OPTIONS='-nostdinc' '-isystem' '/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include' '-I' '/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include' '-I' 'arch/arm/include/generated' '-I' 'include' '-include' '/home/cholokei/git/android_kernel_samsung_dalikt/include/linux/kconfig.h' '-D' '__KERNEL__' '-mlittle-endian' '-I' 'arch/arm/mach-msm/include' '-Wall' '-Wundef' '-Wstrict-prototypes' '-Wno-trigraphs' '-fno-strict-aliasing' '-fno-common' '-Wno-format-security' '-fno-delete-null-pointer-checks' '-Os' '-marm' '-fno-dwarf2-cfi-asm' '-mabi=aapcs-linux' '-mno-thumb-interwork' '-funwind-tables' '-D' '__LINUX_ARM_ARCH__=7' '-march=armv7-a' '-msoft-float' '-U' 'arm' '-Wframe-larger-than=1024' '-fno-stack-protector' '-Wno-unused-but-set-variable' '-fomit-frame-pointer' '-g' '-Wdeclaration-after-statement' '-Wno-pointer-sign' '-fno-strict-overflow' '-fconserve-stack' '-I' 'drivers/media/tdmb' '-v' '-I' 'drivers/media/tdmb/t3900' '-I' 'drivers/media/tdmb/fc8050' '-D' 'KBUILD_STR(s)=#s' '-D' 'KBUILD_BASENAME=KBUILD_STR(tdmb_data)' '-D' 'KBUILD_MODNAME=KBUILD_STR(tdmb_data)' '-c' '-o' 'drivers/media/tdmb/.tmp_tdmb_data.o' '-mfpu=vfp'
+ /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../libexec/gcc/arm-eabi/4.6.x-google/cc1 -quiet -nostdinc -v -I /home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include -I arch/arm/include/generated -I include -I arch/arm/mach-msm/include -I drivers/media/tdmb -I drivers/media/tdmb/t3900 -I drivers/media/tdmb/fc8050 -iprefix /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/ -D__USES_INITFINI__ -D __KERNEL__ -D __LINUX_ARM_ARCH__=7 -U arm -D KBUILD_STR(s)=#s -D KBUILD_BASENAME=KBUILD_STR(tdmb_data) -D KBUILD_MODNAME=KBUILD_STR(tdmb_data) -isystem /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include -include /home/cholokei/git/android_kernel_samsung_dalikt/include/linux/kconfig.h -MD drivers/media/tdmb/.tdmb_data.o.d drivers/media/tdmb/tdmb_data.c -quiet -dumpbase tdmb_data.c -mlittle-endian -marm -mabi=aapcs-linux -mno-thumb-interwork -march=armv7-a -msoft-float -mfpu=vfp -auxbase-strip drivers/media/tdmb/.tmp_tdmb_data.o -g -Os -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -Wno-format-security -Wframe-larger-than=1024 -Wno-unused-but-set-variable -Wdeclaration-after-statement -Wno-pointer-sign -version -fno-strict-aliasing -fno-common -fno-delete-null-pointer-checks -fno-dwarf2-cfi-asm -funwind-tables -fno-stack-protector -fomit-frame-pointer -fno-strict-overflow -fconserve-stack -o /tmp/ccKeAe3v.s
+GNU C (GCC) version 4.6.x-google 20120106 (prerelease) (arm-eabi)
+	compiled by GNU C version 4.4.3, GMP version 4.2.4, MPFR version 2.4.1, MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include
+ arch/arm/include/generated
+ include
+ arch/arm/mach-msm/include
+ drivers/media/tdmb
+ drivers/media/tdmb/t3900
+ drivers/media/tdmb/fc8050
+ /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include
+End of search list.
+GNU C (GCC) version 4.6.x-google 20120106 (prerelease) (arm-eabi)
+	compiled by GNU C version 4.4.3, GMP version 4.2.4, MPFR version 2.4.1, MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 7e0a3541f55243241c747ff83ef85799
+  CC      drivers/input/keyboard/issp_driver_routines.o
+  CC      drivers/input/keyboard/issp_main.o
+  LD      drivers/misc/tspdrv/built-in.o
+  CC      drivers/misc/ak8975.o
+  CC      drivers/misc/k3dh.o
+  CC      drivers/input/keyboard/issp_routines.o
+  LD      drivers/input/misc/built-in.o
+  CC      drivers/media/tdmb/tdmb_port_t3900.o
+Using built-in specs.
+COLLECT_GCC=arm-eabi-gcc
+COLLECT_LTO_WRAPPER=/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../libexec/gcc/arm-eabi/4.6.x-google/lto-wrapper
+Target: arm-eabi
+Configured with: /tmp/android-15472/src/build/../gcc/gcc-4.6/configure --prefix=/usr/local --target=arm-eabi --host=x86_64-linux-gnu --build=x86_64-linux-gnu --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --with-gmp=/tmp/android-15472/obj/temp-install --with-mpfr=/tmp/android-15472/obj/temp-install --with-mpc=/tmp/android-15472/obj/temp-install --without-ppl --without-cloog --disable-libssp --enable-threads --disable-nls --disable-libmudflap --disable-libgomp --disable-libstdc__-v3 --disable-sjlj-exceptions --disable-shared --disable-tls --disable-libitm --with-float=soft --with-fpu=vfp --with-arch=armv5te --enable-target-optspace --with-abi=aapcs --with-gcc-version=4.6 --with-binutils-version=2.21 --with-gmp-version=4.2.4 --with-mpfr-version=2.4.1 --with-gdb-version=7.3.x --with-arch=armv5te --with-sysroot=/tmp/android-15472/install/sysroot --with-prefix=/tmp/android-15472/install --with-gold-version=2.21 --enable-gold --disable-gold --disable-multilib --program-transform-name='s&^&arm-eabi-&'
+Thread model: single
+gcc version 4.6.x-google 20120106 (prerelease) (GCC) 
+COLLECT_GCC_OPTIONS='-nostdinc' '-isystem' '/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include' '-I' '/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include' '-I' 'arch/arm/include/generated' '-I' 'include' '-include' '/home/cholokei/git/android_kernel_samsung_dalikt/include/linux/kconfig.h' '-D' '__KERNEL__' '-mlittle-endian' '-I' 'arch/arm/mach-msm/include' '-Wall' '-Wundef' '-Wstrict-prototypes' '-Wno-trigraphs' '-fno-strict-aliasing' '-fno-common' '-Wno-format-security' '-fno-delete-null-pointer-checks' '-Os' '-marm' '-fno-dwarf2-cfi-asm' '-mabi=aapcs-linux' '-mno-thumb-interwork' '-funwind-tables' '-D' '__LINUX_ARM_ARCH__=7' '-march=armv7-a' '-msoft-float' '-U' 'arm' '-Wframe-larger-than=1024' '-fno-stack-protector' '-Wno-unused-but-set-variable' '-fomit-frame-pointer' '-g' '-Wdeclaration-after-statement' '-Wno-pointer-sign' '-fno-strict-overflow' '-fconserve-stack' '-I' 'drivers/media/tdmb' '-v' '-I' 'drivers/media/tdmb/t3900' '-I' 'drivers/media/tdmb/fc8050' '-D' 'KBUILD_STR(s)=#s' '-D' 'KBUILD_BASENAME=KBUILD_STR(tdmb_port_t3900)' '-D' 'KBUILD_MODNAME=KBUILD_STR(tdmb_port_t3900)' '-c' '-o' 'drivers/media/tdmb/.tmp_tdmb_port_t3900.o' '-mfpu=vfp'
+ /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../libexec/gcc/arm-eabi/4.6.x-google/cc1 -quiet -nostdinc -v -I /home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include -I arch/arm/include/generated -I include -I arch/arm/mach-msm/include -I drivers/media/tdmb -I drivers/media/tdmb/t3900 -I drivers/media/tdmb/fc8050 -iprefix /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/ -D__USES_INITFINI__ -D __KERNEL__ -D __LINUX_ARM_ARCH__=7 -U arm -D KBUILD_STR(s)=#s -D KBUILD_BASENAME=KBUILD_STR(tdmb_port_t3900) -D KBUILD_MODNAME=KBUILD_STR(tdmb_port_t3900) -isystem /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include -include /home/cholokei/git/android_kernel_samsung_dalikt/include/linux/kconfig.h -MD drivers/media/tdmb/.tdmb_port_t3900.o.d drivers/media/tdmb/tdmb_port_t3900.c -quiet -dumpbase tdmb_port_t3900.c -mlittle-endian -marm -mabi=aapcs-linux -mno-thumb-interwork -march=armv7-a -msoft-float -mfpu=vfp -auxbase-strip drivers/media/tdmb/.tmp_tdmb_port_t3900.o -g -Os -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -Wno-format-security -Wframe-larger-than=1024 -Wno-unused-but-set-variable -Wdeclaration-after-statement -Wno-pointer-sign -version -fno-strict-aliasing -fno-common -fno-delete-null-pointer-checks -fno-dwarf2-cfi-asm -funwind-tables -fno-stack-protector -fomit-frame-pointer -fno-strict-overflow -fconserve-stack -o /tmp/ccVrX56Y.s
+GNU C (GCC) version 4.6.x-google 20120106 (prerelease) (arm-eabi)
+	compiled by GNU C version 4.4.3, GMP version 4.2.4, MPFR version 2.4.1, MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include
+ arch/arm/include/generated
+ include
+ arch/arm/mach-msm/include
+ drivers/media/tdmb
+ drivers/media/tdmb/t3900
+ drivers/media/tdmb/fc8050
+ /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include
+End of search list.
+GNU C (GCC) version 4.6.x-google 20120106 (prerelease) (arm-eabi)
+	compiled by GNU C version 4.4.3, GMP version 4.2.4, MPFR version 2.4.1, MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 7e0a3541f55243241c747ff83ef85799
+  LD      drivers/input/touchscreen/built-in.o
+  CC      drivers/media/tdmb/tdmb_port_fc8050.o
+COLLECT_GCC_OPTIONS='-nostdinc' '-isystem' '/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include' '-I' '/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include' '-I' 'arch/arm/include/generated' '-I' 'include' '-include' '/home/cholokei/git/android_kernel_samsung_dalikt/include/linux/kconfig.h' '-D' '__KERNEL__' '-mlittle-endian' '-I' 'arch/arm/mach-msm/include' '-Wall' '-Wundef' '-Wstrict-prototypes' '-Wno-trigraphs' '-fno-strict-aliasing' '-fno-common' '-Wno-format-security' '-fno-delete-null-pointer-checks' '-Os' '-marm' '-fno-dwarf2-cfi-asm' '-mabi=aapcs-linux' '-mno-thumb-interwork' '-funwind-tables' '-D' '__LINUX_ARM_ARCH__=7' '-march=armv7-a' '-msoft-float' '-U' 'arm' '-Wframe-larger-than=1024' '-fno-stack-protector' '-Wno-unused-but-set-variable' '-fomit-frame-pointer' '-g' '-Wdeclaration-after-statement' '-Wno-pointer-sign' '-fno-strict-overflow' '-fconserve-stack' '-I' 'drivers/media/tdmb' '-v' '-I' 'drivers/media/tdmb/t3900' '-I' 'drivers/media/tdmb/fc8050' '-D' 'KBUILD_STR(s)=#s' '-D' 'KBUILD_BASENAME=KBUILD_STR(tdmb_data)' '-D' 'KBUILD_MODNAME=KBUILD_STR(tdmb_data)' '-c' '-o' 'drivers/media/tdmb/.tmp_tdmb_data.o' '-mfpu=vfp'
+ /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/../../../../arm-eabi/bin/as -v -I /home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include -I arch/arm/include/generated -I include -I arch/arm/mach-msm/include -I drivers/media/tdmb -I drivers/media/tdmb/t3900 -I drivers/media/tdmb/fc8050 -EL -march=armv7-a -mfloat-abi=soft -mfpu=vfp -meabi=5 -o drivers/media/tdmb/.tmp_tdmb_data.o /tmp/ccKeAe3v.s
+Using built-in specs.
+COLLECT_GCC=arm-eabi-gcc
+COLLECT_LTO_WRAPPER=/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../libexec/gcc/arm-eabi/4.6.x-google/lto-wrapper
+Target: arm-eabi
+Configured with: /tmp/android-15472/src/build/../gcc/gcc-4.6/configure --prefix=/usr/local --target=arm-eabi --host=x86_64-linux-gnu --build=x86_64-linux-gnu --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --with-gmp=/tmp/android-15472/obj/temp-install --with-mpfr=/tmp/android-15472/obj/temp-install --with-mpc=/tmp/android-15472/obj/temp-install --without-ppl --without-cloog --disable-libssp --enable-threads --disable-nls --disable-libmudflap --disable-libgomp --disable-libstdc__-v3 --disable-sjlj-exceptions --disable-shared --disable-tls --disable-libitm --with-float=soft --with-fpu=vfp --with-arch=armv5te --enable-target-optspace --with-abi=aapcs --with-gcc-version=4.6 --with-binutils-version=2.21 --with-gmp-version=4.2.4 --with-mpfr-version=2.4.1 --with-gdb-version=7.3.x --with-arch=armv5te --with-sysroot=/tmp/android-15472/install/sysroot --with-prefix=/tmp/android-15472/install --with-gold-version=2.21 --enable-gold --disable-gold --disable-multilib --program-transform-name='s&^&arm-eabi-&'
+Thread model: single
+gcc version 4.6.x-google 20120106 (prerelease) (GCC) 
+COLLECT_GCC_OPTIONS='-nostdinc' '-isystem' '/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include' '-I' '/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include' '-I' 'arch/arm/include/generated' '-I' 'include' '-include' '/home/cholokei/git/android_kernel_samsung_dalikt/include/linux/kconfig.h' '-D' '__KERNEL__' '-mlittle-endian' '-I' 'arch/arm/mach-msm/include' '-Wall' '-Wundef' '-Wstrict-prototypes' '-Wno-trigraphs' '-fno-strict-aliasing' '-fno-common' '-Wno-format-security' '-fno-delete-null-pointer-checks' '-Os' '-marm' '-fno-dwarf2-cfi-asm' '-mabi=aapcs-linux' '-mno-thumb-interwork' '-funwind-tables' '-D' '__LINUX_ARM_ARCH__=7' '-march=armv7-a' '-msoft-float' '-U' 'arm' '-Wframe-larger-than=1024' '-fno-stack-protector' '-Wno-unused-but-set-variable' '-fomit-frame-pointer' '-g' '-Wdeclaration-after-statement' '-Wno-pointer-sign' '-fno-strict-overflow' '-fconserve-stack' '-I' 'drivers/media/tdmb' '-v' '-I' 'drivers/media/tdmb/t3900' '-I' 'drivers/media/tdmb/fc8050' '-D' 'KBUILD_STR(s)=#s' '-D' 'KBUILD_BASENAME=KBUILD_STR(tdmb_port_fc8050)' '-D' 'KBUILD_MODNAME=KBUILD_STR(tdmb_port_fc8050)' '-c' '-o' 'drivers/media/tdmb/.tmp_tdmb_port_fc8050.o' '-mfpu=vfp'
+ /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../libexec/gcc/arm-eabi/4.6.x-google/cc1 -quiet -nostdinc -v -I /home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include -I arch/arm/include/generated -I include -I arch/arm/mach-msm/include -I drivers/media/tdmb -I drivers/media/tdmb/t3900 -I drivers/media/tdmb/fc8050 -iprefix /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/ -D__USES_INITFINI__ -D __KERNEL__ -D __LINUX_ARM_ARCH__=7 -U arm -D KBUILD_STR(s)=#s -D KBUILD_BASENAME=KBUILD_STR(tdmb_port_fc8050) -D KBUILD_MODNAME=KBUILD_STR(tdmb_port_fc8050) -isystem /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include -include /home/cholokei/git/android_kernel_samsung_dalikt/include/linux/kconfig.h -MD drivers/media/tdmb/.tdmb_port_fc8050.o.d drivers/media/tdmb/tdmb_port_fc8050.c -quiet -dumpbase tdmb_port_fc8050.c -mlittle-endian -marm -mabi=aapcs-linux -mno-thumb-interwork -march=armv7-a -msoft-float -mfpu=vfp -auxbase-strip drivers/media/tdmb/.tmp_tdmb_port_fc8050.o -g -Os -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -Wno-format-security -Wframe-larger-than=1024 -Wno-unused-but-set-variable -Wdeclaration-after-statement -Wno-pointer-sign -version -fno-strict-aliasing -fno-common -fno-delete-null-pointer-checks -fno-dwarf2-cfi-asm -funwind-tables -fno-stack-protector -fomit-frame-pointer -fno-strict-overflow -fconserve-stack -o /tmp/cc6gqkXe.s
+GNU assembler version 2.21 (arm-eabi) using BFD version (GNU Binutils) 2.21
+  CC      drivers/media/tdmb/fc8050/dmbdrv_wrap_fc8050.o
+GNU C (GCC) version 4.6.x-google 20120106 (prerelease) (arm-eabi)
+	compiled by GNU C version 4.4.3, GMP version 4.2.4, MPFR version 2.4.1, MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include
+ arch/arm/include/generated
+ include
+ arch/arm/mach-msm/include
+ drivers/media/tdmb
+ drivers/media/tdmb/t3900
+ drivers/media/tdmb/fc8050
+ /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include
+End of search list.
+GNU C (GCC) version 4.6.x-google 20120106 (prerelease) (arm-eabi)
+	compiled by GNU C version 4.4.3, GMP version 4.2.4, MPFR version 2.4.1, MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+  CC      drivers/media/tdmb/t3900/INC_FICDEC.o
+Compiler executable checksum: 7e0a3541f55243241c747ff83ef85799
+COMPILER_PATH=/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../libexec/gcc/arm-eabi/4.6.x-google/:/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../libexec/gcc/:/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/../../../../arm-eabi/bin/
+LIBRARY_PATH=/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/:/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/:/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/../../../../arm-eabi/lib/
+COLLECT_GCC_OPTIONS='-nostdinc' '-isystem' '/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include' '-I' '/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include' '-I' 'arch/arm/include/generated' '-I' 'include' '-include' '/home/cholokei/git/android_kernel_samsung_dalikt/include/linux/kconfig.h' '-D' '__KERNEL__' '-mlittle-endian' '-I' 'arch/arm/mach-msm/include' '-Wall' '-Wundef' '-Wstrict-prototypes' '-Wno-trigraphs' '-fno-strict-aliasing' '-fno-common' '-Wno-format-security' '-fno-delete-null-pointer-checks' '-Os' '-marm' '-fno-dwarf2-cfi-asm' '-mabi=aapcs-linux' '-mno-thumb-interwork' '-funwind-tables' '-D' '__LINUX_ARM_ARCH__=7' '-march=armv7-a' '-msoft-float' '-U' 'arm' '-Wframe-larger-than=1024' '-fno-stack-protector' '-Wno-unused-but-set-variable' '-fomit-frame-pointer' '-g' '-Wdeclaration-after-statement' '-Wno-pointer-sign' '-fno-strict-overflow' '-fconserve-stack' '-I' 'drivers/media/tdmb' '-v' '-I' 'drivers/media/tdmb/t3900' '-I' 'drivers/media/tdmb/fc8050' '-D' 'KBUILD_STR(s)=#s' '-D' 'KBUILD_BASENAME=KBUILD_STR(tdmb_data)' '-D' 'KBUILD_MODNAME=KBUILD_STR(tdmb_data)' '-c' '-o' 'drivers/media/tdmb/.tmp_tdmb_data.o' '-mfpu=vfp'
+  CC      drivers/media/tdmb/tdmb_spi.o
+Using built-in specs.
+COLLECT_GCC=arm-eabi-gcc
+COLLECT_LTO_WRAPPER=/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../libexec/gcc/arm-eabi/4.6.x-google/lto-wrapper
+Target: arm-eabi
+Configured with: /tmp/android-15472/src/build/../gcc/gcc-4.6/configure --prefix=/usr/local --target=arm-eabi --host=x86_64-linux-gnu --build=x86_64-linux-gnu --with-gnu-as --with-gnu-ld --enable-languages=c,c++ --with-gmp=/tmp/android-15472/obj/temp-install --with-mpfr=/tmp/android-15472/obj/temp-install --with-mpc=/tmp/android-15472/obj/temp-install --without-ppl --without-cloog --disable-libssp --enable-threads --disable-nls --disable-libmudflap --disable-libgomp --disable-libstdc__-v3 --disable-sjlj-exceptions --disable-shared --disable-tls --disable-libitm --with-float=soft --with-fpu=vfp --with-arch=armv5te --enable-target-optspace --with-abi=aapcs --with-gcc-version=4.6 --with-binutils-version=2.21 --with-gmp-version=4.2.4 --with-mpfr-version=2.4.1 --with-gdb-version=7.3.x --with-arch=armv5te --with-sysroot=/tmp/android-15472/install/sysroot --with-prefix=/tmp/android-15472/install --with-gold-version=2.21 --enable-gold --disable-gold --disable-multilib --program-transform-name='s&^&arm-eabi-&'
+Thread model: single
+gcc version 4.6.x-google 20120106 (prerelease) (GCC) 
+COLLECT_GCC_OPTIONS='-nostdinc' '-isystem' '/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include' '-I' '/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include' '-I' 'arch/arm/include/generated' '-I' 'include' '-include' '/home/cholokei/git/android_kernel_samsung_dalikt/include/linux/kconfig.h' '-D' '__KERNEL__' '-mlittle-endian' '-I' 'arch/arm/mach-msm/include' '-Wall' '-Wundef' '-Wstrict-prototypes' '-Wno-trigraphs' '-fno-strict-aliasing' '-fno-common' '-Wno-format-security' '-fno-delete-null-pointer-checks' '-Os' '-marm' '-fno-dwarf2-cfi-asm' '-mabi=aapcs-linux' '-mno-thumb-interwork' '-funwind-tables' '-D' '__LINUX_ARM_ARCH__=7' '-march=armv7-a' '-msoft-float' '-U' 'arm' '-Wframe-larger-than=1024' '-fno-stack-protector' '-Wno-unused-but-set-variable' '-fomit-frame-pointer' '-g' '-Wdeclaration-after-statement' '-Wno-pointer-sign' '-fno-strict-overflow' '-fconserve-stack' '-I' 'drivers/media/tdmb' '-v' '-I' 'drivers/media/tdmb/t3900' '-I' 'drivers/media/tdmb/fc8050' '-D' 'KBUILD_STR(s)=#s' '-D' 'KBUILD_BASENAME=KBUILD_STR(tdmb_spi)' '-D' 'KBUILD_MODNAME=KBUILD_STR(tdmb_spi)' '-c' '-o' 'drivers/media/tdmb/.tmp_tdmb_spi.o' '-mfpu=vfp'
+ /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../libexec/gcc/arm-eabi/4.6.x-google/cc1 -quiet -nostdinc -v -I /home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include -I arch/arm/include/generated -I include -I arch/arm/mach-msm/include -I drivers/media/tdmb -I drivers/media/tdmb/t3900 -I drivers/media/tdmb/fc8050 -iprefix /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/ -D__USES_INITFINI__ -D __KERNEL__ -D __LINUX_ARM_ARCH__=7 -U arm -D KBUILD_STR(s)=#s -D KBUILD_BASENAME=KBUILD_STR(tdmb_spi) -D KBUILD_MODNAME=KBUILD_STR(tdmb_spi) -isystem /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include -include /home/cholokei/git/android_kernel_samsung_dalikt/include/linux/kconfig.h -MD drivers/media/tdmb/.tdmb_spi.o.d drivers/media/tdmb/tdmb_spi.c -quiet -dumpbase tdmb_spi.c -mlittle-endian -marm -mabi=aapcs-linux -mno-thumb-interwork -march=armv7-a -msoft-float -mfpu=vfp -auxbase-strip drivers/media/tdmb/.tmp_tdmb_spi.o -g -Os -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -Wno-format-security -Wframe-larger-than=1024 -Wno-unused-but-set-variable -Wdeclaration-after-statement -Wno-pointer-sign -version -fno-strict-aliasing -fno-common -fno-delete-null-pointer-checks -fno-dwarf2-cfi-asm -funwind-tables -fno-stack-protector -fomit-frame-pointer -fno-strict-overflow -fconserve-stack -o /tmp/ccdPWZVi.s
+GNU C (GCC) version 4.6.x-google 20120106 (prerelease) (arm-eabi)
+	compiled by GNU C version 4.4.3, GMP version 4.2.4, MPFR version 2.4.1, MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include
+ arch/arm/include/generated
+ include
+ arch/arm/mach-msm/include
+ drivers/media/tdmb
+ drivers/media/tdmb/t3900
+ drivers/media/tdmb/fc8050
+ /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include
+End of search list.
+GNU C (GCC) version 4.6.x-google 20120106 (prerelease) (arm-eabi)
+	compiled by GNU C version 4.4.3, GMP version 4.2.4, MPFR version 2.4.1, MPC version 0.8.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 7e0a3541f55243241c747ff83ef85799
+  CC      drivers/misc/android_vibrator.o
+  LD      arch/arm/mach-msm/qdsp6v2/built-in.o
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+COLLECT_GCC_OPTIONS='-nostdinc' '-isystem' '/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include' '-I' '/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include' '-I' 'arch/arm/include/generated' '-I' 'include' '-include' '/home/cholokei/git/android_kernel_samsung_dalikt/include/linux/kconfig.h' '-D' '__KERNEL__' '-mlittle-endian' '-I' 'arch/arm/mach-msm/include' '-Wall' '-Wundef' '-Wstrict-prototypes' '-Wno-trigraphs' '-fno-strict-aliasing' '-fno-common' '-Wno-format-security' '-fno-delete-null-pointer-checks' '-Os' '-marm' '-fno-dwarf2-cfi-asm' '-mabi=aapcs-linux' '-mno-thumb-interwork' '-funwind-tables' '-D' '__LINUX_ARM_ARCH__=7' '-march=armv7-a' '-msoft-float' '-U' 'arm' '-Wframe-larger-than=1024' '-fno-stack-protector' '-Wno-unused-but-set-variable' '-fomit-frame-pointer' '-g' '-Wdeclaration-after-statement' '-Wno-pointer-sign' '-fno-strict-overflow' '-fconserve-stack' '-I' 'drivers/media/tdmb' '-v' '-I' 'drivers/media/tdmb/t3900' '-I' 'drivers/media/tdmb/fc8050' '-D' 'KBUILD_STR(s)=#s' '-D' 'KBUILD_BASENAME=KBUILD_STR(tdmb_port_fc8050)' '-D' 'KBUILD_MODNAME=KBUILD_STR(tdmb_port_fc8050)' '-c' '-o' 'drivers/media/tdmb/.tmp_tdmb_port_fc8050.o' '-mfpu=vfp'
+ /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/../../../../arm-eabi/bin/as -v -I /home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include -I arch/arm/include/generated -I include -I arch/arm/mach-msm/include -I drivers/media/tdmb -I drivers/media/tdmb/t3900 -I drivers/media/tdmb/fc8050 -EL -march=armv7-a -mfloat-abi=soft -mfpu=vfp -meabi=5 -o drivers/media/tdmb/.tmp_tdmb_port_fc8050.o /tmp/cc6gqkXe.s
+GNU assembler version 2.21 (arm-eabi) using BFD version (GNU Binutils) 2.21
+COLLECT_GCC_OPTIONS='-nostdinc' '-isystem' '/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include' '-I' '/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include' '-I' 'arch/arm/include/generated' '-I' 'include' '-include' '/home/cholokei/git/android_kernel_samsung_dalikt/include/linux/kconfig.h' '-D' '__KERNEL__' '-mlittle-endian' '-I' 'arch/arm/mach-msm/include' '-Wall' '-Wundef' '-Wstrict-prototypes' '-Wno-trigraphs' '-fno-strict-aliasing' '-fno-common' '-Wno-format-security' '-fno-delete-null-pointer-checks' '-Os' '-marm' '-fno-dwarf2-cfi-asm' '-mabi=aapcs-linux' '-mno-thumb-interwork' '-funwind-tables' '-D' '__LINUX_ARM_ARCH__=7' '-march=armv7-a' '-msoft-float' '-U' 'arm' '-Wframe-larger-than=1024' '-fno-stack-protector' '-Wno-unused-but-set-variable' '-fomit-frame-pointer' '-g' '-Wdeclaration-after-statement' '-Wno-pointer-sign' '-fno-strict-overflow' '-fconserve-stack' '-I' 'drivers/media/tdmb' '-v' '-I' 'drivers/media/tdmb/t3900' '-I' 'drivers/media/tdmb/fc8050' '-D' 'KBUILD_STR(s)=#s' '-D' 'KBUILD_BASENAME=KBUILD_STR(tdmb_spi)' '-D' 'KBUILD_MODNAME=KBUILD_STR(tdmb_spi)' '-c' '-o' 'drivers/media/tdmb/.tmp_tdmb_spi.o' '-mfpu=vfp'
+ /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/../../../../arm-eabi/bin/as -v -I /home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include -I arch/arm/include/generated -I include -I arch/arm/mach-msm/include -I drivers/media/tdmb -I drivers/media/tdmb/t3900 -I drivers/media/tdmb/fc8050 -EL -march=armv7-a -mfloat-abi=soft -mfpu=vfp -meabi=5 -o drivers/media/tdmb/.tmp_tdmb_spi.o /tmp/ccdPWZVi.s
+GNU assembler version 2.21 (arm-eabi) using BFD version (GNU Binutils) 2.21
+  CC      drivers/media/tdmb/t3900/INC_INTERFACE.o
+COMPILER_PATH=/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../libexec/gcc/arm-eabi/4.6.x-google/:/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../libexec/gcc/:/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/../../../../arm-eabi/bin/
+LIBRARY_PATH=/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/:/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/:/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/../../../../arm-eabi/lib/
+COLLECT_GCC_OPTIONS='-nostdinc' '-isystem' '/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include' '-I' '/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include' '-I' 'arch/arm/include/generated' '-I' 'include' '-include' '/home/cholokei/git/android_kernel_samsung_dalikt/include/linux/kconfig.h' '-D' '__KERNEL__' '-mlittle-endian' '-I' 'arch/arm/mach-msm/include' '-Wall' '-Wundef' '-Wstrict-prototypes' '-Wno-trigraphs' '-fno-strict-aliasing' '-fno-common' '-Wno-format-security' '-fno-delete-null-pointer-checks' '-Os' '-marm' '-fno-dwarf2-cfi-asm' '-mabi=aapcs-linux' '-mno-thumb-interwork' '-funwind-tables' '-D' '__LINUX_ARM_ARCH__=7' '-march=armv7-a' '-msoft-float' '-U' 'arm' '-Wframe-larger-than=1024' '-fno-stack-protector' '-Wno-unused-but-set-variable' '-fomit-frame-pointer' '-g' '-Wdeclaration-after-statement' '-Wno-pointer-sign' '-fno-strict-overflow' '-fconserve-stack' '-I' 'drivers/media/tdmb' '-v' '-I' 'drivers/media/tdmb/t3900' '-I' 'drivers/media/tdmb/fc8050' '-D' 'KBUILD_STR(s)=#s' '-D' 'KBUILD_BASENAME=KBUILD_STR(tdmb_port_fc8050)' '-D' 'KBUILD_MODNAME=KBUILD_STR(tdmb_port_fc8050)' '-c' '-o' 'drivers/media/tdmb/.tmp_tdmb_port_fc8050.o' '-mfpu=vfp'
+COMPILER_PATH=/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../libexec/gcc/arm-eabi/4.6.x-google/:/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../libexec/gcc/:/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/../../../../arm-eabi/bin/
+LIBRARY_PATH=/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/:/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/:/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/../../../../arm-eabi/lib/
+COLLECT_GCC_OPTIONS='-nostdinc' '-isystem' '/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include' '-I' '/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include' '-I' 'arch/arm/include/generated' '-I' 'include' '-include' '/home/cholokei/git/android_kernel_samsung_dalikt/include/linux/kconfig.h' '-D' '__KERNEL__' '-mlittle-endian' '-I' 'arch/arm/mach-msm/include' '-Wall' '-Wundef' '-Wstrict-prototypes' '-Wno-trigraphs' '-fno-strict-aliasing' '-fno-common' '-Wno-format-security' '-fno-delete-null-pointer-checks' '-Os' '-marm' '-fno-dwarf2-cfi-asm' '-mabi=aapcs-linux' '-mno-thumb-interwork' '-funwind-tables' '-D' '__LINUX_ARM_ARCH__=7' '-march=armv7-a' '-msoft-float' '-U' 'arm' '-Wframe-larger-than=1024' '-fno-stack-protector' '-Wno-unused-but-set-variable' '-fomit-frame-pointer' '-g' '-Wdeclaration-after-statement' '-Wno-pointer-sign' '-fno-strict-overflow' '-fconserve-stack' '-I' 'drivers/media/tdmb' '-v' '-I' 'drivers/media/tdmb/t3900' '-I' 'drivers/media/tdmb/fc8050' '-D' 'KBUILD_STR(s)=#s' '-D' 'KBUILD_BASENAME=KBUILD_STR(tdmb_spi)' '-D' 'KBUILD_MODNAME=KBUILD_STR(tdmb_spi)' '-c' '-o' 'drivers/media/tdmb/.tmp_tdmb_spi.o' '-mfpu=vfp'
+  CC      drivers/media/tdmb/t3900/INC_PROCESS.o
+  CC      drivers/media/tdmb/t3900/INC_RF_CTRL500.o
+COLLECT_GCC_OPTIONS='-nostdinc' '-isystem' '/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include' '-I' '/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include' '-I' 'arch/arm/include/generated' '-I' 'include' '-include' '/home/cholokei/git/android_kernel_samsung_dalikt/include/linux/kconfig.h' '-D' '__KERNEL__' '-mlittle-endian' '-I' 'arch/arm/mach-msm/include' '-Wall' '-Wundef' '-Wstrict-prototypes' '-Wno-trigraphs' '-fno-strict-aliasing' '-fno-common' '-Wno-format-security' '-fno-delete-null-pointer-checks' '-Os' '-marm' '-fno-dwarf2-cfi-asm' '-mabi=aapcs-linux' '-mno-thumb-interwork' '-funwind-tables' '-D' '__LINUX_ARM_ARCH__=7' '-march=armv7-a' '-msoft-float' '-U' 'arm' '-Wframe-larger-than=1024' '-fno-stack-protector' '-Wno-unused-but-set-variable' '-fomit-frame-pointer' '-g' '-Wdeclaration-after-statement' '-Wno-pointer-sign' '-fno-strict-overflow' '-fconserve-stack' '-I' 'drivers/media/tdmb' '-v' '-I' 'drivers/media/tdmb/t3900' '-I' 'drivers/media/tdmb/fc8050' '-D' 'KBUILD_STR(s)=#s' '-D' 'KBUILD_BASENAME=KBUILD_STR(tdmb_port_t3900)' '-D' 'KBUILD_MODNAME=KBUILD_STR(tdmb_port_t3900)' '-c' '-o' 'drivers/media/tdmb/.tmp_tdmb_port_t3900.o' '-mfpu=vfp'
+ /home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/../../../../arm-eabi/bin/as -v -I /home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include -I arch/arm/include/generated -I include -I arch/arm/mach-msm/include -I drivers/media/tdmb -I drivers/media/tdmb/t3900 -I drivers/media/tdmb/fc8050 -EL -march=armv7-a -mfloat-abi=soft -mfpu=vfp -meabi=5 -o drivers/media/tdmb/.tmp_tdmb_port_t3900.o /tmp/ccVrX56Y.s
+GNU assembler version 2.21 (arm-eabi) using BFD version (GNU Binutils) 2.21
+COMPILER_PATH=/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../libexec/gcc/arm-eabi/4.6.x-google/:/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../libexec/gcc/:/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/../../../../arm-eabi/bin/
+LIBRARY_PATH=/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/:/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/:/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/../../../../arm-eabi/lib/
+COLLECT_GCC_OPTIONS='-nostdinc' '-isystem' '/home/cholokei/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/bin/../lib/gcc/arm-eabi/4.6.x-google/include' '-I' '/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/include' '-I' 'arch/arm/include/generated' '-I' 'include' '-include' '/home/cholokei/git/android_kernel_samsung_dalikt/include/linux/kconfig.h' '-D' '__KERNEL__' '-mlittle-endian' '-I' 'arch/arm/mach-msm/include' '-Wall' '-Wundef' '-Wstrict-prototypes' '-Wno-trigraphs' '-fno-strict-aliasing' '-fno-common' '-Wno-format-security' '-fno-delete-null-pointer-checks' '-Os' '-marm' '-fno-dwarf2-cfi-asm' '-mabi=aapcs-linux' '-mno-thumb-interwork' '-funwind-tables' '-D' '__LINUX_ARM_ARCH__=7' '-march=armv7-a' '-msoft-float' '-U' 'arm' '-Wframe-larger-than=1024' '-fno-stack-protector' '-Wno-unused-but-set-variable' '-fomit-frame-pointer' '-g' '-Wdeclaration-after-statement' '-Wno-pointer-sign' '-fno-strict-overflow' '-fconserve-stack' '-I' 'drivers/media/tdmb' '-v' '-I' 'drivers/media/tdmb/t3900' '-I' 'drivers/media/tdmb/fc8050' '-D' 'KBUILD_STR(s)=#s' '-D' 'KBUILD_BASENAME=KBUILD_STR(tdmb_port_t3900)' '-D' 'KBUILD_MODNAME=KBUILD_STR(tdmb_port_t3900)' '-c' '-o' 'drivers/media/tdmb/.tmp_tdmb_port_t3900.o' '-mfpu=vfp'
+  CC      drivers/media/tdmb/fc8050/fc8050_spi.o
+  CC      drivers/misc/sec_misc.o
+  LD      drivers/input/keyboard/built-in.o
+  CC [M]  drivers/misc/tsif.o
+  LD      drivers/input/built-in.o
+arch/arm/mach-msm/board-msm8x60_dali.c:4881:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4881:2: warning: (near initialization for 'fsa9480_pdata.otg_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4882:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4882:2: warning: (near initialization for 'fsa9480_pdata.usb_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4883:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4883:2: warning: (near initialization for 'fsa9480_pdata.charger_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4884:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4884:2: warning: (near initialization for 'fsa9480_pdata.jig_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4885:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4885:2: warning: (near initialization for 'fsa9480_pdata.deskdock_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4886:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4886:2: warning: (near initialization for 'fsa9480_pdata.cardock_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4889:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4889:2: warning: (near initialization for 'fsa9480_pdata.mhl_cb') [enabled by default]
+  CC      drivers/power/sec_battery.o
+  LD      drivers/media/video/built-in.o
+  CC      drivers/spi/spi_qsd.o
+  LD      drivers/media/tdmb/fc8050/built-in.o
+  CC      drivers/staging/android/timed_gpio.o
+  CC      arch/arm/mach-msm/mdm.o
+  CC      arch/arm/mach-msm/mpm.o
+  LD      drivers/misc/built-in.o
+  CC      drivers/switch/switch_gpio.o
+  LD      drivers/staging/android/built-in.o
+  LD      drivers/staging/built-in.o
+  CC      drivers/tty/serial/msm_serial_hs.o
+  CC      drivers/tty/serial/msm_serial_hs_lite.o
+  CC      arch/arm/mach-msm/board-bluetooth-bcm4330.o
+  LD      drivers/switch/built-in.o
+  LD [M]  drivers/misc/msm_tsif.o
+  CC      drivers/video/msm/mdp_vsync.o
+  CC      drivers/video/msm/mipi_dsi.o
+  CC      drivers/video/msm/mipi_dsi_host.o
+  CC      drivers/video/msm/mipi_s6e8aa0_hd720.o
+  LD      drivers/media/tdmb/t3900/built-in.o
+  LD      drivers/media/tdmb/built-in.o
+  LD      drivers/media/built-in.o
+  CHK     kernel/config_data.h
+  LD      drivers/power/built-in.o
+  LD      kernel/trace/built-in.o
+  LD      kernel/built-in.o
+  LD      drivers/net/ethernet/smsc/built-in.o
+  LD      drivers/net/ethernet/built-in.o
+  LD      drivers/net/built-in.o
+  LD      drivers/mmc/host/built-in.o
+  LD      drivers/mmc/built-in.o
+  LD      drivers/video/msm/msm_mipi.o
+  LD      drivers/video/msm/built-in.o
+  LD      drivers/video/built-in.o
+  LD      drivers/spi/built-in.o
+  LD      drivers/tty/serial/built-in.o
+  LD      drivers/tty/built-in.o
+  LD      arch/arm/mach-msm/built-in.o
+  LD      drivers/built-in.o
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  LD      .tmp_vmlinux1
+drivers/built-in.o: In function `devalarm_start':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/staging/android/alarm-dev.c:82: undefined reference to `alarm_start'
+drivers/built-in.o: In function `alarm_ioctl':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/staging/android/alarm-dev.c:204: undefined reference to `alarmtimer_get_rtcdev'
+make: *** [.tmp_vmlinux1] 오류 1

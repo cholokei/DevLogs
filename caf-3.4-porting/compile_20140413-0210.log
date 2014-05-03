@@ -1,0 +1,143 @@
+Script started on 2014년 04월 13일 (일) 오전 02시 10분 23초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  CC      kernel/sys.o
+  CC      drivers/char/msm_rotator.o
+  LD      init/built-in.o
+  CC      drivers/gpio/gpio-sx150x.o
+  CC      drivers/base/genlock.o
+  CC      drivers/base/regmap/regmap-i2c.o
+  CC      drivers/gpu/msm/kgsl.o
+  CC      sound/soc/soc-cache.o
+  CC      arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.o
+  CC      arch/arm/mach-msm/pm-data.o
+  LD      drivers/base/regmap/built-in.o
+  CC      drivers/hid/hid-picolcd.o
+  CC      arch/arm/mach-msm/pm-stats.o
+  LD      drivers/gpio/built-in.o
+  CC      drivers/i2c/i2c-boardinfo.o
+In file included from arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.c:31:0:
+arch/arm/mach-msm/qdsp6v2/snddev_icodec.h:16:36: fatal error: mach/qdsp5v2/audio_def.h: No such file or directory
+compilation terminated.
+make[2]: *** [arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.o] 오류 1
+make[1]: *** [arch/arm/mach-msm/qdsp6v2] 오류 2
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      sound/soc/soc-io.o
+  CC      drivers/input/keyboard/cypress-touchkey_dali.o
+  CC      drivers/input/keyreset.o
+  CC      drivers/input/touchscreen/melfas_ts.o
+  CC      drivers/media/radio/radio-tavarua.o
+  CC      drivers/media/common/tuners/tuner-xc2028.o
+  CC      drivers/media/video/v4l2-device.o
+make: *** [arch/arm/mach-msm] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      drivers/media/common/tuners/tuner-simple.o
+  LD      drivers/base/built-in.o
+  CC      drivers/i2c/i2c-core.o
+  CC      drivers/i2c/i2c-dev.o
+  CC      drivers/mfd/marimba-core.o
+  CC      drivers/mfd/timpani-codec.o
+  CC [M]  drivers/input/evbug.o
+  LD      sound/soc/snd-soc-core.o
+  LD      sound/soc/built-in.o
+  LD      sound/built-in.o
+  CC      drivers/media/video/v4l2-common.o
+  CC      kernel/trace/trace.o
+  CC      drivers/mfd/msm-adie-codec.o
+  CC      drivers/i2c/algos/i2c-algo-bit.o
+  CC      drivers/i2c/busses/i2c-gpio.o
+  LD      drivers/char/built-in.o
+  CC      drivers/input/keyboard/issp_driver_routines.o
+  LD      drivers/hid/built-in.o
+  CC      drivers/input/touchscreen/mcs8000_download.o
+  CC      drivers/misc/fsa9480.o
+  CC      drivers/input/keyboard/issp_routines.o
+  CC      drivers/misc/akm8975.o
+  CC      drivers/media/common/tuners/tuner-types.o
+  LD      drivers/mfd/built-in.o
+  CC      drivers/i2c/busses/i2c-qup.o
+  CC      drivers/platform/msm/ssbi.o
+  CC      drivers/power/power_supply_core.o
+drivers/misc/akm8975.c:540:2: error: unknown field 'ioctl' specified in initializer
+drivers/misc/akm8975.c:540:2: warning: initialization from incompatible pointer type [enabled by default]
+error, forbidden warning: akm8975.c:540
+make[2]: *** [drivers/misc/akm8975.o] 오류 1
+make[2]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      drivers/power/power_supply_sysfs.o
+  CC      drivers/media/common/tuners/mt20xx.o
+  LD      drivers/i2c/algos/built-in.o
+  CC      drivers/regulator/core.o
+  CC      drivers/rtc/rtc-lib.o
+  CC      drivers/media/video/ir-kbd-i2c.o
+make[1]: *** [drivers/misc] 오류 2
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      drivers/media/common/tuners/tda8290.o
+  LD      drivers/media/video/videodev.o
+  CC      drivers/media/common/tuners/tea5767.o
+  CC      drivers/power/power_supply_leds.o
+  LD      drivers/input/keyboard/built-in.o
+  CC      drivers/power/max17040_battery.o
+  CC      drivers/net/wireless/bcmdhd/wl_cfg80211.o
+  LD      drivers/input/touchscreen/built-in.o
+  LD      drivers/input/built-in.o
+  LD      drivers/platform/msm/built-in.o
+  LD      drivers/platform/built-in.o
+  CC      drivers/rtc/hctosys.o
+  CC      drivers/rtc/class.o
+  CC      drivers/rtc/interface.o
+  LD      drivers/media/radio/built-in.o
+  CC      drivers/rtc/rtc-dev.o
+  CC      drivers/i2c/busses/i2c-ssbi.o
+  CC      drivers/rtc/rtc-proc.o
+  LD      drivers/gpu/msm/msm_adreno.o
+  LD      drivers/gpu/msm/msm_z180.o
+  LD      drivers/gpu/msm/msm_kgsl_core.o
+  LD      drivers/power/power_supply.o
+  LD      drivers/power/built-in.o
+  LD      drivers/media/video/built-in.o
+  LD      drivers/gpu/msm/built-in.o
+  CC      drivers/rtc/rtc-sysfs.o
+  CC      drivers/rtc/alarm.o
+  LD      drivers/gpu/built-in.o
+  CC      drivers/regulator/dummy.o
+  CC      drivers/regulator/fixed-helper.o
+  CC      drivers/rtc/alarm-dev.o
+  CC      drivers/rtc/rtc-pm8xxx.o
+  CC      drivers/media/common/tuners/tea5761.o
+  CC      drivers/media/common/tuners/tda9887.o
+  CC      drivers/regulator/pmic8058-regulator.o
+  CC      drivers/regulator/pmic8901-regulator.o
+  CC      drivers/media/common/tuners/tda827x.o
+  LD      drivers/i2c/busses/built-in.o
+  CC      drivers/media/common/tuners/tda18271-maps.o
+  LD      drivers/i2c/built-in.o
+  CC      drivers/media/common/tuners/tda18271-common.o
+  CC      drivers/media/common/tuners/tda18271-fe.o
+  CC      drivers/media/common/tuners/xc5000.o
+  LD      drivers/rtc/rtc-core.o
+  CC      drivers/media/common/tuners/xc4000.o
+  CC      drivers/media/common/tuners/mc44s803.o
+  CC      kernel/module.o
+  LD      drivers/rtc/built-in.o
+  GZIP    kernel/config_data.gz
+  LD      kernel/trace/built-in.o
+  CHK     kernel/config_data.h
+  LD      drivers/media/common/tuners/tda18271.o
+  LD      drivers/regulator/built-in.o
+  LD      drivers/media/common/tuners/built-in.o
+  LD      drivers/media/common/built-in.o
+  LD      drivers/media/built-in.o
+  LD      kernel/built-in.o
+drivers/net/wireless/bcmdhd/wl_cfg80211.c:6727:12: warning: 'wl_add_remove_eventmsg' defined but not used [-Wunused-function]
+error, forbidden warning: wl_cfg80211.c:6727
+make[4]: *** [drivers/net/wireless/bcmdhd/wl_cfg80211.o] 오류 1
+make[3]: *** [drivers/net/wireless/bcmdhd] 오류 2
+make[2]: *** [drivers/net/wireless] 오류 2
+make[1]: *** [drivers/net] 오류 2
+make: *** [drivers] 오류 2

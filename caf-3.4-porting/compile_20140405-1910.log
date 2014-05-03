@@ -1,0 +1,981 @@
+Script started on 2014년 04월 05일 (토) 오후 07시 10분 09초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CC      sound/sound_core.o
+  LD      sound/arm/built-in.o
+  LD      sound/atmel/built-in.o
+  CC      sound/core/hwdep.o
+  CHK     include/generated/compile.h
+  LD      firmware/built-in.o
+  CC      arch/arm/oprofile/../../../drivers/oprofile/oprof.o
+  CC      init/version.o
+  LD      sound/drivers/mpu401/built-in.o
+  LD      sound/drivers/opl3/built-in.o
+  CC      net/socket.o
+  LD      sound/drivers/opl4/built-in.o
+  LD      sound/drivers/pcsp/built-in.o
+  LD      arch/arm/mach-msm/msm-etm.o
+  LD      sound/drivers/vx/built-in.o
+  LD      sound/drivers/built-in.o
+  LD      arch/arm/lib/built-in.o
+  CC      sound/core/memalloc.o
+  LD      sound/firewire/built-in.o
+  AS      arch/arm/lib/ashldi3.o
+  LD      sound/i2c/other/built-in.o
+  CC      lib/bcd.o
+  LD      sound/i2c/built-in.o
+  LD      sound/isa/ad1816a/built-in.o
+  AS      arch/arm/lib/ashrdi3.o
+  LD      sound/isa/ad1848/built-in.o
+  CC      sound/core/pcm.o
+  CC      arch/arm/oprofile/../../../drivers/oprofile/cpu_buffer.o
+  LD      sound/isa/cs423x/built-in.o
+  LD      sound/isa/es1688/built-in.o
+  AS      arch/arm/lib/backtrace.o
+  CC      lib/div64.o
+  LD      sound/isa/galaxy/built-in.o
+  LD      sound/isa/gus/built-in.o
+  CC      arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.o
+  AS      arch/arm/lib/call_with_stack.o
+  LD      sound/isa/msnd/built-in.o
+  LD      init/built-in.o
+  LD      sound/isa/opti9xx/built-in.o
+  CC      arch/arm/mach-msm/qdsp6v2/snddev_icodec.o
+  LD      sound/isa/sb/built-in.o
+  AS      arch/arm/lib/changebit.o
+  LD      sound/isa/wavefront/built-in.o
+  CC      arch/arm/mach-msm/qdsp6v2/snddev_ecodec.o
+  LD      sound/isa/wss/built-in.o
+  LD      sound/isa/built-in.o
+  CC      lib/sort.o
+  AS      arch/arm/lib/clear_user.o
+  LD      sound/mips/built-in.o
+  LD      sound/parisc/built-in.o
+  AS      arch/arm/lib/clearbit.o
+  LD      sound/pci/ac97/built-in.o
+  LD      sound/pci/ali5451/built-in.o
+  AS      arch/arm/lib/copy_from_user.o
+  CC      kernel/sys.o
+  LD      sound/pci/asihpi/built-in.o
+  CC      arch/arm/oprofile/../../../drivers/oprofile/buffer_sync.o
+  LD      sound/pci/au88x0/built-in.o
+  CC      lib/parser.o
+  LD      sound/pci/aw2/built-in.o
+  AS      arch/arm/lib/copy_page.o
+  LD      sound/pci/ca0106/built-in.o
+  CC      sound/core/pcm_native.o
+  CC      sound/core/pcm_lib.o
+  LD      sound/pci/cs46xx/built-in.o
+  AS      arch/arm/lib/copy_to_user.o
+  LD      sound/pci/cs5535audio/built-in.o
+  LD      sound/pci/ctxfi/built-in.o
+  LD      sound/pci/echoaudio/built-in.o
+  LD      sound/pci/emu10k1/built-in.o
+  AS      arch/arm/lib/csumipv6.o
+  LD      sound/pci/hda/built-in.o
+  LD      sound/pci/ice1712/built-in.o
+  AS      arch/arm/lib/csumpartial.o
+  LD      sound/pci/korg1212/built-in.o
+  LD      sound/pci/lola/built-in.o
+  LD      sound/pci/lx6464es/built-in.o
+  CC      arch/arm/mach-msm/qdsp6v2/snddev_mi2s.o
+  LD      sound/pci/mixart/built-in.o
+  AS      arch/arm/lib/csumpartialcopy.o
+  LD      sound/pci/nm256/built-in.o
+  LD      sound/pci/oxygen/built-in.o
+  LD      sound/pci/pcxhr/built-in.o
+  CC      sound/core/pcm_timer.o
+  LD      sound/pci/riptide/built-in.o
+  LD      sound/pci/rme9652/built-in.o
+  CC      lib/halfmd4.o
+  AS      arch/arm/lib/csumpartialcopyuser.o
+  CC      lib/debug_locks.o
+  LD      sound/pci/trident/built-in.o
+  CC      lib/random32.o
+  LD      sound/pci/vx222/built-in.o
+  LD      sound/pci/ymfpci/built-in.o
+  LD      sound/pci/built-in.o
+  CC      arch/arm/lib/delay.o
+  LD      sound/pcmcia/pdaudiocf/built-in.o
+  LD      sound/pcmcia/vx/built-in.o
+  LD      sound/pcmcia/built-in.o
+  CC      lib/bust_spinlocks.o
+  CC      lib/hexdump.o
+  LD      sound/ppc/built-in.o
+  LD      sound/sh/built-in.o
+  CC      sound/soc/soc-core.o
+  CC      sound/soc/soc-dapm.o
+  CC      arch/arm/oprofile/../../../drivers/oprofile/event_buffer.o
+  CC      lib/kasprintf.o
+  AS      arch/arm/lib/div64.o
+  AS      arch/arm/lib/findbit.o
+  CC      lib/bitmap.o
+  AS      arch/arm/lib/getuser.o
+  AS      arch/arm/lib/io-readsb.o
+  CC      sound/core/pcm_misc.o
+  CC      arch/arm/mach-msm/qdsp6v2/snddev_virtual.o
+  CC      arch/arm/mach-msm/qdsp6v2/pcm_out.o
+  AS      arch/arm/lib/io-readsl.o
+  LD      net/802/built-in.o
+  CC      lib/scatterlist.o
+  CC      net/bluetooth/af_bluetooth.o
+  AS      arch/arm/lib/io-readsw-armv4.o
+  CC      arch/arm/oprofile/../../../drivers/oprofile/oprofile_files.o
+  AS      arch/arm/lib/io-writesb.o
+  AS      arch/arm/lib/io-writesl.o
+  AS      arch/arm/lib/io-writesw-armv4.o
+  AS      arch/arm/lib/lib1funcs.o
+  CC      arch/arm/oprofile/../../../drivers/oprofile/oprofilefs.o
+  CC      lib/string_helpers.o
+  AS      arch/arm/lib/lshrdi3.o
+  AS      arch/arm/lib/memchr.o
+  AS      arch/arm/lib/memcpy.o
+  CC      lib/gcd.o
+  AS      arch/arm/lib/memmove.o
+  CC      sound/core/pcm_memory.o
+  CC      lib/lcm.o
+  CC      arch/arm/mach-msm/qdsp6v2/pcm_in.o
+  AS      arch/arm/lib/memset.o
+  CC      arch/arm/oprofile/../../../drivers/oprofile/oprofile_stats.o
+  CC      lib/list_sort.o
+  CC      arch/arm/oprofile/../../../drivers/oprofile/timer_int.o
+  AS      arch/arm/lib/memzero.o
+  CC      arch/arm/mach-msm/pm-boot.o
+  CC      lib/uuid.o
+  AS      arch/arm/lib/muldi3.o
+  AS      arch/arm/lib/putuser.o
+  CC      arch/arm/oprofile/../../../drivers/oprofile/oprofile_perf.o
+  CC      net/core/sock.o
+  CC      lib/flex_array.o
+  AS      arch/arm/lib/setbit.o
+  AS      arch/arm/lib/strchr.o
+  CC      arch/arm/oprofile/common.o
+  CC      net/dns_resolver/dns_key.o
+  AS      arch/arm/lib/strncpy_from_user.o
+  CC      net/dns_resolver/dns_query.o
+  CC      arch/arm/mach-msm/pm-8x60.o
+  CC      kernel/trace/trace.o
+  AS      arch/arm/lib/strnlen_user.o
+  AS      arch/arm/lib/strrchr.o
+  AS      arch/arm/lib/testchangebit.o
+  CC      lib/bsearch.o
+  CC      arch/arm/mach-msm/qdsp6v2/fm.o
+  AS      arch/arm/lib/testclearbit.o
+  CC      lib/find_last_bit.o
+  CC      net/bluetooth/hci_core.o
+  CC      lib/find_next_bit.o
+  AS      arch/arm/lib/testsetbit.o
+  LD      sound/sparc/built-in.o
+  LD      sound/spi/built-in.o
+  LD      arch/arm/oprofile/oprofile.o
+  LD      sound/synth/built-in.o
+  CC      net/ethernet/eth.o
+  CC      sound/usb/card.o
+  AS      arch/arm/lib/ucmpdi2.o
+  CC      lib/llist.o
+  CC      lib/kstrtox.o
+  LD      arch/arm/oprofile/built-in.o
+  LD      net/dns_resolver/dns_resolver.o
+  LD      net/dns_resolver/built-in.o
+  CC      sound/usb/clock.o
+  CC      net/core/request_sock.o
+  AR      arch/arm/lib/lib.a
+  CC      net/core/skbuff.o
+  CC      sound/usb/endpoint.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_lpa.o
+  CC      lib/pci_iomap.o
+  CC      net/core/iovec.o
+  CC      sound/core/rawmidi.o
+  CC      lib/iomap_copy.o
+  CC      lib/devres.o
+  CC      sound/core/timer.o
+  CC      net/core/datagram.o
+  CC      arch/arm/mach-msm/pm-data.o
+  CC      sound/soc/soc-jack.o
+  LD      net/ethernet/built-in.o
+  CC      sound/soc/soc-cache.o
+  CC      net/bluetooth/hci_conn.o
+  CC      sound/usb/format.o
+  CC      lib/hweight.o
+  CC      lib/bitrev.o
+  CC      net/core/stream.o
+  CC      sound/soc/soc-utils.o
+  CC      lib/crc-ccitt.o
+  CC      arch/arm/mach-msm/qdsp6v2/q6voice.o
+  CC      sound/soc/soc-pcm.o
+  CC      sound/usb/helper.o
+  CC      sound/usb/mixer.o
+  CC      lib/crc16.o
+  HOSTCC  lib/gen_crc32table
+  CC      arch/arm/mach-msm/qdsp6v2/snddev_hdmi.o
+  CC      arch/arm/mach-msm/pm-stats.o
+  CC      sound/soc/soc-io.o
+  CC      net/core/scm.o
+  CC      sound/core/sound.o
+  CC      lib/libcrc32c.o
+  CC      net/core/gen_stats.o
+  CC      net/bluetooth/hci_event.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_mvs.o
+  CC      lib/genalloc.o
+  CC      lib/lzo/lzo1x_compress.o
+  CC      arch/arm/mach-msm/spm.o
+  CC      sound/core/init.o
+  LD      sound/soc/atmel/built-in.o
+  CC      sound/core/memory.o
+  LD      sound/soc/au1x/built-in.o
+  LD      sound/soc/blackfin/built-in.o
+  LD      kernel/trace/built-in.o
+  LD      sound/soc/codecs/built-in.o
+  LD      sound/soc/davinci/built-in.o
+  LD      sound/soc/ep93xx/built-in.o
+  CC      kernel/module.o
+  LD      sound/soc/fsl/built-in.o
+  LD      sound/soc/imx/built-in.o
+  LD      sound/soc/jz4740/built-in.o
+  LD      sound/soc/kirkwood/built-in.o
+  LD      sound/soc/mid-x86/built-in.o
+  CC      arch/arm/mach-msm/devices-msm8x60.o
+  CC      sound/soc/msm/lpass-dma.o
+  CC      lib/lzo/lzo1x_decompress.o
+  CC      net/bluetooth/mgmt.o
+  CC      net/core/gen_estimator.o
+  CC      lib/reed_solomon/reed_solomon.o
+  CC      sound/core/info.o
+  CC      net/core/net_namespace.o
+  CC      net/core/secure_seq.o
+  CC      arch/arm/mach-msm/qdsp6v2/apr.o
+  LD      lib/lzo/lzo_compress.o
+  CC      sound/usb/mixer_quirks.o
+  LD      lib/lzo/lzo_decompress.o
+  LD      lib/lzo/built-in.o
+  CC      lib/zlib_deflate/deflate.o
+  CC      arch/arm/mach-msm/qdsp6v2/apr_v1.o
+  CC      arch/arm/mach-msm/qdsp6v2/apr_tal.o
+  CC      sound/core/control.o
+  CC      sound/core/misc.o
+  LD      sound/soc/mxs/built-in.o
+  CC      sound/soc/msm/msm8x60-dai.o
+  LD      sound/soc/nuc900/built-in.o
+  CC      arch/arm/mach-msm/qdsp6v2/q6core.o
+  LD      sound/soc/omap/built-in.o
+  LD      sound/soc/pxa/built-in.o
+  CC      sound/usb/pcm.o
+  CC      sound/soc/msm/msm8x60-pcm.o
+  CC      sound/soc/msm/msm8x60.o
+  LD      lib/reed_solomon/built-in.o
+  CC      lib/zlib_deflate/deftree.o
+  CC      sound/soc/msm/qdsp6/q6asm.o
+  CC      net/core/flow_dissector.o
+  CC      lib/zlib_deflate/deflate_syms.o
+  CC      sound/usb/proc.o
+  CC      arch/arm/mach-msm/qdsp6v2/dsp_debug.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_acdb.o
+  CC      arch/arm/mach-msm/qdsp6v2/aac_in.o
+  CC      sound/usb/quirks.o
+  CC      arch/arm/mach-msm/qdsp6v2/qcelp_in.o
+  CC      sound/usb/stream.o
+  CC      arch/arm/mach-msm/qdsp6v2/evrc_in.o
+  CC      sound/usb/midi.o
+  CC      arch/arm/mach-msm/qdsp6v2/amrnb_in.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_utils.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_wma.o
+  CC      net/core/sysctl_net_core.o
+  LD      sound/usb/6fire/built-in.o
+  LD      lib/zlib_deflate/zlib_deflate.o
+  LD      lib/zlib_deflate/built-in.o
+  LD      sound/usb/caiaq/built-in.o
+  CC      lib/zlib_inflate/inffast.o
+  LD      sound/usb/misc/built-in.o
+  LD      sound/usb/usx2y/built-in.o
+  CC      lib/zlib_inflate/inflate.o
+  LD      sound/soc/msm/snd-soc-msm8x60-dai.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_wmapro.o
+  LD      sound/soc/msm/snd-soc-msm8x60-pcm.o
+  LD      sound/soc/msm/snd-soc-msm8x60.o
+  CC      net/ipv4/route.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_aac.o
+  CC      sound/core/device.o
+  CC      sound/core/jack.o
+  CC      net/ipv6/af_inet6.o
+  CC      sound/soc/msm/qdsp6/q6adm.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_multi_aac.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_utils_aio.o
+  CC      net/ipv6/anycast.o
+  CC      arch/arm/mach-msm/qdsp6v2/rtac.o
+  CC      net/core/dev.o
+  CC      net/ipv4/inetpeer.o
+  LD      sound/core/snd.o
+  LD      sound/core/snd-hwdep.o
+  LD      sound/core/snd-timer.o
+  LD      sound/core/snd-pcm.o
+  CC      lib/zlib_inflate/infutil.o
+  LD      sound/core/snd-page-alloc.o
+  LD      sound/core/snd-rawmidi.o
+  LD      sound/core/built-in.o
+  GZIP    kernel/config_data.gz
+  CC      lib/textsearch.o
+  CC      sound/last.o
+  CHK     kernel/config_data.h
+  LD      kernel/built-in.o
+  CC      lib/zlib_inflate/inftrees.o
+  LD      sound/soundcore.o
+  CC      lib/ts_kmp.o
+  CC      net/bluetooth/hci_sock.o
+  CC      sound/soc/msm/qdsp6/q6afe.o
+  CC      lib/zlib_inflate/inflate_syms.o
+  CC      lib/ts_bm.o
+  LD      sound/usb/snd-usb-audio.o
+  LD      sound/usb/snd-usbmidi-lib.o
+  LD      sound/usb/built-in.o
+  CC      lib/ts_fsm.o
+  CC      net/ipv6/ip6_output.o
+  CC      net/core/ethtool.o
+  CC      lib/percpu_counter.o
+  LD      lib/zlib_inflate/zlib_inflate.o
+  CC      net/ipv6/ip6_input.o
+  LD      lib/zlib_inflate/built-in.o
+  CC      lib/audit.o
+  CC      arch/arm/mach-msm/qdsp6v2/q6audio_v1.o
+  CC      lib/nlattr.o
+  CC      net/core/dev_addr_lists.o
+  CC      net/ipv6/addrconf.o
+  LD      sound/soc/s6000/built-in.o
+  LD      sound/soc/samsung/built-in.o
+  CC      net/key/af_key.o
+  LD      sound/soc/sh/built-in.o
+  CC      arch/arm/mach-msm/qdsp6v2/q6audio_v1_aio.o
+  CC      lib/cpu_rmap.o
+  LD      sound/soc/tegra/built-in.o
+  CC      net/netfilter/core.o
+  CC      net/bluetooth/hci_sysfs.o
+  CC      lib/dynamic_queue_limits.o
+  CC      net/bluetooth/l2cap_core.o
+  LD      sound/soc/msm/qdsp6/built-in.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_mp3.o
+  LD      sound/soc/msm/snd-soc-lpass-dma.o
+  LD      sound/soc/msm/built-in.o
+  CC      lib/argv_split.o
+  LD      sound/soc/txx9/built-in.o
+  LD      sound/soc/snd-soc-core.o
+  CC      net/ipv6/addrlabel.o
+  CC      net/ipv6/route.o
+  LD      sound/soc/built-in.o
+  LD      sound/built-in.o
+  CC      lib/bug.o
+  CC      lib/cmdline.o
+  CC      net/core/dst.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_amrnb.o
+  CC      net/ipv4/protocol.o
+  CC      net/bluetooth/l2cap_sock.o
+  CC      net/netfilter/nf_log.o
+  CC      lib/cpumask.o
+  CC      net/bluetooth/smp.o
+  CC      net/bluetooth/sco.o
+  CC      lib/ctype.o
+  CC      net/core/netevent.o
+  CC      lib/dec_and_lock.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_amrwb.o
+  CC      lib/decompress.o
+  CC      net/ipv6/ip6_fib.o
+  CC      lib/decompress_bunzip2.o
+  CC      net/ipv4/ip_input.o
+  CC      net/ipv6/ipv6_sockglue.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_amrwbplus.o
+  CC      net/core/neighbour.o
+  CC      net/netfilter/nf_queue.o
+  CC      net/ipv6/ndisc.o
+  CC      lib/decompress_inflate.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_evrc.o
+  CC      lib/decompress_unlzma.o
+  CC      net/bluetooth/lib.o
+  CC      lib/dump_stack.o
+  CC      lib/extable.o
+  CC      lib/idr.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_qcelp.o
+  CC      net/ipv4/ip_fragment.o
+  CC      lib/int_sqrt.o
+  CC      lib/ioremap.o
+  LD      net/key/built-in.o
+  CC      net/netfilter/nf_sockopt.o
+  CC      net/netlink/af_netlink.o
+  CC      net/netlink/genetlink.o
+  CC      arch/arm/mach-msm/qdsp6v2/amrwb_in.o
+  CC      net/ipv6/udp.o
+  CC      net/bluetooth/amp.o
+  CC      lib/irq_regs.o
+  CC      lib/is_single_threaded.o
+  CC      lib/klist.o
+  CC      net/ipv6/udplite.o
+  CC      net/ipv4/ip_forward.o
+  CC      arch/arm/mach-msm/clock-local.o
+  CC      lib/kobject.o
+  LD      arch/arm/mach-msm/qdsp6v2/built-in.o
+  CC      net/netfilter/nf_conntrack_core.o
+  CC      net/netfilter/nf_conntrack_standalone.o
+  CC      net/packet/af_packet.o
+  CC      lib/kobject_uevent.o
+  CC      net/ipv6/raw.o
+  CC      net/ipv6/protocol.o
+  CC      net/ipv4/ip_options.o
+  CC      lib/md5.o
+  CC      arch/arm/mach-msm/clock-8x60.o
+  CC      net/ipv4/ip_output.o
+  CC      net/ipv4/ip_sockglue.o
+  CC      arch/arm/mach-msm/acpuclock-8x60.o
+  CC      net/ipv4/inet_hashtables.o
+  CC      lib/memory_alloc.o
+  CC      net/ipv6/icmp.o
+  CC      net/core/rtnetlink.o
+  CC      net/bluetooth/bnep/core.o
+  LD      net/netlink/built-in.o
+  CC      arch/arm/mach-msm/clock-pll.o
+  CC      arch/arm/mach-msm/clock-rpm.o
+  CC      net/ipv6/mcast.o
+  CC      net/ipv4/inet_timewait_sock.o
+  CC      lib/plist.o
+  CC      net/ipv6/reassembly.o
+  CC      lib/prio_heap.o
+  CC      arch/arm/mach-msm/saw-regulator.o
+  CC      net/ipv6/tcp_ipv6.o
+  CC      lib/prio_tree.o
+  CC      arch/arm/mach-msm/footswitch-8x60.o
+  CC      net/netfilter/nf_conntrack_expect.o
+  CC      arch/arm/mach-msm/rpm-regulator.o
+  CC      arch/arm/mach-msm/rpm-regulator-8660.o
+  CC      lib/proportions.o
+  CC      net/bluetooth/bnep/sock.o
+  CC      arch/arm/mach-msm/subsystem_notif.o
+  CC      net/ipv6/ping.o
+  CC      arch/arm/mach-msm/subsystem_restart.o
+  CC      net/bluetooth/hidp/core.o
+  CC      lib/radix-tree.o
+  CC      net/ipv4/inet_connection_sock.o
+  LD      net/packet/built-in.o
+  CC      net/phonet/pn_dev.o
+  CC      net/ipv4/tcp.o
+  CC      net/ipv4/tcp_input.o
+  CC      net/ipv6/exthdrs.o
+  CC      net/bluetooth/bnep/netdev.o
+  CC      net/bluetooth/rfcomm/core.o
+  CC      net/core/utils.o
+  CC      net/netfilter/nf_conntrack_helper.o
+  CC      arch/arm/mach-msm/ramdump.o
+  CC      arch/arm/mach-msm/modem-8660.o
+  CC      net/phonet/pn_netlink.o
+  CC      lib/ratelimit.o
+  CC      arch/arm/mach-msm/lpass-8660.o
+  LD      net/bluetooth/bnep/bnep.o
+  CC      arch/arm/mach-msm/sec_switch.o
+  LD      net/bluetooth/bnep/built-in.o
+  LD      net/bluetooth/bluetooth.o
+  CC      net/ipv6/datagram.o
+  CC      arch/arm/mach-msm/sysmon.o
+  CC      lib/rbtree.o
+  CC      arch/arm/mach-msm/cpuidle.o
+  CC      net/ipv4/tcp_output.o
+  CC      net/bluetooth/hidp/sock.o
+  CC      lib/reciprocal_div.o
+  CC      net/core/link_watch.o
+  CC      net/ipv6/ip6_flowlabel.o
+  CC      arch/arm/mach-msm/msm_watchdog.o
+  CC      net/ipv4/tcp_timer.o
+  CC      lib/rwsem-spinlock.o
+  CC      net/ipv6/inet6_connection_sock.o
+  AS      arch/arm/mach-msm/msm_watchdog_asm.o
+  CC      net/phonet/socket.o
+  CC      net/netfilter/nf_conntrack_proto.o
+  CC      net/ipv6/sysctl_net_ipv6.o
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  LD      net/bluetooth/hidp/hidp.o
+  LD      net/bluetooth/hidp/built-in.o
+  CC      lib/sha1.o
+  CC      arch/arm/mach-msm/mdm.o
+  CC      arch/arm/mach-msm/rmt_storage_client.o
+  CC      arch/arm/mach-msm/rpm.o
+  CC      net/bluetooth/rfcomm/sock.o
+  CC      net/core/filter.o
+  CC      net/core/sock_diag.o
+  CC      net/ipv6/xfrm6_policy.o
+  CC      net/ipv6/xfrm6_state.o
+  CC      lib/show_mem.o
+  CC      net/netfilter/nf_conntrack_l3proto_generic.o
+  CC      net/ipv4/tcp_ipv4.o
+  CC      net/ipv6/xfrm6_input.o
+  CC      net/phonet/datagram.o
+  CC      net/phonet/sysctl.o
+  CC      lib/string.o
+  CC      net/phonet/af_phonet.o
+  CC      arch/arm/mach-msm/rpm_resources.o
+  CC      arch/arm/mach-msm/mpm.o
+  CC      net/ipv6/xfrm6_output.o
+  CC      net/core/flow.o
+  CC      net/ipv6/netfilter.o
+  CC      lib/timerqueue.o
+  CC      net/netfilter/nf_conntrack_proto_generic.o
+  CC      lib/vsprintf.o
+  CC      net/bluetooth/rfcomm/tty.o
+  CC      net/ipv4/tcp_minisocks.o
+  CC      net/core/net-sysfs.o
+  CC      net/ipv6/fib6_rules.o
+  CC      net/ipv4/tcp_cong.o
+  CC      arch/arm/mach-msm/rpm_stats.o
+  CC      net/netfilter/nf_conntrack_proto_tcp.o
+  CC      net/core/fib_rules.o
+  CC      arch/arm/mach-msm/rpm_master_stat.o
+  CC      net/phonet/pep.o
+  CC      net/ipv6/proc.o
+  CC      net/ipv6/ah6.o
+  CC      net/ipv6/esp6.o
+  CC      arch/arm/mach-msm/rpm_log.o
+  CC      net/ipv6/ipcomp6.o
+  CC      arch/arm/mach-msm/tz_log.o
+  CC      arch/arm/mach-msm/msm_xo.o
+  CC      arch/arm/mach-msm/gpiomux-8x60_dali.o
+  CC      net/ipv4/datagram.o
+  LD      net/bluetooth/rfcomm/rfcomm.o
+  CC      net/ipv6/xfrm6_tunnel.o
+  LD      net/bluetooth/rfcomm/built-in.o
+  CC      arch/arm/mach-msm/gpiomux-v2.o
+  LD      net/bluetooth/built-in.o
+  CC      arch/arm/mach-msm/gpiomux.o
+  CC      net/rfkill/core.o
+  CC      net/ipv4/raw.o
+  CC      net/ipv4/udp.o
+  GEN     lib/crc32table.h
+  AR      lib/lib.a
+  CC      lib/crc32.o
+  CC      net/core/net-traces.o
+  CC      net/ipv6/tunnel6.o
+  CC      arch/arm/mach-msm/msm_rq_stats.o
+  CC      net/ipv4/udplite.o
+  CC      net/ipv6/xfrm6_mode_transport.o
+  CC      net/ipv6/xfrm6_mode_tunnel.o
+  CC      arch/arm/mach-msm/msm_show_resume_irq.o
+  CC      arch/arm/mach-msm/restart.o
+  CC      net/phonet/pep-gprs.o
+  CC      net/netfilter/nf_conntrack_proto_udp.o
+  CC      net/ipv6/xfrm6_mode_beet.o
+  CC      net/ipv4/arp.o
+  LD      lib/built-in.o
+  CC      arch/arm/mach-msm/sec_debug.o
+  CC      arch/arm/mach-msm/sec_getlog.o
+  CC      net/ipv4/icmp.o
+  CC      net/sched/sch_generic.o
+  CC      net/sunrpc/clnt.o
+  CC      net/sunrpc/xprt.o
+  CC      net/sunrpc/socklib.o
+  LD      net/rfkill/rfkill.o
+  LD      net/rfkill/built-in.o
+  CC      net/ipv6/mip6.o
+  CC      net/unix/af_unix.o
+  CC      arch/arm/mach-msm/sec_gaf.o
+  LD      net/phonet/phonet.o
+  CC      net/ipv6/netfilter/ip6_tables.o
+  LD      net/phonet/pn_pep.o
+  LD      net/phonet/built-in.o
+  CC      net/wireless/core.o
+  CC      net/netfilter/nf_conntrack_extend.o
+  CC      net/ipv4/devinet.o
+  LD      net/core/built-in.o
+  CC      arch/arm/mach-msm/sec_last_log.o
+  CC      net/xfrm/xfrm_policy.o
+  CC      arch/arm/mach-msm/board-bluetooth-bcm4330.o
+  CC      net/sunrpc/xprtsock.o
+  CC [M]  arch/arm/mach-msm/dal_remotetest.o
+  CC      net/ipv6/sit.o
+  CC [M]  arch/arm/mach-msm/dma_test.o
+  CC      net/sched/sch_mq.o
+  CC      net/ipv4/af_inet.o
+  CC      net/netfilter/nf_conntrack_acct.o
+  CC      net/ipv4/igmp.o
+  CC      net/wireless/sysfs.o
+  CC [M]  arch/arm/mach-msm/msm-buspm-dev.o
+  CC      net/netfilter/nf_conntrack_ecache.o
+  CC      net/netfilter/nf_conntrack_h323_main.o
+  CC      net/ipv6/netfilter/ip6table_filter.o
+  LD      arch/arm/mach-msm/built-in.o
+  CC      net/sunrpc/sched.o
+  CC      net/sched/sch_api.o
+  CC      net/netfilter/nf_conntrack_h323_asn1.o
+  CC      net/sysctl_net.o
+  CC      net/sched/sch_blackhole.o
+  CC      net/wireless/radiotap.o
+  CC      net/netfilter/nfnetlink.o
+  CC      net/sunrpc/auth.o
+  CC      net/ipv6/netfilter/ip6table_mangle.o
+  CC      net/netfilter/nfnetlink_queue.o
+  CC      net/ipv6/ip6_tunnel.o
+  CC      net/unix/garbage.o
+  CC      net/unix/sysctl_net_unix.o
+  CC      net/ipv4/fib_frontend.o
+  CC      net/ipv4/fib_semantics.o
+  CC      net/wireless/util.o
+  CC      net/ipv6/netfilter/ip6table_raw.o
+  CC      net/ipv4/fib_trie.o
+  CC      net/netfilter/nfnetlink_log.o
+  CC      net/netfilter/nf_conntrack_proto_dccp.o
+  CC      net/netfilter/nf_conntrack_proto_gre.o
+  LD      net/unix/unix.o
+  LD      net/unix/built-in.o
+  CC      net/activity_stats.o
+  CC      net/netfilter/nf_conntrack_proto_sctp.o
+  CC      net/sched/cls_api.o
+  CC      net/xfrm/xfrm_state.o
+  CC      net/ipv6/netfilter/nf_conntrack_l3proto_ipv6.o
+  CC      net/sunrpc/auth_null.o
+  CC      net/xfrm/xfrm_hash.o
+  CC      net/ipv4/inet_fragment.o
+  CC      net/ipv6/addrconf_core.o
+  CC      net/xfrm/xfrm_input.o
+  CC      net/xfrm/xfrm_output.o
+  CC      net/xfrm/xfrm_algo.o
+  CC      net/netfilter/nf_conntrack_proto_udplite.o
+  CC      net/ipv4/ping.o
+  CC      net/sunrpc/auth_unix.o
+  CC      net/netfilter/nf_conntrack_netlink.o
+  CC      net/wireless/reg.o
+  CC      net/netfilter/nf_conntrack_amanda.o
+  CC      net/ipv6/netfilter/nf_conntrack_proto_icmpv6.o
+  CC      net/netfilter/nf_conntrack_ftp.o
+  CC      net/ipv6/exthdrs_core.o
+  CC      net/ipv4/sysctl_net_ipv4.o
+  CC      net/sched/act_api.o
+  LD      net/netfilter/nf_conntrack_h323.o
+  CC      net/xfrm/xfrm_sysctl.o
+  CC      net/xfrm/xfrm_replay.o
+  CC      net/xfrm/xfrm_user.o
+  CC      net/sunrpc/auth_generic.o
+  CC      net/ipv4/sysfs_net_ipv4.o
+  CC      net/xfrm/xfrm_ipcomp.o
+  CC      net/ipv6/netfilter/nf_defrag_ipv6_hooks.o
+  CC      net/netfilter/nf_conntrack_irc.o
+  CC      net/ipv6/inet6_hashtables.o
+  CC      net/netfilter/nf_conntrack_broadcast.o
+  CC      net/ipv4/proc.o
+  CC      net/netfilter/nf_conntrack_netbios_ns.o
+  CC      net/ipv4/fib_rules.o
+  CC      net/ipv4/esp4.o
+  CC      net/sunrpc/svc.o
+  CC      net/ipv6/netfilter/nf_conntrack_reasm.o
+  CC      net/sched/act_police.o
+  CC      net/wireless/scan.o
+  CC      net/sched/act_gact.o
+  CC      net/sched/act_mirred.o
+  CC      net/netfilter/nf_conntrack_pptp.o
+  CC      net/netfilter/nf_conntrack_sane.o
+  CC      net/ipv6/netfilter/ip6t_REJECT.o
+  CC      net/sched/sch_fifo.o
+  CC      net/netfilter/nf_conntrack_sip.o
+  CC      net/ipv4/ipcomp.o
+  CC      net/ipv4/xfrm4_tunnel.o
+  CC      net/ipv4/tunnel4.o
+  CC      net/sched/sch_htb.o
+  CC      net/ipv4/xfrm4_mode_transport.o
+  CC      net/sched/sch_ingress.o
+  CC      net/wireless/nl80211.o
+  LD      net/ipv6/netfilter/nf_conntrack_ipv6.o
+  LD      net/xfrm/built-in.o
+  LD      net/ipv6/netfilter/nf_defrag_ipv6.o
+  CC      net/netfilter/nf_conntrack_tftp.o
+  CC      net/netfilter/nf_tproxy_core.o
+  CC      net/netfilter/x_tables.o
+  LD      net/ipv6/netfilter/built-in.o
+  LD      net/ipv6/ipv6.o
+  LD      net/ipv6/built-in.o
+  CC      net/sched/sch_sfq.o
+  CC      net/netfilter/xt_tcpudp.o
+  CC      net/netfilter/xt_mark.o
+  CC      net/netfilter/xt_connmark.o
+  CC      net/netfilter/xt_CLASSIFY.o
+  CC      net/sunrpc/svcsock.o
+  CC      net/sched/sch_tbf.o
+  CC      net/ipv4/xfrm4_mode_tunnel.o
+  CC      net/ipv4/ipconfig.o
+  CC      net/netfilter/xt_CONNSECMARK.o
+  CC      net/netfilter/xt_NFLOG.o
+  CC      net/netfilter/xt_NFQUEUE.o
+  CC      net/netfilter/xt_TCPMSS.o
+  CC      net/wireless/mlme.o
+  CC      net/netfilter/xt_IDLETIMER.o
+  CC      net/sched/sch_prio.o
+  CC      net/netfilter/xt_comment.o
+  CC      net/ipv4/netfilter.o
+  CC      net/sched/cls_u32.o
+  CC      net/netfilter/xt_connlimit.o
+  CC      net/netfilter/xt_conntrack.o
+  CC      net/sched/cls_fw.o
+  CC      net/netfilter/xt_ecn.o
+  CC      net/netfilter/xt_hashlimit.o
+  CC      net/ipv4/netfilter/nf_nat_rule.o
+  CC      net/sched/cls_tcindex.o
+  CC      net/netfilter/xt_helper.o
+  CC      net/ipv4/inet_diag.o
+  CC      net/sched/cls_basic.o
+  CC      net/ipv4/tcp_diag.o
+  CC      net/sunrpc/svcauth.o
+  CC      net/netfilter/xt_hl.o
+  CC      net/netfilter/xt_iprange.o
+  CC      net/netfilter/xt_length.o
+  CC      net/sched/ematch.o
+  CC      net/netfilter/xt_limit.o
+  CC      net/ipv4/tcp_bic.o
+  CC      net/wireless/ibss.o
+  CC      net/ipv4/netfilter/nf_nat_standalone.o
+  CC      net/sched/em_cmp.o
+  CC      net/sched/em_nbyte.o
+  CC      net/sunrpc/svcauth_unix.o
+  CC      net/sunrpc/addr.o
+  CC      net/netfilter/xt_mac.o
+  CC      net/netfilter/xt_multiport.o
+  CC      net/sched/em_u32.o
+  CC      net/ipv4/tcp_cubic.o
+  CC      net/netfilter/xt_pkttype.o
+  CC      net/netfilter/xt_policy.o
+  CC      net/sched/em_meta.o
+  CC      net/sched/em_text.o
+  CC      net/ipv4/xfrm4_policy.o
+  CC      net/ipv4/netfilter/nf_conntrack_l3proto_ipv4_compat.o
+  CC [M]  net/sched/sch_dsmark.o
+  CC      net/netfilter/xt_qtaguid_print.o
+  CC      net/ipv4/xfrm4_state.o
+  CC [M]  net/sched/cls_flow.o
+  CC      net/wireless/sme.o
+  CC      net/netfilter/xt_qtaguid.o
+  CC      net/netfilter/xt_quota.o
+  CC      net/sunrpc/rpcb_clnt.o
+  CC      net/sunrpc/timer.o
+  CC      net/netfilter/xt_quota2.o
+  CC      net/netfilter/xt_socket.o
+  CC      net/ipv4/xfrm4_input.o
+  CC      net/ipv4/xfrm4_output.o
+  CC [M]  net/ipv4/tcp_westwood.o
+  CC      net/ipv4/netfilter/nf_conntrack_l3proto_ipv4.o
+  CC      net/sunrpc/xdr.o
+  CC      net/netfilter/xt_state.o
+  LD      net/sched/built-in.o
+  CC      net/netfilter/xt_statistic.o
+  CC      net/netfilter/xt_string.o
+  CC      net/netfilter/xt_time.o
+  CC      net/netfilter/xt_u32.o
+  CC      net/ipv4/netfilter/nf_conntrack_proto_icmp.o
+  CC [M]  net/ipv4/tcp_htcp.o
+  CC      net/ipv4/netfilter/nf_nat_core.o
+  CC      net/ipv4/netfilter/nf_nat_helper.o
+  CC      net/wireless/chan.o
+  LD      net/netfilter/netfilter.o
+  LD      net/netfilter/nf_conntrack.o
+  CC      net/ipv4/netfilter/nf_nat_proto_unknown.o
+  CC      net/sunrpc/sunrpc_syms.o
+  CC      net/sunrpc/cache.o
+  CC      net/sunrpc/rpc_pipe.o
+  CC      net/sunrpc/svc_xprt.o
+  CC      net/sunrpc/stats.o
+  CC      net/sunrpc/sysctl.o
+  CC      net/ipv4/netfilter/nf_nat_proto_common.o
+  CC      net/ipv4/netfilter/nf_nat_proto_tcp.o
+  CC      net/ipv4/netfilter/nf_nat_proto_udp.o
+  CC      net/ipv4/netfilter/nf_nat_proto_icmp.o
+  CC      net/ipv4/netfilter/nf_defrag_ipv4.o
+  CC      net/wireless/ethtool.o
+  CC      net/wireless/mesh.o
+  CC      net/sunrpc/auth_gss/auth_gss.o
+  CC      net/sunrpc/auth_gss/gss_generic_token.o
+  CC      net/ipv4/netfilter/nf_nat_amanda.o
+  CC      net/ipv4/netfilter/nf_nat_ftp.o
+  LD      net/netfilter/built-in.o
+  CC      net/ipv4/netfilter/nf_nat_h323.o
+  CC      net/ipv4/netfilter/nf_nat_irc.o
+  CC      net/ipv4/netfilter/nf_nat_pptp.o
+  CC      net/ipv4/netfilter/nf_nat_sip.o
+  CC      net/ipv4/netfilter/nf_nat_tftp.o
+  CC      net/ipv4/netfilter/nf_nat_proto_dccp.o
+  CC      net/sunrpc/auth_gss/gss_mech_switch.o
+  CC      net/wireless/wext-compat.o
+  CC      net/wireless/wext-sme.o
+  CC      net/ipv4/netfilter/nf_nat_proto_gre.o
+  CC      net/ipv4/netfilter/nf_nat_proto_udplite.o
+  CC      net/ipv4/netfilter/nf_nat_proto_sctp.o
+  CC      net/ipv4/netfilter/ip_tables.o
+  CC      net/ipv4/netfilter/iptable_filter.o
+  CC      net/ipv4/netfilter/iptable_mangle.o
+  CC      net/wireless/wext-core.o
+  LD      net/ipv4/netfilter/iptable_nat.o
+  CC      net/ipv4/netfilter/iptable_raw.o
+  CC      net/ipv4/netfilter/iptable_security.o
+  LD      net/sunrpc/sunrpc.o
+  CC      net/wireless/wext-proc.o
+  CC      net/ipv4/netfilter/ipt_ah.o
+  CC      net/ipv4/netfilter/ipt_MASQUERADE.o
+  CC      net/ipv4/netfilter/ipt_NETMAP.o
+  CC      net/sunrpc/auth_gss/svcauth_gss.o
+  CC      net/ipv4/netfilter/ipt_REDIRECT.o
+  CC      net/ipv4/netfilter/ipt_REJECT.o
+  CC      net/ipv4/netfilter/arp_tables.o
+  CC      net/ipv4/netfilter/arpt_mangle.o
+  CC      net/ipv4/netfilter/arptable_filter.o
+  LD      net/ipv4/netfilter/nf_conntrack_ipv4.o
+  LD      net/ipv4/netfilter/nf_nat.o
+  LD      net/wireless/cfg80211.o
+  LD      net/wireless/built-in.o
+  LD      net/ipv4/netfilter/built-in.o
+  LD      net/ipv4/built-in.o
+  LD      net/sunrpc/auth_gss/auth_rpcgss.o
+  LD      net/sunrpc/auth_gss/built-in.o
+  LD      net/sunrpc/built-in.o
+  LD      net/built-in.o
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  LD      .tmp_vmlinux1
+arch/arm/mach-msm/built-in.o: In function `snddev_icodec_probe':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/snddev_icodec.c:1018: undefined reference to `msm_snddev_register'
+arch/arm/mach-msm/built-in.o: In function `snddev_ecodec_probe':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/snddev_ecodec.c:326: undefined reference to `msm_snddev_register'
+arch/arm/mach-msm/built-in.o: In function `snddev_mi2s_probe':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/snddev_mi2s.c:411: undefined reference to `msm_snddev_register'
+arch/arm/mach-msm/built-in.o: In function `snddev_virtual_probe':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/snddev_virtual.c:128: undefined reference to `msm_snddev_register'
+arch/arm/mach-msm/built-in.o: In function `pcm_out_release':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/pcm_out.c:438: undefined reference to `msm_clear_session_id'
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/pcm_out.c:439: undefined reference to `auddev_unregister_evt_listner'
+arch/arm/mach-msm/built-in.o: In function `pcm_out_open':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/pcm_out.c:341: undefined reference to `auddev_register_evt_listner'
+arch/arm/mach-msm/built-in.o: In function `pcm_out_cb':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/pcm_out.c:70: undefined reference to `reset_device'
+arch/arm/mach-msm/built-in.o: In function `pcm_in_release':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/pcm_in.c:456: undefined reference to `msm_disable_incall_recording'
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/pcm_in.c:462: undefined reference to `auddev_cfg_tx_copp_topology'
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/pcm_in.c:467: undefined reference to `msm_clear_session_id'
+arch/arm/mach-msm/built-in.o: In function `pcm_in_ioctl':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/pcm_in.c:204: undefined reference to `msm_enable_incall_recording'
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/pcm_in.c:284: undefined reference to `auddev_cfg_tx_copp_topology'
+arch/arm/mach-msm/built-in.o: In function `pcm_in_cb':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/pcm_in.c:79: undefined reference to `reset_device'
+arch/arm/mach-msm/built-in.o: In function `fm_audio_release':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/fm.c:191: undefined reference to `auddev_unregister_evt_listner'
+arch/arm/mach-msm/built-in.o: In function `fm_audio_open':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/fm.c:220: undefined reference to `auddev_register_evt_listner'
+arch/arm/mach-msm/built-in.o: In function `audio_open':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/audio_lpa.c:1346: undefined reference to `auddev_register_evt_listner'
+arch/arm/mach-msm/built-in.o: In function `q6_audlpa_out_cb':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/audio_lpa.c:708: undefined reference to `reset_device'
+arch/arm/mach-msm/built-in.o: In function `audio_release':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/audio_lpa.c:1131: undefined reference to `msm_clear_session_id'
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/audio_lpa.c:1132: undefined reference to `auddev_unregister_evt_listner'
+arch/arm/mach-msm/built-in.o: In function `voice_send_tty_mode_to_modem':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/q6voice.c:732: undefined reference to `audio_dev_ctrl_find_dev'
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/q6voice.c:738: undefined reference to `audio_dev_ctrl_find_dev'
+arch/arm/mach-msm/built-in.o: In function `voice_set_device':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/q6voice.c:1365: undefined reference to `audio_dev_ctrl_find_dev'
+arch/arm/mach-msm/built-in.o: In function `voice_setup_modem_voice':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/q6voice.c:1494: undefined reference to `audio_dev_ctrl_find_dev'
+arch/arm/mach-msm/built-in.o: In function `voice_auddev_cb_function':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/q6voice.c:2203: undefined reference to `msm_snddev_enable_sidetone'
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/q6voice.c:2236: undefined reference to `msm_snddev_enable_sidetone'
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/q6voice.c:2285: undefined reference to `msm_snddev_enable_sidetone'
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/q6voice.c:2330: undefined reference to `msm_snddev_enable_sidetone'
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/q6voice.c:2421: undefined reference to `msm_snddev_enable_sidetone'
+arch/arm/mach-msm/built-in.o: In function `snddev_hdmi_probe':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/snddev_hdmi.c:161: undefined reference to `msm_snddev_register'
+arch/arm/mach-msm/built-in.o: In function `voice_init':
+/home/cholokei/git/android_kernel_samsung_dalikt/arch/arm/mach-msm/qdsp6v2/q6voice.c:2942: undefined reference to `auddev_register_evt_listner'
+sound/built-in.o: In function `msm_pcm_playback_prepare':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60-pcm.c:269: undefined reference to `msm_snddev_set_dec'
+sound/built-in.o: In function `msm_pcm_capture_prepare':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60-pcm.c:315: undefined reference to `msm_snddev_set_enc'
+sound/built-in.o: In function `msm_pcm_open':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60-pcm.c:415: undefined reference to `msm_snddev_route_dec'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60-pcm.c:427: undefined reference to `msm_snddev_route_enc'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60-pcm.c:431: undefined reference to `auddev_register_evt_listner'
+sound/built-in.o: In function `alsa_out_listener':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60-pcm.c:100: undefined reference to `msm_snddev_set_dec'
+sound/built-in.o: In function `alsa_in_listener':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60-pcm.c:134: undefined reference to `msm_snddev_set_enc'
+sound/built-in.o: In function `msm_pcm_capture_close':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60-pcm.c:625: undefined reference to `auddev_unregister_evt_listner'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60-pcm.c:627: undefined reference to `msm_clear_session_id'
+sound/built-in.o: In function `msm_loopback_info':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:882: undefined reference to `msm_snddev_devcount'
+sound/built-in.o: In function `pcm_route_info':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:752: undefined reference to `msm_snddev_devcount'
+sound/built-in.o: In function `msm_device_mute_info':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:955: undefined reference to `msm_snddev_devcount'
+sound/built-in.o: In function `msm_voice_info':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:249: undefined reference to `msm_snddev_devcount'
+sound/built-in.o: In function `msm_route_info':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:505: undefined reference to `msm_snddev_devcount'
+sound/built-in.o:/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:340: more undefined references to `msm_snddev_devcount' follow
+sound/built-in.o: In function `msm_device_volume_get':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:631: undefined reference to `audio_dev_ctrl_find_dev'
+sound/built-in.o: In function `msm_anc_put':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:722: undefined reference to `audio_dev_ctrl_find_dev'
+sound/built-in.o: In function `msm_device_volume_put':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:648: undefined reference to `audio_dev_ctrl_find_dev'
+sound/built-in.o: In function `msm_device_get':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:484: undefined reference to `audio_dev_ctrl_find_dev'
+sound/built-in.o: In function `msm_loopback_put':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:906: undefined reference to `audio_dev_ctrl_find_dev'
+sound/built-in.o:/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:918: more undefined references to `audio_dev_ctrl_find_dev' follow
+sound/built-in.o: In function `pcm_route_put_tx':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:864: undefined reference to `broadcast_event'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:868: undefined reference to `broadcast_event'
+sound/built-in.o: In function `pcm_route_put_rx':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:786: undefined reference to `audio_dev_ctrl_find_dev'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:812: undefined reference to `broadcast_event'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:816: undefined reference to `broadcast_event'
+sound/built-in.o: In function `msm_v_call_put':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:107: undefined reference to `broadcast_event'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:110: undefined reference to `broadcast_event'
+sound/built-in.o: In function `msm_volume_put':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:236: undefined reference to `broadcast_event'
+sound/built-in.o: In function `msm_device_mute_put':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:974: undefined reference to `audio_dev_ctrl_find_dev'
+sound/built-in.o: In function `msm_reset_put':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:692: undefined reference to `msm_reset_all_device'
+sound/built-in.o: In function `msm_v_mute_put':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:149: undefined reference to `msm_set_voice_mute'
+sound/built-in.o: In function `msm_v_volume_put':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:186: undefined reference to `msm_set_voice_vol'
+sound/built-in.o: In function `msm_voice_put':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:268: undefined reference to `audio_dev_ctrl_find_dev'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:284: undefined reference to `msm_set_voc_route'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:290: undefined reference to `broadcast_event'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:295: undefined reference to `audio_dev_ctrl_find_dev'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:311: undefined reference to `msm_set_voc_route'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:314: undefined reference to `broadcast_event'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:317: undefined reference to `broadcast_event'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:320: undefined reference to `broadcast_event'
+sound/built-in.o: In function `msm_route_put':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:537: undefined reference to `audio_dev_ctrl_find_dev'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:545: undefined reference to `msm_snddev_set_dec'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:565: undefined reference to `msm_snddev_set_enc'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:572: undefined reference to `broadcast_event'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:578: undefined reference to `msm_snddev_get_enc_freq'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:581: undefined reference to `msm_snddev_request_freq'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:591: undefined reference to `msm_snddev_withdraw_freq'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:594: undefined reference to `broadcast_event'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:600: undefined reference to `broadcast_event'
+sound/built-in.o: In function `msm_device_put':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:359: undefined reference to `audio_dev_ctrl_find_dev'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:370: undefined reference to `msm_device_is_voice'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:371: undefined reference to `msm_get_voc_freq'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:396: undefined reference to `broadcast_event'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:400: undefined reference to `audio_dev_ctrl_find_dev'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:408: undefined reference to `audio_dev_ctrl_find_dev'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:429: undefined reference to `broadcast_event'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:439: undefined reference to `broadcast_event'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:446: undefined reference to `audio_dev_ctrl_find_dev'
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:454: undefined reference to `audio_dev_ctrl_find_dev'
+sound/built-in.o: In function `msm_new_mixer':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:1135: undefined reference to `msm_snddev_devcount'
+sound/built-in.o: In function `snd_dev_ctl_index':
+/home/cholokei/git/android_kernel_samsung_dalikt/sound/soc/msm/msm8x60.c:1032: undefined reference to `audio_dev_ctrl_find_dev'
+make: *** [.tmp_vmlinux1] 오류 1

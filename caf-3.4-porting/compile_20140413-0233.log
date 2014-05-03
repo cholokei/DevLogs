@@ -1,0 +1,138 @@
+Script started on 2014년 04월 13일 (일) 오전 02시 33분 13초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  CC      kernel/sys.o
+  LD      arch/arm/mach-msm/msm-etm.o
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  CC      arch/arm/mach-msm/rmt_storage_client.o
+In file included from arch/arm/mach-msm/board-msm8x60_dali.c:181:0:
+include/linux/video/sec_mipi_lcd_esd_refresh.h:50:21: error: 'PM_GPIO_VIN_L5' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c: In function 'msm_hsusb_smb328a_vbus_power':
+arch/arm/mach-msm/board-msm8x60_dali.c:1710:18: error: 'POWER_SUPPLY_CAPACITY_OTG_ENABLE' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:1710:18: note: each undeclared identifier is reported only once for each function it appears in
+arch/arm/mach-msm/board-msm8x60_dali.c:1712:18: error: 'POWER_SUPPLY_CAPACITY_OTG_DISABLE' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:1715:32: error: 'POWER_SUPPLY_PROP_OTG' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c: At top level:
+arch/arm/mach-msm/board-msm8x60_dali.c:1770:2: error: unknown field 'check_microusb' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:1770:20: error: 'fsa9480_check_device' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:1770:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:1770:2: warning: (near initialization for 'msm_gadget_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c: In function 'fsa9480_usb_cb':
+arch/arm/mach-msm/board-msm8x60_dali.c:4541:31: error: 'DEV_TYPE_USB' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4541:46: error: 'DEV_TYPE_NONE' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4542:32: error: 'CABLE_TYPE_USB' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4542:49: error: 'CABLE_TYPE_NONE' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4542:2: error: 'set_cable_status' has an incomplete type
+arch/arm/mach-msm/board-msm8x60_dali.c: In function 'fsa9480_charger_cb':
+arch/arm/mach-msm/board-msm8x60_dali.c:4596:31: error: 'DEV_TYPE_CHARGER' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4596:50: error: 'DEV_TYPE_NONE' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4597:32: error: 'CABLE_TYPE_AC' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4597:48: error: 'CABLE_TYPE_NONE' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4597:2: error: 'set_cable_status' has an incomplete type
+arch/arm/mach-msm/board-msm8x60_dali.c: In function 'fsa9480_jig_cb':
+arch/arm/mach-msm/board-msm8x60_dali.c:4655:31: error: 'DEV_TYPE_JIG' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4655:46: error: 'DEV_TYPE_NONE' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4656:32: error: 'CABLE_TYPE_UARTOFF' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4656:53: error: 'CABLE_TYPE_NONE' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4656:2: error: 'set_cable_status' has an incomplete type
+arch/arm/mach-msm/board-msm8x60_dali.c: In function 'fsa9480_mhl_cb':
+arch/arm/mach-msm/board-msm8x60_dali.c:4707:31: error: 'DEV_TYPE_MHL' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4707:46: error: 'DEV_TYPE_NONE' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4708:32: error: 'CABLE_TYPE_MISC' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4708:50: error: 'CABLE_TYPE_NONE' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4708:2: error: 'set_cable_status' has an incomplete type
+arch/arm/mach-msm/board-msm8x60_dali.c: In function 'fsa9480_deskdock_cb':
+arch/arm/mach-msm/board-msm8x60_dali.c:4767:31: error: 'DEV_TYPE_DESKDOCK' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4767:51: error: 'DEV_TYPE_NONE' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4768:32: error: 'CABLE_TYPE_CARDOCK' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4768:53: error: 'CABLE_TYPE_NONE' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4768:2: error: 'set_cable_status' has an incomplete type
+arch/arm/mach-msm/board-msm8x60_dali.c: In function 'fsa9480_cardock_cb':
+arch/arm/mach-msm/board-msm8x60_dali.c:4830:31: error: 'DEV_TYPE_CARDOCK' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4830:50: error: 'DEV_TYPE_NONE' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4831:32: error: 'CABLE_TYPE_CARDOCK' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4831:53: error: 'CABLE_TYPE_NONE' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4831:2: error: 'set_cable_status' has an incomplete type
+arch/arm/mach-msm/board-msm8x60_dali.c: At top level:
+arch/arm/mach-msm/board-msm8x60_dali.c:4880:15: error: variable 'fsa9480_pdata' has initializer but incomplete type
+arch/arm/mach-msm/board-msm8x60_dali.c:4881:2: error: unknown field 'otg_cb' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:4881:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4881:2: warning: (near initialization for 'fsa9480_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4882:2: error: unknown field 'usb_cb' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:4882:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4882:2: warning: (near initialization for 'fsa9480_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4883:2: error: unknown field 'charger_cb' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:4883:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4883:2: warning: (near initialization for 'fsa9480_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4884:2: error: unknown field 'jig_cb' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:4884:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4884:2: warning: (near initialization for 'fsa9480_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4885:2: error: unknown field 'deskdock_cb' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:4885:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4885:2: warning: (near initialization for 'fsa9480_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4886:2: error: unknown field 'cardock_cb' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:4886:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4886:2: warning: (near initialization for 'fsa9480_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4887:2: error: unknown field 'reset_cb' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:4887:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4887:2: warning: (near initialization for 'fsa9480_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4888:2: error: unknown field 'set_init_flag' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:4888:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4888:2: warning: (near initialization for 'fsa9480_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4889:2: error: unknown field 'mhl_cb' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:4889:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4889:2: warning: (near initialization for 'fsa9480_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c: In function 'sec_switch_get_cable_status':
+arch/arm/mach-msm/board-msm8x60_dali.c:4919:2: error: 'set_cable_status' has an incomplete type
+arch/arm/mach-msm/board-msm8x60_dali.c: In function 'sec_switch_set_vbus_status':
+arch/arm/mach-msm/board-msm8x60_dali.c:4935:14: error: 'USB_VBUS_AP_ON' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c: At top level:
+arch/arm/mach-msm/board-msm8x60_dali.c:4955:15: error: variable 'sec_switch_pdata' has initializer but incomplete type
+arch/arm/mach-msm/board-msm8x60_dali.c:4956:2: error: unknown field 'set_vbus_status' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:4956:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4956:2: warning: (near initialization for 'sec_switch_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4957:2: error: unknown field 'set_usb_gadget_vbus' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:4957:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4957:2: warning: (near initialization for 'sec_switch_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4958:2: error: unknown field 'get_cable_status' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:4958:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4958:2: warning: (near initialization for 'sec_switch_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4959:2: error: unknown field 'get_phy_init_status' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:4959:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4959:2: warning: (near initialization for 'sec_switch_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4960:2: error: unknown field 'get_attached_device' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:4960:2: warning: excess elements in struct initializer [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4960:2: warning: (near initialization for 'sec_switch_pdata') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:6482:2: error: unknown field 'hw_init' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:6482:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:6482:2: warning: (near initialization for 'max17040_pdata.battery_online') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:6483:2: error: unknown field 'low_batt_cb' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:6495:2: error: unknown field 'rcomp_value' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:6495:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:6495:2: warning: (near initialization for 'max17040_pdata.charger_enable') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:8721:16: error: 'CHANNEL_ADC_LIGHT_LUX' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:8732:45: error: 'scale_sec_settherm' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:8734:17: error: 'CHANNEL_ADC_PMIC_THERM' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:15288:13: warning: 'sensor_power_on' defined but not used [-Wunused-function]
+arch/arm/mach-msm/board-msm8x60_dali.c:15304:13: warning: 'sensor_power_off' defined but not used [-Wunused-function]
+arch/arm/mach-msm/board-msm8x60_dali.c:15319:13: warning: 'sensor_power_on_mag' defined but not used [-Wunused-function]
+arch/arm/mach-msm/board-msm8x60_dali.c:15324:13: warning: 'sensor_power_off_mag' defined but not used [-Wunused-function]
+arch/arm/mach-msm/board-msm8x60_dali.c:4507:3: warning: 'charging_cbs' defined but not used [-Wunused-variable]
+arch/arm/mach-msm/board-msm8x60_dali.c:4509:13: warning: 'is_cable_attached' defined but not used [-Wunused-variable]
+make[1]: *** [arch/arm/mach-msm/board-msm8x60_dali.o] 오류 1
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      kernel/module.o
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  CC      kernel/trace/trace.o
+make: *** [arch/arm/mach-msm] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+  LD      kernel/trace/built-in.o
+  LD      kernel/built-in.o

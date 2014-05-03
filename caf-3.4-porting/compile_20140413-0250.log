@@ -1,0 +1,60 @@
+Script started on 2014년 04월 13일 (일) 오전 02시 50분 39초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  CC      arch/arm/mach-msm/rpm.o
+  CC      arch/arm/mach-msm/rpm_resources.o
+In file included from arch/arm/mach-msm/board-msm8x60_dali.c:181:0:
+include/linux/video/sec_mipi_lcd_esd_refresh.h:50:21: error: 'PM_GPIO_VIN_L5' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:8729:16: error: 'CHANNEL_ADC_LIGHT_LUX' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:8740:45: error: 'scale_sec_settherm' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:8742:17: error: 'CHANNEL_ADC_PMIC_THERM' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9495:3: error: 'fg_smb_i2c_gpio_device' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9495:2: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:9495:2: error: (near initialization for 'surf_devices[20]')
+arch/arm/mach-msm/board-msm8x60_dali.c:9522:3: error: 'sec_device_switch' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:9522:2: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:9522:2: error: (near initialization for 'surf_devices[24]')
+arch/arm/mach-msm/board-msm8x60_dali.c:12144:3: error: 'fg_smb_i2c_devices' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:12144:3: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:12144:3: error: (near initialization for 'msm8x60_i2c_devices[0].info')
+arch/arm/mach-msm/board-msm8x60_dali.c:12145:3: error: invalid operands to binary / (have 'struct platform_device **' and 'unsigned int')
+arch/arm/mach-msm/board-msm8x60_dali.c:12145:3: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:12145:3: error: (near initialization for 'msm8x60_i2c_devices[0].len')
+arch/arm/mach-msm/board-msm8x60_dali.c:12248:3: error: 'micro_usb_i2c_devices_info' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:12248:3: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:12248:3: error: (near initialization for 'msm8x60_i2c_devices[5].info')
+arch/arm/mach-msm/board-msm8x60_dali.c:12249:3: error: invalid operands to binary / (have 'struct platform_device **' and 'unsigned int')
+arch/arm/mach-msm/board-msm8x60_dali.c:12249:3: error: initializer element is not constant
+arch/arm/mach-msm/board-msm8x60_dali.c:12249:3: error: (near initialization for 'msm8x60_i2c_devices[5].len')
+arch/arm/mach-msm/board-msm8x60_dali.c: In function 'msm8x60_init_buses':
+arch/arm/mach-msm/board-msm8x60_dali.c:12466:52: error: 'msm_gadget_pdata' undeclared (first use in this function)
+arch/arm/mach-msm/board-msm8x60_dali.c:12466:52: note: each undeclared identifier is reported only once for each function it appears in
+arch/arm/mach-msm/board-msm8x60_dali.c: At top level:
+arch/arm/mach-msm/board-msm8x60_dali.c:15296:13: warning: 'sensor_power_on' defined but not used [-Wunused-function]
+arch/arm/mach-msm/board-msm8x60_dali.c:15312:13: warning: 'sensor_power_off' defined but not used [-Wunused-function]
+arch/arm/mach-msm/board-msm8x60_dali.c:15327:13: warning: 'sensor_power_on_mag' defined but not used [-Wunused-function]
+arch/arm/mach-msm/board-msm8x60_dali.c:15332:13: warning: 'sensor_power_off_mag' defined but not used [-Wunused-function]
+arch/arm/mach-msm/board-msm8x60_dali.c:1274:12: warning: 'msm_hsusb_phy_id_setup_init' defined but not used [-Wunused-function]
+arch/arm/mach-msm/board-msm8x60_dali.c:1299:12: warning: 'msm_hsusb_pmic_id_notif_init' defined but not used [-Wunused-function]
+arch/arm/mach-msm/board-msm8x60_dali.c:1387:12: warning: 'msm_hsusb_init_vddcx' defined but not used [-Wunused-function]
+arch/arm/mach-msm/board-msm8x60_dali.c:1427:12: warning: 'msm_hsusb_config_vddcx' defined but not used [-Wunused-function]
+arch/arm/mach-msm/board-msm8x60_dali.c:1459:12: warning: 'msm_hsusb_ldo_init' defined but not used [-Wunused-function]
+arch/arm/mach-msm/board-msm8x60_dali.c:1514:12: warning: 'msm_hsusb_ldo_enable' defined but not used [-Wunused-function]
+arch/arm/mach-msm/board-msm8x60_dali.c:1561:12: warning: 'msm_hsusb_ldo_set_voltage' defined but not used [-Wunused-function]
+arch/arm/mach-msm/board-msm8x60_dali.c:4443:12: warning: 'fsa9480_init_flag' defined but not used [-Wunused-variable]
+arch/arm/mach-msm/board-msm8x60_dali.c:4444:26: warning: 'set_cable_status' defined but not used [-Wunused-variable]
+arch/arm/mach-msm/board-msm8x60_dali.c:4445:12: warning: 'device_attached' defined but not used [-Wunused-variable]
+arch/arm/mach-msm/board-msm8x60_dali.c:4481:14: warning: 'fsa9480_otg_cb' defined but not used [-Wunused-function]
+arch/arm/mach-msm/board-msm8x60_dali.c:4509:3: warning: 'charging_cbs' defined but not used [-Wunused-variable]
+arch/arm/mach-msm/board-msm8x60_dali.c:4511:13: warning: 'is_cable_attached' defined but not used [-Wunused-variable]
+  CC      arch/arm/mach-msm/mpm.o
+make[1]: *** [arch/arm/mach-msm/board-msm8x60_dali.o] 오류 1
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+make: *** [arch/arm/mach-msm] 오류 2

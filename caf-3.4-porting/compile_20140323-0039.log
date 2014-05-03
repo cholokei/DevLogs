@@ -1,0 +1,49 @@
+Script started on 2014년 03월 23일 (일) 오전 12시 39분 17초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  CC      kernel/sys.o
+  LD      arch/arm/mach-msm/msm-etm.o
+  CC      arch/arm/mach-msm/pm-boot.o
+  CC      arch/arm/mach-msm/pm-8x60.o
+  CC      arch/arm/mach-msm/pm-data.o
+  CC      arch/arm/mach-msm/pm-stats.o
+  CC      arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.o
+  CC      arch/arm/mach-msm/qdsp6v2/snddev_icodec.o
+  CC      arch/arm/mach-msm/spm.o
+  CC      arch/arm/mach-msm/qdsp6v2/snddev_ecodec.o
+  CC      arch/arm/mach-msm/devices-msm8x60.o
+  CC      kernel/trace/trace.o
+In file included from arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.c:32:0:
+arch/arm/mach-msm/qdsp6v2/snddev_ecodec.h:15:36: fatal error: mach/qdsp5v2/audio_def.h: No such file or directory
+compilation terminated.
+  CC      arch/arm/mach-msm/clock-local.o
+  CC      arch/arm/mach-msm/qdsp6v2/snddev_mi2s.o
+make[2]: *** [arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.o] 오류 1
+make[2]: *** 끝나지 않은 작업을 기다리고 있습니다....
+In file included from arch/arm/mach-msm/qdsp6v2/snddev_ecodec.c:27:0:
+arch/arm/mach-msm/qdsp6v2/snddev_ecodec.h:15:36: fatal error: mach/qdsp5v2/audio_def.h: No such file or directory
+compilation terminated.
+make[2]: *** [arch/arm/mach-msm/qdsp6v2/snddev_ecodec.o] 오류 1
+  CC      arch/arm/mach-msm/clock-8x60.o
+  CC      kernel/module.o
+  CC      arch/arm/mach-msm/acpuclock-8x60.o
+  CC      arch/arm/mach-msm/clock-pll.o
+  CC      arch/arm/mach-msm/clock-rpm.o
+  CC      arch/arm/mach-msm/saw-regulator.o
+  CC      arch/arm/mach-msm/footswitch-8x60.o
+  CC      arch/arm/mach-msm/rpm-regulator.o
+  GZIP    kernel/config_data.gz
+make[1]: *** [arch/arm/mach-msm/qdsp6v2] 오류 2
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+make: *** [arch/arm/mach-msm] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+  LD      kernel/trace/built-in.o
+  CHK     kernel/config_data.h
+  LD      kernel/built-in.o

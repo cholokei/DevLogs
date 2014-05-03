@@ -1,0 +1,157 @@
+Script started on 2014년 03월 23일 (일) 오전 12시 41분 50초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  CC      arch/arm/mach-msm/qdsp6v2/board-msm8x60-audio.o
+  CC      arch/arm/mach-msm/qdsp6v2/snddev_ecodec.o
+  CC      arch/arm/mach-msm/qdsp6v2/snddev_virtual.o
+  CC      arch/arm/mach-msm/qdsp6v2/pcm_out.o
+  CC      arch/arm/mach-msm/qdsp6v2/pcm_in.o
+  CC      arch/arm/mach-msm/qdsp6v2/fm.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_lpa.o
+  CC      arch/arm/mach-msm/qdsp6v2/q6voice.o
+  CC      arch/arm/mach-msm/qdsp6v2/snddev_hdmi.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_mvs.o
+  CC      arch/arm/mach-msm/qdsp6v2/lpa_if_hdmi.o
+  CC      arch/arm/mach-msm/qdsp6v2/apr.o
+  CC      arch/arm/mach-msm/qdsp6v2/apr_v1.o
+  CC      arch/arm/mach-msm/rpm-regulator-8660.o
+  CC      arch/arm/mach-msm/subsystem_notif.o
+  CC      arch/arm/mach-msm/subsystem_restart.o
+  CC      arch/arm/mach-msm/qdsp6v2/apr_tal.o
+  CC      arch/arm/mach-msm/qdsp6v2/q6core.o
+  CC      arch/arm/mach-msm/qdsp6v2/dsp_debug.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_acdb.o
+  CC      arch/arm/mach-msm/qdsp6v2/aac_in.o
+  CC      arch/arm/mach-msm/qdsp6v2/qcelp_in.o
+  CC      arch/arm/mach-msm/qdsp6v2/evrc_in.o
+  CC      arch/arm/mach-msm/qdsp6v2/amrnb_in.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_utils.o
+  CC      arch/arm/mach-msm/ramdump.o
+  CC      arch/arm/mach-msm/modem-8660.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_wma.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_wmapro.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_aac.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_multi_aac.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_utils_aio.o
+  CC      arch/arm/mach-msm/lpass-8660.o
+  CC      arch/arm/mach-msm/qdsp6v2/rtac.o
+  CC      arch/arm/mach-msm/qdsp6v2/q6audio_v1.o
+  CC      arch/arm/mach-msm/qdsp6v2/q6audio_v1_aio.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_mp3.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_amrnb.o
+  CC      arch/arm/mach-msm/sec_switch.o
+  CC      arch/arm/mach-msm/sysmon.o
+  CC      arch/arm/mach-msm/cpuidle.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_amrwb.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_amrwbplus.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_evrc.o
+  CC      arch/arm/mach-msm/qdsp6v2/audio_qcelp.o
+  CC      arch/arm/mach-msm/qdsp6v2/amrwb_in.o
+  CC      arch/arm/mach-msm/msm_watchdog.o
+  AS      arch/arm/mach-msm/msm_watchdog_asm.o
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  CC      arch/arm/mach-msm/mdm.o
+  CC      arch/arm/mach-msm/rmt_storage_client.o
+  CC      arch/arm/mach-msm/sdio_smem.o
+  CC      arch/arm/mach-msm/rpm.o
+  CC      arch/arm/mach-msm/rpm_resources.o
+  CC      arch/arm/mach-msm/mpm.o
+  CC      arch/arm/mach-msm/rpm_stats.o
+  CC      arch/arm/mach-msm/rpm_master_stat.o
+  CC      arch/arm/mach-msm/rpm_log.o
+  CC      arch/arm/mach-msm/msm_xo.o
+  CC      arch/arm/mach-msm/gpiomux-8x60_dali.o
+  CC      arch/arm/mach-msm/gpiomux-v2.o
+  CC      arch/arm/mach-msm/gpiomux.o
+  CC      arch/arm/mach-msm/msm_rq_stats.o
+  CC      arch/arm/mach-msm/msm_show_resume_irq.o
+  CC      arch/arm/mach-msm/restart.o
+  CC      arch/arm/mach-msm/sec_debug.o
+  CC      arch/arm/mach-msm/sec_getlog.o
+  CC      arch/arm/mach-msm/sec_gaf.o
+  CC      arch/arm/mach-msm/sec_last_log.o
+  CC      arch/arm/mach-msm/board-bluetooth-bcm4330.o
+  LD      arch/arm/mach-msm/qdsp6v2/built-in.o
+  CC [M]  arch/arm/mach-msm/dal_remotetest.o
+  CC [M]  arch/arm/mach-msm/dma_test.o
+  CC [M]  arch/arm/mach-msm/msm-buspm-dev.o
+  LD      arch/arm/mach-msm/built-in.o
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  LD      .tmp_vmlinux1
+  KSYM    .tmp_kallsyms1.S
+  AS      .tmp_kallsyms1.o
+  LD      .tmp_vmlinux2
+  KSYM    .tmp_kallsyms2.S
+  AS      .tmp_kallsyms2.o
+  LD      vmlinux
+  SYSMAP  System.map
+  SYSMAP  .tmp_System.map
+  Building modules, stage 2.
+  OBJCOPY arch/arm/boot/Image
+  MODPOST 21 modules
+  Kernel: arch/arm/boot/Image is ready
+  AS      arch/arm/boot/compressed/head.o
+  GZIP    arch/arm/boot/compressed/piggy.gzip
+  CC      arch/arm/boot/compressed/misc.o
+  CC      arch/arm/boot/compressed/decompress.o
+  CC      arch/arm/boot/compressed/string.o
+  SHIPPED arch/arm/boot/compressed/lib1funcs.S
+  AS      arch/arm/boot/compressed/lib1funcs.o
+  CC      arch/arm/mach-msm/dal_remotetest.mod.o
+  CC      arch/arm/mach-msm/dma_test.mod.o
+  CC      arch/arm/mach-msm/msm-buspm-dev.mod.o
+  CC      block/test-iosched.mod.o
+  CC      crypto/ansi_cprng.mod.o
+  CC      drivers/crypto/msm/qce.mod.o
+  CC      drivers/crypto/msm/qcedev.mod.o
+  CC      drivers/crypto/msm/qcrypto.mod.o
+  CC      drivers/hid/hid-logitech-dj.mod.o
+  CC      drivers/input/evbug.mod.o
+  CC      drivers/media/video/gspca/gspca_main.mod.o
+  CC      drivers/misc/msm_tsif.mod.o
+  CC      drivers/misc/tsif_chrdev.mod.o
+  CC      drivers/mmc/card/mmc_test.mod.o
+  CC      drivers/scsi/scsi_wait_scan.mod.o
+  CC      drivers/spi/spidev.mod.o
+  CC      drivers/video/backlight/lcd.mod.o
+  CC      net/ipv4/tcp_htcp.mod.o
+  CC      net/ipv4/tcp_westwood.mod.o
+  CC      net/sched/cls_flow.mod.o
+  CC      net/sched/sch_dsmark.mod.o
+  LD [M]  arch/arm/mach-msm/dal_remotetest.ko
+  LD [M]  arch/arm/mach-msm/dma_test.ko
+  LD [M]  arch/arm/mach-msm/msm-buspm-dev.ko
+  LD [M]  block/test-iosched.ko
+  LD [M]  crypto/ansi_cprng.ko
+  LD [M]  drivers/crypto/msm/qce.ko
+  LD [M]  drivers/crypto/msm/qcedev.ko
+  LD [M]  drivers/crypto/msm/qcrypto.ko
+  LD [M]  drivers/hid/hid-logitech-dj.ko
+  LD [M]  drivers/input/evbug.ko
+  LD [M]  drivers/media/video/gspca/gspca_main.ko
+  LD [M]  drivers/misc/msm_tsif.ko
+  LD [M]  drivers/misc/tsif_chrdev.ko
+  LD [M]  drivers/mmc/card/mmc_test.ko
+  LD [M]  net/ipv4/tcp_westwood.ko
+  LD [M]  net/sched/cls_flow.ko
+  LD [M]  net/ipv4/tcp_htcp.ko
+  LD [M]  net/sched/sch_dsmark.ko
+  LD [M]  drivers/video/backlight/lcd.ko
+  LD [M]  drivers/spi/spidev.ko
+  LD [M]  drivers/scsi/scsi_wait_scan.ko
+  AS      arch/arm/boot/compressed/piggy.gzip.o
+  LD      arch/arm/boot/compressed/vmlinux
+  OBJCOPY arch/arm/boot/zImage
+  Kernel: arch/arm/boot/zImage is ready

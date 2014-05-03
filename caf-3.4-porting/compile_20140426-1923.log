@@ -1,0 +1,46 @@
+Script started on 2014년 04월 26일 (토) 오후 07시 23분 31초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  CC      security/selinux/hooks.o
+  CC      kernel/fork.o
+  CC      kernel/exit.o
+  LD      init/built-in.o
+  CC      kernel/itimer.o
+  CC      kernel/timer.o
+  CC      kernel/sys.o
+  CC      kernel/posix-timers.o
+  CC      drivers/staging/android/alarm-dev.o
+  CC      kernel/posix-cpu-timers.o
+  LD      drivers/staging/android/built-in.o
+  CC      kernel/module.o
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  CC      kernel/time/posix-clock.o
+  CC      kernel/trace/trace.o
+  LD      drivers/staging/built-in.o
+  LD      kernel/time/built-in.o
+  LD      drivers/built-in.o
+  LD      kernel/trace/built-in.o
+  LD      security/selinux/selinux.o
+  LD      kernel/built-in.o
+  LD      security/selinux/built-in.o
+  LD      security/built-in.o
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  LD      .tmp_vmlinux1
+drivers/built-in.o: In function `devalarm_start':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/staging/android/alarm-dev.c:82: undefined reference to `alarm_start'
+drivers/built-in.o: In function `alarm_ioctl':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/staging/android/alarm-dev.c:204: undefined reference to `alarmtimer_get_rtcdev'
+make: *** [.tmp_vmlinux1] 오류 1
