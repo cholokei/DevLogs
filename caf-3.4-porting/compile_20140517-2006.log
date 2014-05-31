@@ -1,0 +1,9 @@
+Script started on 2014년 05월 17일 (토) 오후 08시 06분 14초
+scripts/kconfig/conf --silentoldconfig Kconfig
+arch/arm/mach-msm/Kconfig:3358: 'endif' in different file than 'if'
+arch/arm/mach-msm/Kconfig:3: location of the 'if'
+arch/arm/Kconfig:1492: 'endmenu' in different file than 'menu'
+arch/arm/mach-msm/Kconfig:3: location of the 'menu'
+make[2]: *** [silentoldconfig] 오류 1
+make[1]: *** [silentoldconfig] 오류 2
+make: *** `include/config/kernel.release'에서 필요로 하는  타겟 `include/config/auto.conf'를 만들 규칙이 없습니다.  멈춤.

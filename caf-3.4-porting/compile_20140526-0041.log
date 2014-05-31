@@ -1,0 +1,41 @@
+Script started on 2014년 05월 26일 (월) 오전 12시 41분 01초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  CC      drivers/misc/fsa9480.o
+drivers/misc/fsa9480.c: In function 'FSA9480_CheckAndHookAudioDock':
+drivers/misc/fsa9480.c:278:4: warning: implicit declaration of function 'sec_get_lpm_mode' [-Wimplicit-function-declaration]
+arch/arm/mach-msm/board-msm8x60_dali.c:4892:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4892:2: warning: (near initialization for 'fsa9480_pdata.otg_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4893:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4893:2: warning: (near initialization for 'fsa9480_pdata.usb_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4894:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4894:2: warning: (near initialization for 'fsa9480_pdata.charger_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4895:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4895:2: warning: (near initialization for 'fsa9480_pdata.jig_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4896:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4896:2: warning: (near initialization for 'fsa9480_pdata.deskdock_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4897:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4897:2: warning: (near initialization for 'fsa9480_pdata.cardock_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4900:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4900:2: warning: (near initialization for 'fsa9480_pdata.mhl_cb') [enabled by default]
+  LD      drivers/misc/built-in.o
+  LD      drivers/built-in.o
+  LD      arch/arm/mach-msm/built-in.o
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  LD      .tmp_vmlinux1
+drivers/built-in.o: In function `FSA9480_CheckAndHookAudioDock':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/misc/fsa9480.c:278: undefined reference to `sec_get_lpm_mode'
+make: *** [.tmp_vmlinux1] 오류 1

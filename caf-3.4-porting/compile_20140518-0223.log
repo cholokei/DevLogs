@@ -1,0 +1,92 @@
+Script started on 2014년 05월 18일 (일) 오전 02시 23분 01초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      arch/arm/mm/init.o
+  CC      arch/arm/common/cpaccess.o
+  CC      arch/arm/kernel/patch.o
+  CC      arch/arm/mm/mmu.o
+  LDS     arch/arm/kernel/vmlinux.lds
+  LD      arch/arm/kernel/built-in.o
+  LD      arch/arm/common/built-in.o
+  CC      arch/arm/mach-msm/timer.o
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  UPD     kernel/config_data.h
+  CC      kernel/configs.o
+  LD      arch/arm/mm/built-in.o
+  LD      drivers/video/console/built-in.o
+  LD      kernel/built-in.o
+  CC      drivers/video/msm/msm_fb.o
+  CC      drivers/video/msm/mdp.o
+  CC      drivers/video/msm/mdp_debugfs.o
+  CC      drivers/video/msm/mdp4_util.o
+  CC      drivers/video/msm/mdp4_video_enhance.o
+  CC      drivers/video/msm/mdp4_overlay.o
+  CC      drivers/video/msm/mdp4_overlay_lcdc.o
+  CC      drivers/video/msm/mdp4_overlay_dsi_video.o
+  CC      drivers/video/msm/mdp4_overlay_dsi_cmd.o
+  CC      drivers/video/msm/mdp4_dtv.o
+  CC      drivers/video/msm/mdp4_overlay_dtv.o
+  CC      drivers/video/msm/mdp_dma.o
+  CC      drivers/video/msm/mdp_dma_s.o
+  LD      arch/arm/mach-msm/built-in.o
+  CC      drivers/video/msm/mdp_vsync.o
+  CC      drivers/video/msm/mdp_cursor.o
+drivers/video/msm/mdp4_video_tuning_HD720.h:297:21: warning: 'DMB_LUT_TUNE' defined but not used [-Wunused-variable]
+  CC      drivers/video/msm/mdp_dma_tv.o
+  CC      drivers/video/msm/msm_dss_io_8x60.o
+  CC      drivers/video/msm/mipi_dsi.o
+  CC      drivers/video/msm/mipi_dsi_host.o
+  CC      drivers/video/msm/mipi_s6e8aa0_hd720.o
+  CC      drivers/video/msm/sec_mipi_lcd_esd_refresh.o
+  CC      drivers/video/msm/mipi_s6e8aa0_hd720_pt.o
+  CC      drivers/video/msm/hdmi_msm.o
+  CC      drivers/video/msm/external_common.o
+  LD      drivers/video/msm/msm_mipi.o
+  LD      drivers/video/msm/built-in.o
+  LD      drivers/video/built-in.o
+  LD      drivers/built-in.o
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  LD      .tmp_vmlinux1
+  KSYM    .tmp_kallsyms1.S
+  AS      .tmp_kallsyms1.o
+  LD      .tmp_vmlinux2
+  KSYM    .tmp_kallsyms2.S
+  AS      .tmp_kallsyms2.o
+  LD      vmlinux
+  SYSMAP  System.map
+  SYSMAP  .tmp_System.map
+  OBJCOPY arch/arm/boot/Image
+  Building modules, stage 2.
+  MODPOST 15 modules
+  Kernel: arch/arm/boot/Image is ready
+  GZIP    arch/arm/boot/compressed/piggy.gzip
+  LD [M]  arch/arm/mach-msm/dal_remotetest.ko
+  LD [M]  arch/arm/mach-msm/dma_test.ko
+  LD [M]  arch/arm/mach-msm/msm-buspm-dev.ko
+  LD [M]  block/test-iosched.ko
+  LD [M]  crypto/ansi_cprng.ko
+  LD [M]  drivers/crypto/msm/qce.ko
+  LD [M]  drivers/crypto/msm/qcedev.ko
+  LD [M]  drivers/crypto/msm/qcrypto.ko
+  LD [M]  drivers/hid/hid-logitech-dj.ko
+  LD [M]  drivers/input/evbug.ko
+  LD [M]  drivers/media/video/gspca/gspca_main.ko
+  LD [M]  drivers/misc/msm_tsif.ko
+  LD [M]  drivers/misc/tsif_chrdev.ko
+  LD [M]  drivers/scsi/scsi_wait_scan.ko
+  LD [M]  drivers/spi/spidev.ko
+  AS      arch/arm/boot/compressed/piggy.gzip.o
+  LD      arch/arm/boot/compressed/vmlinux
+  OBJCOPY arch/arm/boot/zImage
+  Kernel: arch/arm/boot/zImage is ready

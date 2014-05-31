@@ -1,0 +1,20 @@
+Script started on 2014년 05월 26일 (월) 오전 12시 27분 33초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  GZIP    kernel/config_data.gz
+  CC      arch/arm/mach-msm/restart.o
+  CHK     kernel/config_data.h
+arch/arm/mach-msm/restart.c: In function 'set_dload_mode':
+arch/arm/mach-msm/restart.c:129:3: error: 'CALLER_ADDR0' undeclared (first use in this function)
+arch/arm/mach-msm/restart.c:129:3: note: each undeclared identifier is reported only once for each function it appears in
+arch/arm/mach-msm/restart.c: In function 'msm_restart_init':
+arch/arm/mach-msm/restart.c:435:17: error: 'download_mode' undeclared (first use in this function)
+arch/arm/mach-msm/restart.c: At top level:
+arch/arm/mach-msm/restart.c:397:30: warning: 'dload_reboot_block' defined but not used [-Wunused-variable]
+make[1]: *** [arch/arm/mach-msm/restart.o] 오류 1
+make: *** [arch/arm/mach-msm] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....

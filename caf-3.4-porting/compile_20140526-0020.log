@@ -1,0 +1,52 @@
+Script started on 2014년 05월 26일 (월) 오전 12시 20분 22초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  CC      kernel/sys.o
+  LD      arch/arm/mach-msm/msm-etm.o
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  CC      arch/arm/mach-msm/restart.o
+  CC      arch/arm/mach-msm/sec_last_log.o
+  CC      arch/arm/mach-msm/board-bluetooth-bcm4330.o
+arch/arm/mach-msm/board-msm8x60_dali.c:4892:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4892:2: warning: (near initialization for 'fsa9480_pdata.otg_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4893:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4893:2: warning: (near initialization for 'fsa9480_pdata.usb_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4894:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4894:2: warning: (near initialization for 'fsa9480_pdata.charger_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4895:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4895:2: warning: (near initialization for 'fsa9480_pdata.jig_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4896:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4896:2: warning: (near initialization for 'fsa9480_pdata.deskdock_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4897:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4897:2: warning: (near initialization for 'fsa9480_pdata.cardock_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4900:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4900:2: warning: (near initialization for 'fsa9480_pdata.mhl_cb') [enabled by default]
+  CC [M]  arch/arm/mach-msm/dal_remotetest.o
+  CC [M]  arch/arm/mach-msm/dma_test.o
+  CC      kernel/irq/handle.o
+  CC      kernel/power/wakelock.o
+  CC [M]  arch/arm/mach-msm/msm-buspm-dev.o
+  CC      kernel/module.o
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  CC      kernel/trace/trace.o
+arch/arm/mach-msm/restart.c: In function 'set_dload_mode':
+arch/arm/mach-msm/restart.c:129:3: error: 'CALLER_ADDR0' undeclared (first use in this function)
+arch/arm/mach-msm/restart.c:129:3: note: each undeclared identifier is reported only once for each function it appears in
+arch/arm/mach-msm/restart.c: In function 'msm_restart':
+arch/arm/mach-msm/restart.c:282:2: warning: implicit declaration of function 'sec_debug_is_enabled' [-Wimplicit-function-declaration]
+make[1]: *** [arch/arm/mach-msm/restart.o] 오류 1
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  LD      kernel/irq/built-in.o
+  LD      kernel/power/built-in.o
+make: *** [arch/arm/mach-msm] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+  LD      kernel/trace/built-in.o
+  LD      kernel/built-in.o

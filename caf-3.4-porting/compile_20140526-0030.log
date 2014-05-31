@@ -1,0 +1,15 @@
+Script started on 2014년 05월 26일 (월) 오전 12시 30분 34초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      arch/arm/mach-msm/restart.o
+arch/arm/mach-msm/restart.c: In function 'msm_restart_init':
+arch/arm/mach-msm/restart.c:437:17: error: 'download_mode' undeclared (first use in this function)
+arch/arm/mach-msm/restart.c:437:17: note: each undeclared identifier is reported only once for each function it appears in
+arch/arm/mach-msm/restart.c: At top level:
+arch/arm/mach-msm/restart.c:399:30: warning: 'dload_reboot_block' defined but not used [-Wunused-variable]
+make[1]: *** [arch/arm/mach-msm/restart.o] 오류 1
+make: *** [arch/arm/mach-msm] 오류 2

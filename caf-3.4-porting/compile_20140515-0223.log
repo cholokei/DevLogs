@@ -1,0 +1,247 @@
+Script started on 2014년 05월 15일 (목) 오전 02시 23분 19초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CC      init/main.o
+  CC      drivers/char/mem.o
+  CC      drivers/bluetooth/hci_ldisc.o
+  CC      drivers/bluetooth/hci_h4.o
+  CC      drivers/bluetooth/hci_ibs.o
+  CHK     include/generated/compile.h
+  CC      init/do_mounts.o
+  CC      drivers/base/genlock.o
+  CC      arch/arm/kernel/kgdb.o
+  CC      security/selinux/hooks.o
+  CC      arch/arm/mach-msm/smd_tty.o
+  CC      mm/highmem.o
+  CC      fs/open.o
+  CC      net/bluetooth/rfcomm/tty.o
+  CC      drivers/char/misc.o
+  CC      kernel/fork.o
+  LD      arch/arm/kernel/built-in.o
+  CC      fs/char_dev.o
+  LD      drivers/base/built-in.o
+  CC      drivers/char/msm_rotator.o
+  LD      mm/built-in.o
+  CC      kernel/printk.o
+  CC      kernel/exit.o
+  CC      drivers/bluetooth/bluesleep_bcm.o
+  CC      init/version.o
+  LD      drivers/bluetooth/hci_uart.o
+  LD      net/bluetooth/rfcomm/rfcomm.o
+  LD      init/mounts.o
+  CC      arch/arm/mach-msm/devices-msm8x60.o
+  LD      drivers/bluetooth/built-in.o
+  CC      fs/devpts/inode.o
+  CC      lib/bust_spinlocks.o
+  LD      net/bluetooth/rfcomm/built-in.o
+  LD      net/bluetooth/built-in.o
+  LD      init/built-in.o
+  LD      fs/devpts/devpts.o
+  LD      fs/devpts/built-in.o
+  CC      kernel/signal.o
+  LD      drivers/char/built-in.o
+  LD      security/selinux/selinux.o
+  LD      lib/built-in.o
+  CC      kernel/sys.o
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  CC      drivers/gpu/msm/kgsl.o
+  CC      kernel/debug/debug_core.o
+  CC      kernel/debug/gdbstub.o
+  LD      kernel/debug/built-in.o
+  CC      drivers/hid/hid-picolcd.o
+  LD      security/selinux/built-in.o
+  CC      net/ipv4/netfilter/nf_nat_proto_sctp.o
+  LD      security/built-in.o
+  CC      kernel/module.o
+  LD      drivers/gpu/msm/msm_adreno.o
+  CC      drivers/input/serio/serport.o
+  GZIP    kernel/config_data.gz
+  CC      kernel/audit.o
+arch/arm/mach-msm/board-msm8x60_dali.c:4888:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4888:2: warning: (near initialization for 'fsa9480_pdata.otg_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4889:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4889:2: warning: (near initialization for 'fsa9480_pdata.usb_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4890:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4890:2: warning: (near initialization for 'fsa9480_pdata.charger_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4891:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4891:2: warning: (near initialization for 'fsa9480_pdata.jig_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4892:2: warning: initialization from incompatible pointer type [enabled by default]  LD      drivers/hid/built-in.o
+
+arch/arm/mach-msm/board-msm8x60_dali.c:4892:2: warning: (near initialization for 'fsa9480_pdata.deskdock_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4893:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4893:2: warning: (near initialization for 'fsa9480_pdata.cardock_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4896:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4896:2: warning: (near initialization for 'fsa9480_pdata.mhl_cb') [enabled by default]
+  CC      kernel/auditsc.o
+  CC      kernel/trace/trace.o
+  CC      fs/proc/array.o
+  LD      drivers/input/serio/built-in.o
+  LD      drivers/gpu/msm/msm_z180.o
+  LD      net/ipv4/netfilter/built-in.o
+  LD      drivers/gpu/msm/msm_kgsl_core.o
+  CC      fs/proc/proc_tty.o
+  CC      drivers/net/slip/slip.o
+  CC      fs/proc/consoles.o
+  CC      drivers/net/ppp/ppp_async.o
+  LD      fs/proc/proc.o
+  CHK     kernel/config_data.h
+  UPD     kernel/config_data.h
+  LD      arch/arm/mach-msm/built-in.o
+  LD      drivers/gpu/msm/built-in.o
+  CC      kernel/configs.o
+  LD      drivers/gpu/built-in.o
+  CC      drivers/usb/class/cdc-acm.o
+  CC      drivers/tty/tty_io.o
+  CC      drivers/usb/gadget/msm72k_udc.o
+  LD      drivers/net/slip/built-in.o
+  LD      drivers/net/ppp/built-in.o
+  CC      drivers/usb/gadget/android.o
+  CC      drivers/tty/n_tty.o
+  LD      kernel/trace/built-in.o
+  CC      drivers/usb/host/ehci-hcd.o
+  CC      drivers/tty/tty_ioctl.o
+  CC      drivers/video/fb_notify.o
+  CC      drivers/tty/tty_ldisc.o
+  LD      drivers/net/built-in.o
+  CC      drivers/video/fbmem.o
+In file included from drivers/usb/gadget/android.c:57:0:
+drivers/usb/gadget/u_serial.c: In function '__gs_poll_get_char':
+drivers/usb/gadget/u_serial.c:1755:3: warning: implicit declaration of function 'usb_loop_poll_hw' [-Wimplicit-function-declaration]
+  LD      fs/proc/built-in.o
+  LD      fs/built-in.o
+  LD      drivers/usb/class/built-in.o
+  CC      drivers/tty/tty_buffer.o
+  CC      drivers/tty/tty_port.o
+  CC      drivers/usb/otg/msm72k_otg.o
+  CC      drivers/tty/tty_mutex.o
+  CC      drivers/tty/pty.o
+  LD      net/ipv4/built-in.o
+  LD      kernel/built-in.o
+  CC      drivers/tty/tty_audit.o
+  CC      drivers/tty/sysrq.o
+  CC      drivers/video/fbmon.o
+  CC      drivers/video/fbcmap.o
+  CC      drivers/tty/serial/serial_core.o
+  CC      drivers/video/fbsysfs.o
+  CC      drivers/tty/vt/vt_ioctl.o
+  CC      drivers/tty/vt/vc_screen.o
+  CC      drivers/video/modedb.o
+  CC      drivers/video/fbcvt.o
+  CC      drivers/video/backlight/lcd.o
+  CC      drivers/video/cfbfillrect.o
+  CC      drivers/video/console/dummycon.o
+  CC      drivers/tty/vt/selection.o
+  CC      drivers/tty/vt/keyboard.o
+  CC      drivers/video/cfbcopyarea.o
+  CC      drivers/video/msm/msm_fb.o
+  CC      drivers/video/msm/logo.o
+  CC      drivers/video/console/fbcon.o
+  CC      drivers/video/backlight/backlight.o
+  CC      drivers/tty/vt/consolemap.o
+  CC      drivers/video/cfbimgblt.o
+  CC      drivers/video/msm/mdp.o
+  LD      drivers/usb/otg/built-in.o
+  CC      drivers/video/msm/mdp_debugfs.o
+  CC      drivers/tty/serial/msm_serial_hs.o
+  CC      drivers/tty/serial/msm_serial_hs_lite.o
+  LD      drivers/usb/host/built-in.o
+  CC      drivers/tty/serial/kgdboc.o
+  CC      drivers/tty/vt/vt.o
+  CC      drivers/video/backlight/generic_bl.o
+  LD      net/built-in.o
+  CC      drivers/video/msm/mdp4_util.o
+  CC      drivers/video/msm/mdp4_video_enhance.o
+  CC      drivers/video/msm/mdp4_overlay.o
+  CC      drivers/video/console/bitblit.o
+  LD      drivers/video/backlight/built-in.o
+  LD      drivers/video/fb.o
+  CC      drivers/video/msm/mdp4_overlay_lcdc.o
+  CC      drivers/video/msm/mdp4_overlay_dsi_video.o
+  CC      drivers/video/console/softcursor.o
+  CC      drivers/video/msm/mdp4_overlay_dsi_cmd.o
+  CC      drivers/video/msm/mdp4_dtv.o
+  CC      drivers/video/msm/mdp4_overlay_dtv.o
+  CC      drivers/video/msm/mdp_dma.o
+  CC      drivers/video/msm/mdp_dma_s.o
+  CC      drivers/video/msm/mdp_vsync.o
+  CC      drivers/video/msm/mdp_cursor.o
+  CC      drivers/video/msm/mdp_dma_tv.o
+  LD      drivers/video/console/built-in.o
+  CC      drivers/video/msm/msm_dss_io_8x60.o
+  CC      drivers/video/msm/mipi_dsi.o
+  CC      drivers/video/msm/mipi_dsi_host.o
+  CC      drivers/video/msm/mipi_s6e8aa0_hd720.o
+  CC      drivers/video/msm/sec_mipi_lcd_esd_refresh.o
+  CC      drivers/video/msm/msm_fb_panel.o
+  CC      drivers/video/msm/mipi_s6e8aa0_hd720_pt.o
+  CC      drivers/video/msm/hdmi_msm.o
+  CC      drivers/video/msm/external_common.o
+  LD      drivers/tty/serial/built-in.o
+  LD      drivers/tty/vt/built-in.o
+  LD      drivers/tty/built-in.o
+  LD      drivers/video/msm/msm_mipi.o
+  LD      drivers/video/msm/built-in.o
+  LD      drivers/video/built-in.o
+  LD      drivers/usb/gadget/g_android.o
+  LD      drivers/usb/gadget/built-in.o
+  LD      drivers/usb/built-in.o
+  LD      drivers/built-in.o
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  LD      .tmp_vmlinux1
+  KSYM    .tmp_kallsyms1.S
+  AS      .tmp_kallsyms1.o
+  LD      .tmp_vmlinux2
+  KSYM    .tmp_kallsyms2.S
+  AS      .tmp_kallsyms2.o
+  LD      vmlinux
+  SYSMAP  System.map
+  SYSMAP  .tmp_System.map
+  OBJCOPY arch/arm/boot/Image
+  Building modules, stage 2.
+  MODPOST 15 modules
+  Kernel: arch/arm/boot/Image is ready
+  GZIP    arch/arm/boot/compressed/piggy.gzip
+  CC      arch/arm/mach-msm/dal_remotetest.mod.o
+  CC      arch/arm/mach-msm/dma_test.mod.o
+  CC      arch/arm/mach-msm/msm-buspm-dev.mod.o
+  CC      block/test-iosched.mod.o
+  CC      crypto/ansi_cprng.mod.o
+  CC      drivers/crypto/msm/qce.mod.o
+  CC      drivers/crypto/msm/qcedev.mod.o
+  CC      drivers/crypto/msm/qcrypto.mod.o
+  CC      drivers/hid/hid-logitech-dj.mod.o
+  CC      drivers/input/evbug.mod.o
+  CC      drivers/media/video/gspca/gspca_main.mod.o
+  CC      drivers/misc/msm_tsif.mod.o
+  CC      drivers/misc/tsif_chrdev.mod.o
+  CC      drivers/scsi/scsi_wait_scan.mod.o
+  CC      drivers/spi/spidev.mod.o
+  LD [M]  arch/arm/mach-msm/msm-buspm-dev.ko
+  LD [M]  arch/arm/mach-msm/dal_remotetest.ko
+  LD [M]  drivers/crypto/msm/qcrypto.ko
+  LD [M]  drivers/input/evbug.ko
+  LD [M]  block/test-iosched.ko
+  LD [M]  crypto/ansi_cprng.ko
+  LD [M]  drivers/crypto/msm/qce.ko
+  LD [M]  drivers/crypto/msm/qcedev.ko
+  LD [M]  drivers/hid/hid-logitech-dj.ko
+  LD [M]  drivers/media/video/gspca/gspca_main.ko
+  LD [M]  arch/arm/mach-msm/dma_test.ko
+  LD [M]  drivers/spi/spidev.ko
+  LD [M]  drivers/misc/tsif_chrdev.ko
+  LD [M]  drivers/misc/msm_tsif.ko
+  LD [M]  drivers/scsi/scsi_wait_scan.ko
+  AS      arch/arm/boot/compressed/piggy.gzip.o
+  LD      arch/arm/boot/compressed/vmlinux
+  OBJCOPY arch/arm/boot/zImage
+  Kernel: arch/arm/boot/zImage is ready
