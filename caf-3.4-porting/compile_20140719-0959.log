@@ -1,0 +1,23 @@
+Script started on 2014년 07월 19일 (토) 오전 09시 59분 08초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  GZIP    kernel/config_data.gz
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  CHK     kernel/config_data.h
+arch/arm/mach-msm/board-msm8x60_dali.c:4908:21: error: 'fsa9480_pdata' undeclared here (not in a function)
+arch/arm/mach-msm/board-msm8x60_dali.c:4490:14: warning: 'fsa9480_otg_cb' defined but not used [-Wunused-function]
+arch/arm/mach-msm/board-msm8x60_dali.c:4523:13: warning: 'fsa9480_usb_cb' defined but not used [-Wunused-function]
+arch/arm/mach-msm/board-msm8x60_dali.c:4592:13: warning: 'fsa9480_charger_cb' defined but not used [-Wunused-function]
+arch/arm/mach-msm/board-msm8x60_dali.c:4649:13: warning: 'fsa9480_jig_cb' defined but not used [-Wunused-function]
+arch/arm/mach-msm/board-msm8x60_dali.c:4705:13: warning: 'fsa9480_mhl_cb' defined but not used [-Wunused-function]
+arch/arm/mach-msm/board-msm8x60_dali.c:4757:13: warning: 'fsa9480_deskdock_cb' defined but not used [-Wunused-function]
+arch/arm/mach-msm/board-msm8x60_dali.c:4820:13: warning: 'fsa9480_cardock_cb' defined but not used [-Wunused-function]
+arch/arm/mach-msm/board-msm8x60_dali.c:4876:13: warning: 'fsa9480_reset_cb' defined but not used [-Wunused-function]
+arch/arm/mach-msm/board-msm8x60_dali.c:4886:13: warning: 'fsa9480_set_init_flag' defined but not used [-Wunused-function]
+make[1]: *** [arch/arm/mach-msm/board-msm8x60_dali.o] 오류 1
+make: *** [arch/arm/mach-msm] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....

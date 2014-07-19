@@ -1,0 +1,54 @@
+Script started on 2014년 07월 19일 (토) 오전 09시 47분 12초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  CC      kernel/sys.o
+  CC      drivers/misc/fsa9480.o
+drivers/misc/fsa9480.c: In function 'fsa9480_detect_dev':
+drivers/misc/fsa9480.c:842:41: warning: initialization from incompatible pointer type [enabled by default]
+drivers/misc/fsa9480.c:861:13: error: request for member 'usb_cb' in something not a structure or union
+drivers/misc/fsa9480.c:862:10: error: request for member 'usb_cb' in something not a structure or union
+drivers/misc/fsa9480.c:872:13: error: request for member 'uart_cb' in something not a structure or union
+drivers/misc/fsa9480.c:873:10: error: request for member 'uart_cb' in something not a structure or union
+drivers/misc/fsa9480.c:883:13: error: request for member 'charger_cb' in something not a structure or union
+drivers/misc/fsa9480.c:884:10: error: request for member 'charger_cb' in something not a structure or union
+drivers/misc/fsa9480.c:889:13: error: request for member 'otg_cb' in something not a structure or union
+drivers/misc/fsa9480.c:890:10: error: request for member 'otg_cb' in something not a structure or union
+drivers/misc/fsa9480.c:902:13: error: request for member 'jig_cb' in something not a structure or union
+drivers/misc/fsa9480.c:903:10: error: request for member 'jig_cb' in something not a structure or union
+drivers/misc/fsa9480.c:945:13: error: request for member 'deskdock_cb' in something not a structure or union
+drivers/misc/fsa9480.c:946:10: error: request for member 'deskdock_cb' in something not a structure or union
+drivers/misc/fsa9480.c:977:13: error: request for member 'cardock_cb' in something not a structure or union
+drivers/misc/fsa9480.c:978:10: error: request for member 'cardock_cb' in something not a structure or union
+drivers/misc/fsa9480.c:1012:13: error: request for member 'usb_cb' in something not a structure or union
+drivers/misc/fsa9480.c:1013:10: error: request for member 'usb_cb' in something not a structure or union
+drivers/misc/fsa9480.c:1019:13: error: request for member 'uart_cb' in something not a structure or union
+drivers/misc/fsa9480.c:1020:10: error: request for member 'uart_cb' in something not a structure or union
+drivers/misc/fsa9480.c:1024:10: error: request for member 'jig_cb' in something not a structure or union
+drivers/misc/fsa9480.c:1029:13: error: request for member 'charger_cb' in something not a structure or union
+drivers/misc/fsa9480.c:1030:10: error: request for member 'charger_cb' in something not a structure or union
+drivers/misc/fsa9480.c:1042:13: error: request for member 'jig_cb' in something not a structure or union
+drivers/misc/fsa9480.c:1043:10: error: request for member 'jig_cb' in something not a structure or union
+drivers/misc/fsa9480.c:1070:13: error: request for member 'deskdock_cb' in something not a structure or union
+drivers/misc/fsa9480.c:1071:10: error: request for member 'deskdock_cb' in something not a structure or union
+drivers/misc/fsa9480.c:1087:13: error: request for member 'cardock_cb' in something not a structure or union
+drivers/misc/fsa9480.c:1088:10: error: request for member 'cardock_cb' in something not a structure or union
+drivers/misc/fsa9480.c:1123:13: error: request for member 'deskdock_cb' in something not a structure or union
+drivers/misc/fsa9480.c:1124:10: error: request for member 'deskdock_cb' in something not a structure or union
+make[2]: *** [drivers/misc/fsa9480.o] 오류 1
+make[1]: *** [drivers/misc] 오류 2
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      kernel/module.o
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  CC      kernel/trace/trace.o
+make: *** [drivers] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+  LD      kernel/trace/built-in.o
+  LD      kernel/built-in.o

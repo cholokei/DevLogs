@@ -1,0 +1,83 @@
+Script started on 2014년 07월 19일 (토) 오전 09시 53분 08초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+arch/arm/mach-msm/board-msm8x60_dali.c:4892:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4892:2: warning: (near initialization for 'fsa9480_pdata.otg_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4893:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4893:2: warning: (near initialization for 'fsa9480_pdata.usb_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4894:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4894:2: warning: (near initialization for 'fsa9480_pdata.charger_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4895:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4895:2: warning: (near initialization for 'fsa9480_pdata.jig_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4896:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4896:2: warning: (near initialization for 'fsa9480_pdata.deskdock_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4897:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4897:2: warning: (near initialization for 'fsa9480_pdata.cardock_cb') [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4900:2: warning: initialization from incompatible pointer type [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:4900:2: warning: (near initialization for 'fsa9480_pdata.mhl_cb') [enabled by default]
+  CC      drivers/misc/fsa9480.o
+  LD      drivers/misc/built-in.o
+  LD      arch/arm/mach-msm/built-in.o
+  LD      drivers/built-in.o
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  LD      .tmp_vmlinux1
+  KSYM    .tmp_kallsyms1.S
+  AS      .tmp_kallsyms1.o
+  LD      .tmp_vmlinux2
+  KSYM    .tmp_kallsyms2.S
+  AS      .tmp_kallsyms2.o
+  LD      vmlinux
+  SYSMAP  System.map
+  SYSMAP  .tmp_System.map
+  OBJCOPY arch/arm/boot/Image
+  Building modules, stage 2.
+  MODPOST 15 modules
+  Kernel: arch/arm/boot/Image is ready
+  CC      arch/arm/mach-msm/dal_remotetest.mod.o
+  CC      arch/arm/mach-msm/dma_test.mod.o
+  CC      arch/arm/mach-msm/msm-buspm-dev.mod.o
+  CC      block/test-iosched.mod.o
+  CC      crypto/ansi_cprng.mod.o
+  CC      drivers/crypto/msm/qce.mod.o
+  CC      drivers/crypto/msm/qcedev.mod.o
+  GZIP    arch/arm/boot/compressed/piggy.gzip
+  CC      drivers/crypto/msm/qcrypto.mod.o
+  CC      drivers/hid/hid-logitech-dj.mod.o
+  CC      drivers/input/evbug.mod.o
+  CC      drivers/media/video/gspca/gspca_main.mod.o
+  CC      drivers/misc/msm_tsif.mod.o
+  CC      drivers/misc/tsif_chrdev.mod.o
+  CC      drivers/scsi/scsi_wait_scan.mod.o
+  CC      drivers/spi/spidev.mod.o
+  LD [M]  arch/arm/mach-msm/dal_remotetest.ko
+  LD [M]  arch/arm/mach-msm/dma_test.ko
+  LD [M]  arch/arm/mach-msm/msm-buspm-dev.ko
+  LD [M]  block/test-iosched.ko
+  LD [M]  crypto/ansi_cprng.ko
+  LD [M]  drivers/crypto/msm/qce.ko
+  LD [M]  drivers/crypto/msm/qcedev.ko
+  LD [M]  drivers/crypto/msm/qcrypto.ko
+  LD [M]  drivers/hid/hid-logitech-dj.ko
+  LD [M]  drivers/input/evbug.ko
+  LD [M]  drivers/media/video/gspca/gspca_main.ko
+  LD [M]  drivers/misc/msm_tsif.ko
+  LD [M]  drivers/misc/tsif_chrdev.ko
+  LD [M]  drivers/scsi/scsi_wait_scan.ko
+  LD [M]  drivers/spi/spidev.ko
+  AS      arch/arm/boot/compressed/piggy.gzip.o
+  LD      arch/arm/boot/compressed/vmlinux
+  OBJCOPY arch/arm/boot/zImage
+  Kernel: arch/arm/boot/zImage is ready
