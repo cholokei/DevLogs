@@ -1,0 +1,100 @@
+Script started on 2014년 07월 28일 (월) 오전 11시 46분 38초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  CC      arch/arm/mach-msm/sdio_al.o
+  CC      arch/arm/mach-msm/sdio_al_test.o
+  CC      kernel/sys.o
+  CC      arch/arm/mach-msm/sdio_al_dloader.o
+  CC      drivers/char/diag/diagchar_core.o
+  LD      init/built-in.o
+  CC      drivers/char/diag/diagchar_hdlc.o
+  CC      drivers/char/diag/diagfwd.o
+  CC      drivers/char/diag/diagmem.o
+  CC      drivers/char/diag/diagfwd_cntl.o
+  CC      drivers/char/diag/diag_dci.o
+  CC      drivers/char/diag/diag_masks.o
+  CC      kernel/trace/trace.o
+  CC      drivers/char/diag/diag_debugfs.o
+  CC      arch/arm/mach-msm/rpcrouter_sdio_xprt.o
+  CC      drivers/char/diag/diagfwd_sdio.o
+  LD      drivers/char/diag/diagchar.o
+  LD      drivers/char/diag/built-in.o
+  LD      drivers/char/built-in.o
+  CC      kernel/module.o
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  LD      kernel/trace/built-in.o
+  GZIP    kernel/config_data.gz
+  CC      drivers/mmc/host/msm_sdcc.o
+  CHK     kernel/config_data.h
+  UPD     kernel/config_data.h
+  CC      kernel/configs.o
+  LD      kernel/built-in.o
+  CC      drivers/usb/gadget/android.o
+  LD      arch/arm/mach-msm/built-in.o
+  LD      drivers/mmc/host/built-in.o
+  LD      drivers/mmc/built-in.o
+  LD      drivers/usb/gadget/g_android.o
+  LD      drivers/usb/gadget/built-in.o
+  LD      drivers/usb/built-in.o
+  LD      drivers/built-in.o
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  LD      .tmp_vmlinux1
+  KSYM    .tmp_kallsyms1.S
+  AS      .tmp_kallsyms1.o
+  LD      .tmp_vmlinux2
+  KSYM    .tmp_kallsyms2.S
+  AS      .tmp_kallsyms2.o
+  LD      vmlinux
+  SYSMAP  System.map
+  SYSMAP  .tmp_System.map
+  OBJCOPY arch/arm/boot/Image
+  Building modules, stage 2.
+  MODPOST 15 modules
+  Kernel: arch/arm/boot/Image is ready
+  GZIP    arch/arm/boot/compressed/piggy.gzip
+  CC      arch/arm/mach-msm/dal_remotetest.mod.o
+  CC      arch/arm/mach-msm/dma_test.mod.o
+  CC      arch/arm/mach-msm/msm-buspm-dev.mod.o
+  CC      block/test-iosched.mod.o
+  CC      crypto/ansi_cprng.mod.o
+  CC      drivers/crypto/msm/qce.mod.o
+  CC      drivers/crypto/msm/qcedev.mod.o
+  CC      drivers/crypto/msm/qcrypto.mod.o
+  CC      drivers/hid/hid-logitech-dj.mod.o
+  CC      drivers/input/evbug.mod.o
+  CC      drivers/media/video/gspca/gspca_main.mod.o
+  CC      drivers/misc/msm_tsif.mod.o
+  CC      drivers/misc/tsif_chrdev.mod.o
+  CC      drivers/scsi/scsi_wait_scan.mod.o
+  CC      drivers/spi/spidev.mod.o
+  LD [M]  arch/arm/mach-msm/dal_remotetest.ko
+  LD [M]  arch/arm/mach-msm/dma_test.ko
+  LD [M]  arch/arm/mach-msm/msm-buspm-dev.ko
+  LD [M]  block/test-iosched.ko
+  LD [M]  crypto/ansi_cprng.ko
+  LD [M]  drivers/crypto/msm/qce.ko
+  LD [M]  drivers/crypto/msm/qcedev.ko
+  LD [M]  drivers/crypto/msm/qcrypto.ko
+  LD [M]  drivers/hid/hid-logitech-dj.ko
+  LD [M]  drivers/input/evbug.ko
+  LD [M]  drivers/media/video/gspca/gspca_main.ko
+  LD [M]  drivers/misc/msm_tsif.ko
+  LD [M]  drivers/misc/tsif_chrdev.ko
+  LD [M]  drivers/scsi/scsi_wait_scan.ko
+  LD [M]  drivers/spi/spidev.ko
+  AS      arch/arm/boot/compressed/piggy.gzip.o
+  LD      arch/arm/boot/compressed/vmlinux
+  OBJCOPY arch/arm/boot/zImage
+  Kernel: arch/arm/boot/zImage is ready

@@ -1,0 +1,26 @@
+Script started on 2014년 07월 30일 (수) 오전 11시 21분 11초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  CC      drivers/misc/fsa9480.o
+  LD      drivers/misc/built-in.o
+  LD      drivers/built-in.o
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  LD      .tmp_vmlinux1
+drivers/built-in.o: In function `sii9234_power_down':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mhl_v2/sii9234.c:944: undefined reference to `mhl_hpd_handler'
+drivers/built-in.o: In function `sii9234_irq_thread':
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mhl_v2/sii9234.c:1960: undefined reference to `mhl_hpd_handler'
+/home/cholokei/git/android_kernel_samsung_dalikt/drivers/video/msm/mhl_v2/sii9234.c:2021: undefined reference to `mhl_hpd_handler'
+make: *** [.tmp_vmlinux1] 오류 1

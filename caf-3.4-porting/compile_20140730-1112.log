@@ -1,0 +1,21 @@
+Script started on 2014년 07월 30일 (수) 오전 11시 12분 39초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  CC      drivers/misc/fsa9480.o
+drivers/misc/fsa9480.c: In function 'fsa9480_detect_dev':
+drivers/misc/fsa9480.c:851:2: error: 'adc' undeclared (first use in this function)
+drivers/misc/fsa9480.c:851:2: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [drivers/misc/fsa9480.o] 오류 1
+make[1]: *** [drivers/misc] 오류 2
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      drivers/video/msm/mhl_v2/sii9234.o
+  LD      drivers/video/msm/mhl_v2/built-in.o
+  LD      drivers/video/msm/built-in.o
+  LD      drivers/video/built-in.o
+make: *** [drivers] 오류 2

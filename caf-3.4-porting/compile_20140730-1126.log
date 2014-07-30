@@ -1,0 +1,25 @@
+Script started on 2014년 07월 30일 (수) 오전 11시 26분 58초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  CC      drivers/video/msm/hdmi_msm.o
+drivers/video/msm/hdmi_msm.c: In function 'mhl_hpd_handler':
+drivers/video/msm/hdmi_msm.c:780:16: error: 'struct hdmi_msm_state_type' has no member named 'mhl_hpd_state'
+drivers/video/msm/hdmi_msm.c:781:16: error: 'struct hdmi_msm_state_type' has no member named 'hpd_cable_chg_detected'
+drivers/video/msm/hdmi_msm.c:782:16: error: 'struct hdmi_msm_state_type' has no member named 'hpd_on_offline'
+drivers/video/msm/hdmi_msm.c:784:29: error: 'struct hdmi_msm_state_type' has no member named 'boot_completion'
+drivers/video/msm/hdmi_msm.c:788:3: warning: implicit declaration of function 'hdmi_msm_hpd_on' [-Wimplicit-function-declaration]
+drivers/video/msm/hdmi_msm.c:789:28: error: 'struct hdmi_msm_state_type' has no member named 'boot_completion'
+drivers/video/msm/hdmi_msm.c:790:3: error: 'struct hdmi_msm_state_type' has no member named 'boot_completion'
+drivers/video/msm/hdmi_msm.c: At top level:
+drivers/video/msm/hdmi_msm.c:4317:12: error: static declaration of 'hdmi_msm_hpd_on' follows non-static declaration
+drivers/video/msm/hdmi_msm.c:788:3: note: previous implicit declaration of 'hdmi_msm_hpd_on' was here
+make[3]: *** [drivers/video/msm/hdmi_msm.o] 오류 1
+make[2]: *** [drivers/video/msm] 오류 2
+make[1]: *** [drivers/video] 오류 2
+make: *** [drivers] 오류 2

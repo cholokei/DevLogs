@@ -1,0 +1,32 @@
+Script started on 2014년 07월 30일 (수) 오전 11시 05분 35초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  CC      kernel/sys.o
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  CC      kernel/module.o
+  GZIP    kernel/config_data.gz
+  CC      kernel/trace/trace.o
+arch/arm/mach-msm/board-msm8x60_dali.c:171:27: fatal error: linux/sii9234.h: No such file or directory
+compilation terminated.
+make[1]: *** [arch/arm/mach-msm/board-msm8x60_dali.o] 오류 1
+make: *** [arch/arm/mach-msm] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      drivers/misc/fsa9480.o
+drivers/misc/fsa9480.c:32:27: fatal error: linux/sii9234.h: No such file or directory
+compilation terminated.
+make[2]: *** [drivers/misc/fsa9480.o] 오류 1
+make[1]: *** [drivers/misc] 오류 2
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+make: *** [drivers] 오류 2
+  LD      kernel/trace/built-in.o
+  CHK     kernel/config_data.h
+  UPD     kernel/config_data.h
+  CC      kernel/configs.o
+  LD      kernel/built-in.o

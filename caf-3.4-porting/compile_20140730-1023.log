@@ -1,0 +1,31 @@
+Script started on 2014년 07월 30일 (수) 오전 10시 23분 57초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  CC      kernel/sys.o
+  LD      init/built-in.o
+  LD      drivers/misc/tspdrv/built-in.o
+  LD      drivers/misc/vibetonz/built-in.o
+  CC [M]  drivers/misc/vibetonz/tspdrv.o
+  CC      kernel/trace/trace.o
+drivers/misc/vibetonz/tspdrv.c: In function 'get_time_for_vibetonz':
+drivers/misc/vibetonz/tspdrv.c:242:16: error: 'ktime_t' has no member named 'tv'
+drivers/misc/vibetonz/tspdrv.c:242:34: error: 'ktime_t' has no member named 'tv'
+make[3]: *** [drivers/misc/vibetonz/tspdrv.o] 오류 1
+make[2]: *** [drivers/misc/vibetonz] 오류 2
+make[1]: *** [drivers/misc] 오류 2
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      kernel/module.o
+  GZIP    kernel/config_data.gz
+make: *** [drivers] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+  LD      kernel/trace/built-in.o
+  CHK     kernel/config_data.h
+  UPD     kernel/config_data.h
+  CC      kernel/configs.o
+  LD      kernel/built-in.o
