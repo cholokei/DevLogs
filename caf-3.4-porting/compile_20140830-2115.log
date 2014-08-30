@@ -1,0 +1,54 @@
+Script started on 2014년 08월 30일 (토) 오후 09시 15분 29초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  CC      drivers/video/msm/msm_fb.o
+  LD      drivers/video/msm/built-in.o
+  LD      drivers/video/built-in.o
+  LD      drivers/built-in.o
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  LD      .tmp_vmlinux1
+  KSYM    .tmp_kallsyms1.S
+  AS      .tmp_kallsyms1.o
+  LD      .tmp_vmlinux2
+  KSYM    .tmp_kallsyms2.S
+  AS      .tmp_kallsyms2.o
+  LD      vmlinux
+  SYSMAP  System.map
+  SYSMAP  .tmp_System.map
+  OBJCOPY arch/arm/boot/Image
+  Building modules, stage 2.
+  MODPOST 16 modules
+  Kernel: arch/arm/boot/Image is ready
+  LD [M]  arch/arm/mach-msm/dal_remotetest.ko
+  LD [M]  arch/arm/mach-msm/msm-buspm-dev.ko
+  LD [M]  arch/arm/mach-msm/dma_test.ko
+  LD [M]  block/test-iosched.ko
+  LD [M]  crypto/ansi_cprng.ko
+  LD [M]  drivers/crypto/msm/qce.ko
+  LD [M]  drivers/crypto/msm/qcedev.ko
+  LD [M]  drivers/crypto/msm/qcrypto.ko
+  LD [M]  drivers/hid/hid-logitech-dj.ko
+  LD [M]  drivers/input/evbug.ko
+  LD [M]  drivers/media/video/gspca/gspca_main.ko
+  LD [M]  drivers/misc/msm_tsif.ko
+  LD [M]  drivers/misc/vibetonz/vibrator.ko
+  LD [M]  drivers/misc/tsif_chrdev.ko
+  LD [M]  drivers/scsi/scsi_wait_scan.ko
+  LD [M]  drivers/spi/spidev.ko
+  GZIP    arch/arm/boot/compressed/piggy.gzip
+  AS      arch/arm/boot/compressed/piggy.gzip.o
+  LD      arch/arm/boot/compressed/vmlinux
+  OBJCOPY arch/arm/boot/zImage
+  Kernel: arch/arm/boot/zImage is ready
