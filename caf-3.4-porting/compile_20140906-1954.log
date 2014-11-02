@@ -1,0 +1,25 @@
+Script started on 2014년 09월 06일 (토) 오후 07시 54분 40초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  CC      kernel/sys.o
+  CC      kernel/trace/trace.o
+  CC      drivers/input/misc/pmic8xxx-pwrkey.o
+drivers/input/misc/pmic8xxx-pwrkey.c:278:1: error: 'pmic8xxx_pwrkey_status' undeclared here (not in a function)
+make[3]: *** [drivers/input/misc/pmic8xxx-pwrkey.o] 오류 1
+make[2]: *** [drivers/input/misc] 오류 2
+make[1]: *** [drivers/input] 오류 2
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      kernel/module.o
+  GZIP    kernel/config_data.gz
+make: *** [drivers] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+  LD      kernel/trace/built-in.o
+  CHK     kernel/config_data.h
+  LD      kernel/built-in.o

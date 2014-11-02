@@ -1,0 +1,64 @@
+Script started on 2014년 09월 07일 (일) 오후 12시 06분 27초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+  CC      kernel/sys.o
+  CC      arch/arm/mach-msm/board-msm8x60_dali.o
+  CC      kernel/trace/trace.o
+arch/arm/mach-msm/board-msm8x60_dali.c:1649:2: error: unknown field 'host_notify' specified in initializer
+arch/arm/mach-msm/board-msm8x60_dali.c:1649:2: warning: initialization makes pointer from integer without a cast [enabled by default]
+arch/arm/mach-msm/board-msm8x60_dali.c:1649:2: warning: (near initialization for 'msm_usb_host_pdata.config_gpio') [enabled by default]
+make[1]: *** [arch/arm/mach-msm/board-msm8x60_dali.o] 오류 1
+make: *** [arch/arm/mach-msm] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+  LD      kernel/trace/built-in.o
+  CC      drivers/scsi/sd.o
+  CC      drivers/usb/host/ehci-hcd.o
+  CC      drivers/usb/notify/host_notify_class.o
+drivers/usb/notify/host_notify_class.c:16:31: fatal error: linux/host_notify.h: No such file or directory
+compilation terminated.
+make[3]: *** [drivers/usb/notify/host_notify_class.o] 오류 1
+make[2]: *** [drivers/usb/notify] 오류 2
+make[2]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      kernel/module.o
+  GZIP    kernel/config_data.gz
+  CC      drivers/usb/core/hub.o
+drivers/scsi/sd.c: In function 'sd_revalidate_disk':
+drivers/scsi/sd.c:2483:7: error: 'struct gendisk' has no member named 'media_present'
+drivers/scsi/sd.c: In function 'sd_media_scan_thread':
+drivers/scsi/sd.c:2675:14: error: 'struct gendisk' has no member named 'media_present'
+drivers/scsi/sd.c: In function 'sd_probe_async':
+drivers/scsi/sd.c:2733:15: error: 'struct Scsi_Host' has no member named 'by_usb'
+drivers/scsi/sd.c:2734:5: error: 'struct gendisk' has no member named 'interfaces'
+drivers/scsi/sd.c:2734:20: error: 'GENHD_IF_USB' undeclared (first use in this function)
+drivers/scsi/sd.c:2734:20: note: each undeclared identifier is reported only once for each function it appears in
+drivers/scsi/sd.c:2751:15: error: 'struct Scsi_Host' has no member named 'by_usb'
+drivers/scsi/sd.c: In function 'sd_probe':
+drivers/scsi/sd.c:2846:15: error: 'struct Scsi_Host' has no member named 'by_usb'
+drivers/scsi/sd.c: In function 'sd_remove':
+drivers/scsi/sd.c:2895:12: error: 'struct gendisk' has no member named 'media_present'
+drivers/scsi/sd.c:2897:24: error: 'struct Scsi_Host' has no member named 'by_usb'
+make[2]: *** [drivers/scsi/sd.o] 오류 1
+make[1]: *** [drivers/scsi] 오류 2
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CHK     kernel/config_data.h
+  UPD     kernel/config_data.h
+drivers/usb/core/hub.c:35:31: fatal error: linux/host_notify.h: No such file or directory
+compilation terminated.
+  CC      kernel/configs.o
+make[3]: *** [drivers/usb/core/hub.o] 오류 1
+make[2]: *** [drivers/usb/core] 오류 2
+In file included from drivers/usb/host/ehci-hcd.c:1366:0:
+drivers/usb/host/ehci-msm72k.c:43:31: fatal error: linux/host_notify.h: No such file or directory
+compilation terminated.
+make[3]: *** [drivers/usb/host/ehci-hcd.o] 오류 1
+make[2]: *** [drivers/usb/host] 오류 2
+make[1]: *** [drivers/usb] 오류 2
+make: *** [drivers] 오류 2
+  LD      kernel/built-in.o

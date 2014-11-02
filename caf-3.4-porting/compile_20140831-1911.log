@@ -1,0 +1,45 @@
+Script started on 2014년 08월 31일 (일) 오후 07시 11분 39초
+scripts/kconfig/conf --silentoldconfig Kconfig
+  CHK     include/linux/version.h
+  CHK     include/generated/utsrelease.h
+  UPD     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h'는 이미 갱신되었습니다.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CC      init/version.o
+  CC      drivers/hwmon/msm_adc.o
+  CC      kernel/sys.o
+  CC      drivers/input/keyboard/pmic8xxx-keypad.o
+  CC      drivers/input/misc/pmic8xxx-pwrkey.o
+  CC      drivers/mfd/marimba-core.o
+drivers/mfd/marimba-core.c: In function 'timpani_reset':
+drivers/mfd/marimba-core.c:440:13: error: 'struct marimba_platform_data' has no member named 'timpani_reset_config'
+  LD      init/built-in.o
+make[2]: *** [drivers/mfd/marimba-core.o] 오류 1
+make[1]: *** [drivers/mfd] 오류 2
+make[1]: *** 끝나지 않은 작업을 기다리고 있습니다....
+  CC      drivers/media/common/tuners/xc4000.o
+  LD      drivers/input/misc/built-in.o
+  CC      drivers/mmc/core/core.o
+  LD      drivers/hwmon/built-in.o
+  CC      drivers/mmc/core/mmc.o
+  LD      drivers/input/keyboard/built-in.o
+  CC      drivers/mmc/host/msm_sdcc.o
+  LD      drivers/media/common/tuners/built-in.o
+  LD      drivers/input/built-in.o
+  CC      kernel/module.o
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  UPD     kernel/config_data.h
+  CC      kernel/configs.o
+  CC      kernel/trace/trace.o
+  LD      drivers/media/common/built-in.o
+  LD      drivers/mmc/core/mmc_core.o
+  LD      drivers/mmc/core/built-in.o
+  LD      drivers/media/built-in.o
+  LD      kernel/trace/built-in.o
+  LD      drivers/mmc/host/built-in.o
+  LD      drivers/mmc/built-in.o
+make: *** [drivers] 오류 2
+make: *** 끝나지 않은 작업을 기다리고 있습니다....
+  LD      kernel/built-in.o
